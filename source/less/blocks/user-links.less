@@ -1,0 +1,23 @@
+.user-links {
+  .list-style();
+  display: flex;
+}
+
+.user-links__item + .user-links__item {
+  margin-left: 10px;
+}
+
+.user-links__item {
+  a {
+    svg {
+      .trans-linear();
+      fill: darkgray;
+    }
+  }
+
+  a:hover {
+    svg {
+      fill: @color-light-blue;
+    }
+  }
+}

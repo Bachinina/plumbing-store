@@ -1,0 +1,45 @@
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-style() {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link-default() {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.trans-linear() {
+  transition: 0.3s;
+}
+
+.img-transform() {
+  .trans-linear();
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  transform-origin: center;
+}
+
+.img-transform-hover() {
+  transform: scale(1.05);
+}

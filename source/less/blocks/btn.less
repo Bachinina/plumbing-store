@@ -1,0 +1,45 @@
+.btn-default() {
+  .trans-linear();
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    .trans-linear();
+  }
+}
+
+.btn {
+  .btn-default();
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+
+  color: @color-light-blue;
+  background-color: transparent;
+  border: 1px solid @color-light-blue;
+
+  &:not(.arrow):hover,
+  &:not(.arrow):focus,
+  &:not(.arrow).active {
+    color: @color-white;
+    background-color: @color-light-blue;
+    border-color: @color-light-blue;
+  }
+}

@@ -1,0 +1,29 @@
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: @color-black;
+  background-color: @color-white;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  .trans-linear();
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+}

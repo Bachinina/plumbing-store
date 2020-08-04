@@ -1,0 +1,21 @@
+.range {
+  display: flex;
+}
+
+.range__item {
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: lightgray;
+  }
+}
+
+.range__item + .range__item{
+  margin-left: 2px;
+}
+
+.range__item.active {
+  svg {
+    fill: #eeee3e;
+  }
+}
