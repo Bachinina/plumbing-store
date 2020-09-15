@@ -18,18 +18,19 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("build/styles"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("build/styles"))
     .pipe(server.stream());
 });
 
 gulp.task("style-css", function () {
   gulp.src("source/css/*.css")
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("build/styles"))
     .pipe(server.stream());
 });
+
 
 gulp.task("html", function () {
   return gulp.src([
@@ -37,27 +38,30 @@ gulp.task("html", function () {
   ], {
       base: "source"
     })
-    .pipe(gulp.dest("docs"));
+    .pipe(gulp.dest("build"));
 });
+
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/img/**",
+    "source/fonts/**",
+    "source/img/assets/**",
     "source/js/**",
     "source/*.html"
   ], {
       base: "source"
     })
-    .pipe(gulp.dest("docs"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {
-  return del("docs");
+  return del("build");
 });
+
 
 gulp.task("server", function () {
   server.init({
-    server: "docs/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -67,8 +71,9 @@ gulp.task("server", function () {
   gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("add", server.reload);
-  gulp.watch("source/img/*.{img, png}", ["copy"]).on("change", server.reload);
-  gulp.watch("source/img/*.{img, png}", ["copy"]).on("add", server.reload);
+  gulp.watch("source/img/assets/*.{img, png}", ["copy"]).on("change", server.reload);
+  gulp.watch("source/img/assets/*.{img, png}", ["copy"]).on("add", server.reload);
+  gulp.watch("source/img/assets/**/*.svg", ["copy"]).on("change", server.reload);
   gulp.watch("source/js/*.js", ["copy"]).on("change", server.reload);
   gulp.watch("source/css/*.css", ["style-css"]).on("change", server.reload);
 });
@@ -82,3 +87,4 @@ gulp.task("build", function (done) {
     done
   );
 });
+

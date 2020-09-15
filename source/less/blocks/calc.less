@@ -1,0 +1,45 @@
+.calc__step {
+  margin-right: 24px;
+}
+
+.calc__val {
+  .list-style();
+  display: flex;
+
+  li + li {
+    margin-left: 24px
+  }
+
+  button {
+    .btn-default();
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: @color-blue;
+  }
+
+  button.active {
+    font-weight: 700;
+    color: @color-black;
+    text-decoration: none;
+  }
+}
+
+
+.calc__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.calc__wrap + .calc__min {
+  margin-top: 24px;
+}
+
+.calc__min {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: @color-gray;
+}

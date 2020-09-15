@@ -1,0 +1,152 @@
+.slider-double {
+}
+
+.slider-double--vert {
+  @media (min-width: @xl + 1) {
+    position: relative;
+    .slider-double__parent {
+      margin-left: 170px;
+      height: 540px;
+
+      .owl-stage-outer {
+        height: 540px;
+      }
+    }
+
+    .slider-double__child {
+      position: absolute;
+      right: 100%;
+      bottom: 0;
+      width: 540px;
+      padding: 0 25px;
+      transform: rotate(90deg);
+      transform-origin: 100% 100%;
+
+      .slider-double__item {
+        transform: rotate(-90deg);
+        padding: 7px;
+      }
+    }
+
+    .owl-nav button {
+      width: 22px;
+    }
+  }
+}
+
+.slider-double-alt {
+  max-width: 610px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  height: 272px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+
+  @media (min-width: @md + 1) {
+    margin: 0;
+    height: 500px;
+  }
+}
+
+.slider-double__parent {
+  max-width: 610px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  & > *:first-child,
+  & > *:first-child > *:first-child {
+    height: 100%;
+  }
+
+  .owl-stage-outer {
+    height: 272px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+
+    @media (min-width: @md + 1) {
+      height: 500px;
+    }
+  }
+
+  @media (min-width: @md + 1) {
+    margin: 0;
+  }
+}
+
+.slider-double__child {
+  display: none !important;
+  margin-top: 32px;
+
+  .owl-item {
+    .trans-linear();
+    border: 2px solid transparent;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .owl-item.current,
+  .owl-item.center {
+    border-color: @color-orange;
+  }
+
+  .slider-double__item {
+    max-width: 90px;
+    max-height: 90px;
+    padding: 6px;
+  }
+
+  @media (min-width: @md + 1) {
+    display: block !important;
+    max-width: 610px;
+    padding: 0 30px;
+  }
+}
+
+.slider-double__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+
+  img {
+    object-fit: contain;
+    height: inherit;
+  }
+
+  @media (min-width: @xl + 1) {
+    .slider-double__desc {
+      opacity: 0;
+    }
+
+    &:hover {
+      .slider-double__desc {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.slider-double__img-wrap {
+  margin: auto;
+  display: flex;
+  max-height: 100%;
+}
+
+.slider-double__desc {
+  .trans-linear();
+  position: absolute;
+  bottom: 0;
+  padding: 5px 15px;
+  font-size: 13px;
+  line-height: 1.4;
+  background: @color-light-gray2;
+  opacity: 0;
+
+  @media (min-width: @md + 1) {
+    opacity: 1;
+  }
+}

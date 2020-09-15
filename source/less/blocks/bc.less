@@ -1,0 +1,43 @@
+.bc {
+  margin: 0;
+}
+
+.bc__list {
+  .list-style();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bc__item {
+  margin-bottom: 2px;
+  font-size: 13px;
+  line-height: 15px;
+  color: @color-light-black;
+
+  a {
+    .link-underline-on-hover();
+    color: @color-light-black;
+
+  }
+
+  &:not(:last-of-type)::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin: 0px 8px;
+    background: url(../img/assets/icon-arrow.svg) no-repeat center;
+  }
+}
+
+.bc__item:last-of-type {
+  & > * {
+    .link-default();
+    .disabled();
+  }
+
+  a {
+    .link-default();
+  }
+}
+

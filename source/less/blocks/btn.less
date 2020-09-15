@@ -1,12 +1,13 @@
+// SET DEFAULT BUTTON STYLES
 .btn-default() {
   .trans-linear();
   position: relative;
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   padding: 0;
   text-align: center;
   border: none;
-  background-color: none;
+  background-color: transparent;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -16,6 +17,11 @@
   &:focus {
     .trans-linear();
   }
+
+  &:disabled,
+  &.disabled {
+    .disabled();
+  }
 }
 
 .btn {
@@ -23,23 +29,76 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  padding: 8px 10px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-style: normal;
+  background: @color-white;
+  border: 1px solid @color-blue;
+  box-sizing: border-box;
+  color: @color-blue;
   font-weight: 500;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 12px 15px;
+  border-radius: 3px;
 
-  color: @color-light-blue;
-  background-color: transparent;
-  border: 1px solid @color-light-blue;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
 
-  &:not(.arrow):hover,
-  &:not(.arrow):focus,
-  &:not(.arrow).active {
-    color: @color-white;
-    background-color: @color-light-blue;
-    border-color: @color-light-blue;
+.btn-dashed {
+  .btn-default();
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.4;
+  color: @color-blue;
+  border-bottom: 1px dashed @color-blue;
+  text-align: left;
+}
+
+.btn-bg {
+  background: @color-blue;
+  color: @color-white;
+}
+
+.btn-icon {
+  .btn-default();
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+
+  svg {
+    .trans-linear();
+    fill: @color-light-black;
+  }
+
+  svg + * {
+    margin-left: 8px;
+  }
+
+  * + svg {
+    margin-left: 8px;
+  }
+}
+
+.btn-icon--orange {
+  &:hover,
+  &:focus {
+    color: @color-orange;
+
+    svg {
+      fill: @color-orange;
+    }
+  }
+}
+
+.btn-icon--blue {
+  &:hover,
+  &:focus {
+    color: @color-blue;
+
+    svg {
+      fill: @color-blue;
+    }
   }
 }

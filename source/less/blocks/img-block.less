@@ -1,0 +1,19 @@
+.img-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  img + img {
+    margin-left: 15px;
+  }
+
+  img {
+    .trans-linear();
+    margin: 2px 0;
+    filter: grayscale(1);
+  }
+
+  img:hover {
+    filter: grayscale(0);
+  }
+}

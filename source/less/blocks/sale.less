@@ -1,0 +1,30 @@
+.sale__item {
+  box-sizing: content-box;
+  display: inline-block;
+  max-width: 110px;
+  padding: 0 8px;
+
+  & > * {
+    display: block;
+    margin-bottom: 3px;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.sale__item + .sale__item {
+  margin-left: 8px;
+}
+
+.sale__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.sale__code {
+  color: @color-blue;
+}

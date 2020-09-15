@@ -1,0 +1,30 @@
+.step {
+  display: flex;
+
+  & > * + * {
+    margin-left: 8px;
+  }
+}
+
+.step__btn {
+  .btn-default();
+  .border-radius();
+  min-width: 32px;
+  padding: 10px;
+  background-color: @color-blue;
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: @color-white;
+  }
+}
+
+.step__input {
+  padding: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  width: 72px;
+}
