@@ -1,12 +1,11 @@
 .promo {
   .border-radius();
   padding: 16px 30px;
-  font-size: 16px;
-  line-height: 19px;
+
   background: @color-light-yellow;
   color: @color-black;
 
-  & > *{
+  & > * {
     margin-bottom: 4px;
   }
   & > *:last-child {
@@ -14,9 +13,31 @@
   }
 }
 
+.promo__text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .promo__code {
   font-weight: 700;
   font-size: 21px;
   line-height: 25px;
   margin-top: 8px;
+}
+
+.promo__price {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+@media (min-width: @md + 1) and (max-width: @lg) {
+  .promo__price {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .promo__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

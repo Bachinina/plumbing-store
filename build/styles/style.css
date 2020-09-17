@@ -1025,8 +1025,6 @@ input {
 .promo {
   border-radius: 4px;
   padding: 16px 30px;
-  font-size: 16px;
-  line-height: 19px;
   background: rgba(255, 210, 72, 0.2);
   color: #000;
 }
@@ -1036,11 +1034,29 @@ input {
 .promo > *:last-child {
   margin-bottom: 0;
 }
+.promo__text {
+  font-size: 16px;
+  line-height: 19px;
+}
 .promo__code {
   font-weight: 700;
   font-size: 21px;
   line-height: 25px;
   margin-top: 8px;
+}
+.promo__price {
+  font-size: 36px;
+  line-height: 42px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .promo__price {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .promo__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .calc__step {
   margin-right: 15px;
@@ -1195,6 +1211,11 @@ input {
 }
 .prod__info {
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .prod__info {
+    margin-top: 32px;
+  }
 }
 .prod__price-old {
   margin-bottom: 8px;
