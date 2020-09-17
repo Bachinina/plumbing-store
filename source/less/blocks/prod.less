@@ -23,12 +23,18 @@
   margin-top: 10px;
 }
 
+.prod__info {
+  margin-bottom: 40px;
+}
+
 .prod__price-old {
   margin-bottom: 8px;
 }
 
 .prod__price {
   margin: 0;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .prod__price-ben {
@@ -48,6 +54,15 @@
 
 .prod__calc {
   margin-top: 30px;
+
+  .calc__step {
+    margin-right: 24px;
+  }
+
+  .step__input {
+    width: 72px;
+    padding: 5px;
+  }
 }
 
 
@@ -100,8 +115,30 @@
 
 .prod__credit-btn {
   margin-top: 10px;
+
+  a {
+    display: inline;
+  }
 }
 
 .prod__sale {
   margin-top: 36px;
+}
+
+.prod__tabs-wrap {
+  margin-top: 40px;
+}
+
+.prod__card-slider {
+  max-width: calc(610px + 170px);
+
+  @media(max-width: @lg) {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  @media(max-width: @md) {
+    max-width: 420px;
+    margin: 0 auto;
+  }
 }
