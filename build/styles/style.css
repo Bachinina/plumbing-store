@@ -544,6 +544,8 @@ ul {
     padding-left: 32px;
     border: none;
     text-align: left;
+    margin: 0;
+    border-radius: 0;
   }
   .tabs-collapse .tabs__title button::after {
     -webkit-transition: 0.3s;
