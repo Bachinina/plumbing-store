@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+}
+
+.search__input {
+  width: 100%;
+  padding-right: 65px;
+  font-size: 14px;
+
+}
+
+.search__btn {
+  .btn-default();
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    fill: #9eadb4;
+  }
+
+  &:focus {
+    outline: none;
+    svg {
+      fill: @color-blue;
+    }
+  }
+}

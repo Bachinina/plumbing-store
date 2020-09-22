@@ -54,3 +54,12 @@ $('[data-tabs]').each(function () {
 });
 
 
+
+$('[data-open]').on('mouseover', function() {
+  $(this).addClass('opened')
+});
+$('[data-open]').on('mouseout', function() {
+  $(this).removeClass('opened')
+});
+
+

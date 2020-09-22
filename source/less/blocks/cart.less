@@ -1,0 +1,43 @@
+.cart {
+  display: inline-flex;
+
+  svg {
+    fill: @color-blue;
+  }
+}
+
+.cart__img-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.cart__img {
+  position: relative;
+}
+
+.cart__count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  top: -5px;
+  right: -8px;
+}
+
+.cart__info {
+  color: @color-gray;
+  margin-left: 15px;
+
+  & > * {
+    margin: 0;
+  }
+
+  a {
+    .link-default();
+    .link-black-blue();
+    font-weight: 700;
+  }
+
+  p + p {
+    margin-top: 5px;
+  }
+}

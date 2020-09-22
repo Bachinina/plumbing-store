@@ -1,0 +1,31 @@
+.menu {
+  .list-style();
+  display: flex;
+}
+
+.menu__item {
+  display: flex;
+}
+
+.menu__item + .menu__item {
+  margin-left: 22px;
+}
+
+.menu__link {
+  .link-default();
+  .link-lightblack-blue();
+  display: flex;
+  align-items: center;
+
+  font-size: 13px;
+  line-height: 1;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+button.menu__link {
+  .btn-default();
+  display: flex;
+}

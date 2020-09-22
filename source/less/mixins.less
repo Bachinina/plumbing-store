@@ -57,9 +57,35 @@
 
 .link-black-blue() {
   color: @color-black;
+  svg {
+    .trans-linear();
+    fill: @color-black;
+  }
+
   &:hover,
   &:focus {
     color: @color-blue;
+
+    svg {
+      fill: @color-blue;
+    }
+  }
+}
+
+.link-lightblack-blue() {
+  color: @color-light-black;
+  svg {
+    .trans-linear();
+    fill: @color-light-black;
+  }
+
+  &:hover,
+  &:focus {
+    color: @color-blue;
+
+    svg {
+      fill: @color-blue;
+    }
   }
 }
 
