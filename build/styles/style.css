@@ -890,6 +890,9 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
 input {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1044,6 +1047,10 @@ input[type="checkbox"] + label {
   .modal .mb-s {
     margin-bottom: 16px;
   }
+  .modal .step-row {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .modal .install-table {
   max-width: 355px;
@@ -1065,6 +1072,11 @@ input[type="checkbox"] + label {
 }
 .modal .step-row__list:first-of-type {
   margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .modal .step-row__list:first-of-type {
+    margin-top: 24px;
+  }
 }
 .modal.active {
   -webkit-transition: 0.3s;
