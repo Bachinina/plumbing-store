@@ -1178,11 +1178,6 @@ input[type="checkbox"] + label {
 .modal__scroll {
   max-height: 480px;
 }
-@media (max-width: 575px) {
-  .modal__scroll {
-    max-height: none;
-  }
-}
 .modal__content {
   margin-top: 24px;
 }
