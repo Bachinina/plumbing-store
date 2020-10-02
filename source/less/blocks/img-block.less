@@ -8,12 +8,15 @@
   }
 
   img {
-    .trans-linear();
     margin: 2px 0;
+  }
+
+  &:not(.def) img {
+    .trans-linear();
     filter: grayscale(1);
   }
 
-  img:hover {
+  &:not(.def) img:hover {
     filter: grayscale(0);
   }
 }

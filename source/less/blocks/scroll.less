@@ -1,0 +1,26 @@
+.scroll {
+  overflow-y: auto;
+  padding-right: 15px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-width: 1px;
+    border-color: @color-blue;
+    background-color: @color-blue;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    border-width: 1px;
+    border-color:@color-blue;
+    background-color: @color-blue;
+  }
+  &::-webkit-scrollbar-track {
+    border-width: 0;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+  }
+}
+
+

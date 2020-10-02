@@ -1,0 +1,42 @@
+.install {
+  .checkbox-line {
+    padding: 21px;
+    font-size: 16px;
+
+    input {
+      width: 20px;
+      height: 20px;
+
+      & + label {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.install-table {
+  table {
+    td {
+      min-width: calc(110px + 4px * 2);
+      vertical-align: text-top;
+    }
+  }
+}
+
+.install__info {
+  padding: 16px;
+  padding-left: 42px;
+  border-radius: 6px;
+
+  .list-icon {
+    font-size: 12px;
+  }
+}
+
+.install__info + .install__info {
+  margin-top: 24px;
+
+  @media (max-width: @md) {
+    margin-top: 12px;
+  }
+}

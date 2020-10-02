@@ -106,6 +106,11 @@
           </clipPath>
         </defs>
       </symbol>
+
+      <symbol id="icon-cancel">
+        <path
+          d="M0.684936 0.24066C0.590882 0.249813 0.501434 0.285779 0.427224 0.344283C0.353013 0.402787 0.297161 0.481368 0.266305 0.570687C0.23545 0.660005 0.230888 0.756305 0.253164 0.848141C0.275439 0.939976 0.323614 1.02348 0.391962 1.08874L5.30569 6.00247L0.391962 10.9162C0.346064 10.9621 0.309655 11.0166 0.284815 11.0766C0.259975 11.1365 0.24719 11.2008 0.24719 11.2657C0.24719 11.3306 0.259975 11.3949 0.284815 11.4549C0.309655 11.5148 0.346064 11.5693 0.391962 11.6152C0.437861 11.6611 0.492351 11.6975 0.55232 11.7224C0.612289 11.7472 0.676564 11.76 0.741474 11.76C0.806385 11.76 0.87066 11.7472 0.930629 11.7224C0.990598 11.6975 1.04509 11.6611 1.09099 11.6152L6.00471 6.70149L10.9184 11.6152C10.9643 11.6611 11.0188 11.6975 11.0788 11.7224C11.1388 11.7472 11.203 11.76 11.268 11.76C11.3329 11.76 11.3971 11.7472 11.4571 11.7224C11.5171 11.6975 11.5716 11.6611 11.6175 11.6152C11.6634 11.5693 11.6998 11.5148 11.7246 11.4549C11.7494 11.3949 11.7622 11.3306 11.7622 11.2657C11.7622 11.2008 11.7494 11.1365 11.7246 11.0766C11.6998 11.0166 11.6634 10.9621 11.6175 10.9162L6.70374 6.00247L11.6175 1.08874C11.6892 1.01942 11.7383 0.929981 11.7581 0.832219C11.778 0.734456 11.7678 0.632962 11.7289 0.541121C11.6899 0.449279 11.624 0.371404 11.5399 0.317765C11.4558 0.264126 11.3574 0.237242 11.2577 0.24066C11.1295 0.244395 11.0079 0.297853 10.9184 0.389716L6.00471 5.30344L1.09099 0.389716C1.04486 0.34239 0.989705 0.30481 0.928784 0.279206C0.867862 0.253601 0.802418 0.240493 0.736335 0.24066C0.719213 0.239767 0.702057 0.239767 0.684936 0.24066Z" />
+      </symbol>
     </svg>
     <!-- endinject -->
   </div>
@@ -874,7 +879,7 @@
               </div>
 
               <div class="prod__delivery">
-                <button class="btn-dashed" aria-label="Узнать больше о доставке" data-modal="#modal-delivery">Самовывоз
+                <button class="btn-dashed" aria-label="Узнать больше о доставке" data-modal="#modal-pickup">Самовывоз
                   по России. Подробнее</button>
                 <p>с 06 октября по 08 ноября, <b>бесплатно</b></p>
 
@@ -885,11 +890,20 @@
                   </div>
 
 
-                  <button class="btn-dashed" aria-label="Узнать больше о доставке" data-modal="#modal-delivery">+ 24 000
+                  <button class="btn-dashed" aria-label="Узнать больше о доставке" data-modal="#modal-pickup">+ 24 000
                     ПВЗ </button>
                 </div>
               </div>
               <!-- Доставка и самовывоз -->
+
+
+              <!-- Установка -->
+              <div class="prod__delivery">
+                <button class="btn-dashed" aria-label="Узнать больше о доставке"
+                  data-modal="#modal-install">Профессиональная установка. Подробнее</button>
+                <p> <b>от 4 500 ₽</b></p>
+              </div>
+              <!-- Установка -->
 
 
               <!-- Кнопки -->
@@ -1680,6 +1694,292 @@
     </section>
   </main>
 
+
+  <!-- Модальное окно: самовывоз -->
+  <section class="modal" id="modal-pickup">
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Самовывоз: Москва</h2>
+        <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+          сиденьем Микролифт и
+          клавишей смыва Хром</p>
+
+        <form action="/" class="modal__search search">
+          <input class="search__input" type="search" placeholder="Начните набирать адрес">
+          <button type="reset" class="search__btn" aria-label="Очистить поисковую строку">
+            <svg width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="#icon-cancel"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="modal__content">
+          <div class="modal__scroll scroll">
+            <div class="branch">
+              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+              <p>Способ оплаты: картой на сайте</p>
+              <ul class="branch__detail">
+                <li>срок хранения 3 дня</li>
+                <li>средне-габарит - 699 руб.</li>
+                <li>крупный габарит - бесплатно</li>
+              </ul>
+            </div>
+            <div class="branch">
+              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+              <p>Способ оплаты: картой на сайте</p>
+              <ul class="branch__detail">
+                <li>срок хранения 3 дня</li>
+                <li>средне-габарит - 699 руб.</li>
+                <li>крупный габарит - бесплатно</li>
+              </ul>
+            </div>
+            <div class="branch">
+              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+              <p>Способ оплаты: картой на сайте</p>
+              <ul class="branch__detail">
+                <li>срок хранения 3 дня</li>
+                <li>средне-габарит - 699 руб.</li>
+                <li>крупный габарит - бесплатно</li>
+              </ul>
+            </div>
+            <div class="branch">
+              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+              <p>Способ оплаты: картой на сайте</p>
+              <ul class="branch__detail">
+                <li>срок хранения 3 дня</li>
+                <li>средне-габарит - 699 руб.</li>
+                <li>крупный габарит - бесплатно</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal__bottom">
+          <span>Вы сможете выбрать ПВЗ при оформлении заказа.</span>
+        </div>
+        <button class="modal__close" type="button" aria-label="Закрыть информацию о самовывозе"></button>
+      </div>
+    </div>
+  </section>
+  <!-- Модальное окно: самовывоз -->
+
+
+  <!-- Модальное окно: доставка -->
+  <section class="modal" id="modal-delivery">
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Доставка: Санкт-Петербург</h2>
+        <p class="modal__desc mb-s">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+          сиденьем Микролифт и клавишей смыва Хром</p>
+
+        <div class="modal__content mb-s">
+          <div class="modal__item">
+            <h3>Ожидаемая дата доставки:</h3>
+            <p>с 06 сентября по 08 сентября 2020 г.</p>
+          </div>
+
+          <div class="modal__item">
+            <h3>Ожидаемая стоимость доставки:</h3>
+            <p>200 ₽</p>
+          </div>
+        </div>
+
+        <div class="modal__bottom">
+          <p>При заказе нескольких позиций, стоимость доставки партнерской службой может быть увеличена. </p>
+          <p>Партнерская доставка по адресу и в пункты выдачи осуществляется партнерскими курьерскими службами. Вы
+            можете выбрать любую службу доставки при оформлении заказа или указать в комментарии другую службу.</p>
+
+          <div class="modal__img-block img-block def">
+            <img src="img/assets/logo-1.png" alt="Деловые линии">
+            <img src="img/assets/logo-2.png" alt="ПЭК">
+            <img src="img/assets/logo-8.png" alt="DPD">
+            <img src="img/assets/logo-9.png" alt="CDEK">
+            <img src="img/assets/logo-4.png" alt="Boxberry">
+            <img src="img/assets/logo-5.png" alt="PickPoint">
+            <img src="img/assets/logo-10.png" alt="IML">
+            <img src="img/assets/logo-11.png" alt="Почта России">
+          </div>
+
+        </div>
+        <button class="modal__close" type="button" aria-label="Закрыть информацию о самовывозе"></button>
+      </div>
+    </div>
+  </section>
+  <!-- Модальное окно: доставка -->
+
+
+  <!-- Модальное окно: установка -->
+  <section class="modal active" id="modal-install">
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Установка</h2>
+        <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+          сиденьем Микролифт и клавишей смыва Хром</p>
+
+        <div class="modal__content install">
+          <div class="checkbox-line mb-s">
+            <input type="checkbox" name="install-agree" id="install-agree">
+            <label for="install-agree">Мне требуется установка этого товара вашими специалистами</label>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <div class="modal__item">
+                <h3 class="mb-xs">Чугунные ванны</h3>
+
+                <div class="install-table table-wrap">
+                  <table>
+                    <tr>
+                      <td>Установка чугунной ванны</td>
+                      <td class="text-right">4500 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Сборка каркаса под ванну</td>
+                      <td class="text-right">1000-1200 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Демонтаж чугунной ванны</td>
+                      <td class="text-right">1500-2000 ₽</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="modal__item">
+                <h3 class="mb-xs">Дополнительные работы</h3>
+
+                <div class="install-table  table-wrap">
+                  <table>
+                    <tr>
+                      <td>Герметизация ванны по периметру</td>
+                      <td class="text-right">600-1000 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Монтаж сифона</td>
+                      <td class="text-right">500 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Установка смесителя на борт ванны</td>
+                      <td class="text-right">2500-3500 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Установка фронтальной панели</td>
+                      <td class="text-right">800-2000 ₽</td>
+                    </tr>
+                    <tr>
+                      <td>Подгонка фронтальной панели, под трубы</td>
+                      <td class="text-right">600 ₽/рез.</td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="install__info bg--gray">
+                <ul class="list-icon list-icon--info">
+                  <li>В стоимость монтажа не входят расходные материалы и доп. комплектующие</li>
+                </ul>
+              </div>
+
+              <div class="install__info bg--gray">
+                <h4>Монтаж включает в себя следующие работы: </h4>
+
+                <ul class="list-icon list-icon--checked">
+                  <li>осмотр комплектации</li>
+                  <li> осмотр на возможные дефекты и брак</li>
+                  <li> сборка каркаса (если необходимо)</li>
+                  <li>установка на место эксплуатации</li>
+                  <li> регулировка положения по уровню для качественного оттока воды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="bg--gray">
+        <div class="modal__container step-row">
+          <h3 class="text-center">Порядок работы</h3>
+
+          <ul class="step-row__list row">
+            <li class="step-row__item col-12 col-md-4">
+              <div class="step-row__img-wrap">
+                <img src="img/assets/install-step-1.svg" alt="Добавьте услугу установки при оформлении заказа">
+              </div>
+              <p class="step-row__desc">
+                Добавьте услугу установки при оформлении заказа
+              </p>
+            </li>
+            <li class="step-row__item col-12 col-md-4">
+              <div class="step-row__img-wrap">
+                <img src="img/assets/install-step-2.svg" alt="Обсудите детали установки с менеджером">
+              </div>
+              <p class="step-row__desc">
+                Обсудите детали установки с менеджером
+              </p>
+            </li>
+            <li class="step-row__item col-12 col-md-4">
+              <div class="step-row__img-wrap">
+                <img src="img/assets/install-step-3.svg" alt="Примите заказ у службы доставки или на пункте самовывоза">
+              </div>
+              <p class="step-row__desc">
+                Примите заказ у службы доставки или на пункте самовывоза
+              </p>
+            </li>
+          </ul>
+
+          <ul class="step-row__list row">
+            <li class="step-row__item col-12 col-md-4">
+              <div class="step-row__img-wrap">
+                <img src="img/assets/install-step-4.svg" alt="Встретьте бригаду мастеров">
+              </div>
+              <p class="step-row__desc">
+                Встретьте бригаду мастеров
+              </p>
+            </li>
+            <li class="step-row__item col-12 col-md-4">
+              <div class="step-row__img-wrap">
+                <img src="img/assets/install-step-5.svg" alt="Примите выполенную работу">
+              </div>
+              <p class="step-row__desc">
+                Примите выполенную работу
+              </p>
+            </li>
+            <li class="step-row__item col-12 col-md-4">
+              <div class="step-row__img-wrap">
+                <img src="img/assets/install-step-6.svg" alt="Наслаждайтесь новой сантехникой">
+              </div>
+              <p class="step-row__desc">
+                Наслаждайтесь новой сантехникой
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <button class="modal__close" type="button" aria-label="Закрыть информацию о самовывозе"></button>
+    </div>
+
+  </section>
+  <!-- Модальное окно: установка -->
+
+
+
+
   <footer class="footer">
     <div class="footer__top">
       <div class="container">
@@ -1862,7 +2162,6 @@
         </p>
       </div>
     </div>
-
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

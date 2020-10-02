@@ -76,13 +76,63 @@ li > a {
   text-align: right;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-blue {
+  color: @color-blue;
+}
+
+.text-gray {
+  color: @color-gray;
+}
+
 .symb {
   font-size: 0.75em;
 }
-.symb-sm{
+.symb-sm {
   font-size: 0.6em;
 }
 
 ul {
   padding-left: 15px;
+}
+
+.list-icon {
+  .list-style();
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+  }
+
+  li:before {
+    content: "";
+    position: absolute;
+    left: calc(-20px - 12px);
+    width: 20px;
+    height: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+.list-icon--info {
+  li:before {
+    background-image: url(../img/assets/icon-info.svg);
+  }
+}
+
+.list-icon--checked {
+  li:before {
+    background-image: url(../img/assets/icon-check.svg);
+  }
 }

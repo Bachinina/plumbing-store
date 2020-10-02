@@ -4,7 +4,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -14,10 +14,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
@@ -32,5 +32,32 @@ input {
   &:focus {
     outline: none;
     box-shadow: 0 0 0 2px #9cacb2;
+  }
+}
+
+input[type="checkbox"] {
+  background-color: @color-white;
+  border: 1px solid @color-black;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  & + label {
+    margin-left: 5px;
+  }
+}
+
+.checkbox-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: @color-white;
+  background: @color-orange;
+  border-radius: 6px;
+
+  input {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
   }
 }

@@ -1,0 +1,43 @@
+.branch {
+  & > * {
+    margin: 0;
+  }
+  & > * + * {
+    margin-top: 2px;
+  }
+}
+
+.branch + .branch {
+  margin-top: 28px;
+
+  @media (max-width: @sm) {
+    margin-top: 20px;
+  }
+}
+
+.branch__title {
+  .text-blue();
+  margin-bottom: 4px;
+
+  @media (max-width: @sm) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.branch__detail {
+  .list-style();
+  .text-gray();
+  margin-top: 4px;
+
+  li {
+    display: inline-block;
+  }
+
+  li:not(:last-child) {
+    &::after {
+      content: "\2022";
+      padding: 0 9px;
+    }
+  }
+}
