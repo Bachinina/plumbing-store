@@ -61,46 +61,40 @@ $(document).ready(function () {
 
   // MODAL
   // MODAL OPENING
-  $('[data-modal]').on('click', function () {
-    $($(this).attr('data-modal')).addClass('active');
-    $($(this).attr('data-modal')).focus();
+  $('[data-open-modal]').on('click', function () {
+    $('[data-modal]').removeClass('active');
+    $($(this).attr('data-open-modal')).addClass('active');
   });
   // MODAL CLOSING
-  (function () {
-    const modals = document.querySelectorAll('.modal');
-    if (modals.length > 0) {
-      modals.forEach((modal) => {
-        const modalCloseBtn = modal.querySelector('.modal__close');
 
-        const closeModalByClick = (evt) => {
-          if (evt.target === modal) {
-            closeModal();
-          }
-        };
-
-        const closeModalByEsc = (evt) => {
-          if (evt.keyCode === 27) {
-            closeModal();
-          }
-        };
-
-        const closeModal = () => {
-          modal.classList.remove('active');
+  const modals = $('[data-modal]');
+  modals.each(function () {
+    const modalCloseBtn = $(this).find('.modal__close');
 
 
-          const form = modal.querySelector('form');
-          if (form) {
-            // CLEAR FORM
-            form.reset();
-          }
-        };
+    const closeModalByEsc = (evt) => {
+      if (evt.keyCode === 27) {
+        closeModal();
+      }
+    };
 
-        modal.addEventListener('click', closeModalByClick);
-        modalCloseBtn.addEventListener('click', closeModal);
-        document.addEventListener('keydown', closeModalByEsc);
-      });
-    }
-  })();
+    const closeModal = () => {
+      $(this).removeClass('active');
+
+      const form = $(this).find('form');
+      if (form) {
+        // CLEAR FORM
+        form.trigger("reset");
+      }
+    };
+
+    $(this).on('click', closeModal)
+      .children().click(function(e) {
+      return false;
+    });
+    modalCloseBtn.on('click', closeModal);
+    $(document).on('keydown', closeModalByEsc);
+  });
 });
 
 

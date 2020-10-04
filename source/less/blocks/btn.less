@@ -51,14 +51,23 @@
   }
 }
 
+.btn-und,
 .btn-dashed {
   .btn-default();
   display: inline-block;
   font-size: 14px;
   line-height: 1.4;
   color: @color-blue;
-  border-bottom: 1px dashed @color-blue;
+  border-bottom: 1px @color-blue;
   text-align: left;
+}
+
+.btn-und {
+  border-bottom-style: solid;
+}
+
+.btn-dashed {
+  border-bottom-style: dashed;
 }
 
 .btn-bg {

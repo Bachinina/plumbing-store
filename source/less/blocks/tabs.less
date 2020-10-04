@@ -10,13 +10,13 @@
 }
 
 
-.tabs__content,
+.tabs-content,
 .tabs-collapse__content {
   position: relative;
 }
 
 
-.tabs__title {
+.tabs-toggle {
   .trans-linear();
 
   button {
@@ -29,7 +29,7 @@
 .tabs {
   overflow-y: hidden;
 
-  .tabs__title {
+  .tabs-toggle {
     flex-shrink: 0;
 
     &:first-of-type {
@@ -50,27 +50,27 @@
     }
   }
 
-  .tabs__title.active {
+  .tabs-toggle.active {
     button {
       border-color: @color-blue;
       color: @color-blue;
     }
   }
 
-  .tabs__title + .tabs__title {
+  .tabs-toggle + .tabs-toggle {
     margin-left: 32px;
   }
 }
 
 
-.tabs__content {
+.tabs-content {
   padding: 48px 0;
 }
 
 
 .tabs-collapse {
   flex-wrap: wrap;
-  .tabs__title {
+  .tabs-toggle {
     button {
       padding: 10px 12px;
       border: 1px solid @color-orange;
@@ -79,14 +79,14 @@
     }
   }
 
-  .tabs__title.active {
+  .tabs-toggle.active {
     button {
       color: @color-white;
       background-color: @color-orange;
     }
   }
 
-  .tabs__title {
+  .tabs-toggle {
     margin: 6px;
   }
 
@@ -97,7 +97,7 @@
     border: 1px solid @color-orange;
     border-radius: 3px;
 
-    .tabs__title {
+    .tabs-toggle {
       margin: 0;
       width: 100%;
 
@@ -127,7 +127,7 @@
       }
     }
 
-    .tabs__title.active {
+    .tabs-toggle.active {
       order: -1;
       button {
         display: block;
@@ -141,7 +141,7 @@
     }
 
     &.opened {
-      .tabs__title {
+      .tabs-toggle {
         button {
           display: block;
         }
@@ -156,7 +156,7 @@
         }
       }
 
-      .tabs__title.active {
+      .tabs-toggle.active {
         button {
           display: block;
           &::after {
@@ -174,7 +174,7 @@
 
 
 
-.tabs__item {
+.tabs-item {
   .trans-linear();
   height: 0px;
   opacity: 0;
@@ -182,7 +182,7 @@
   overflow: hidden;
 }
 
-.tabs__item.active {
+.tabs-item.active {
   height: auto;
   opacity: 1;
   visibility: visible;
