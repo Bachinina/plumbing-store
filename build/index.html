@@ -155,11 +155,19 @@
     <!-- Баннер -->
 
     <!-- Меню -->
-    <div class="header__top d-lg-block">
+    <div class="header__top">
       <div class="container">
-        <ul class="header__menu menu">
-          <li class="menu__item">
-            <button class="menu__link" aria-label="Выбрать город">
+        <ul class="header__menu menu d-lg-flex">
+          <li class="menu__item menu__item--modal">
+            <button class="menu__link" aria-label="Выбрать город" data-toggle-modal="#select-country">
+              <svg viewBox="0 0 384.97 384.97" width="16" height="16">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+              Россия
+            </button>
+          </li>
+          <li class="menu__item menu__item--modal">
+            <button class="menu__link" aria-label="Выбрать город" data-toggle-modal="#select-city">
               <svg viewBox="0 0 477 477" width="16" height="16">
                 <use xlink:href="#icon-location"></use>
               </svg>
@@ -185,6 +193,139 @@
             <a href="/" class="menu__link">Контакты</a>
           </li>
         </ul>
+
+
+        <div class="menu__modal sm modal-top" id="select-country" data-modal>
+          <h2 class="h3">Выберите страну</h2>
+          <div class="menu__modal-row mb-0">
+
+          <form class="menu__modal-form row" action="/">
+            <div class="form__item col-12 col-md-4">
+              <div class="checkbox-round">
+                <input type="checkbox" name="country-rf" id="country-rf">
+                <label for="country-rf">Россия</label>
+              </div>
+            </div>
+            <div class="form__item col-12 col-md-4">
+              <div class="checkbox-round">
+                <input type="checkbox" name="country-kh" id="country-kh">
+                <label for="country-kh">Казахстан</label>
+              </div>
+            </div>
+            <div class="form__item col-12 col-md-4">
+              <div class="checkbox-round">
+                <input type="checkbox" name="country-bel" id="country-bel">
+                <label for="country-bel">Белоруссия</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+        </div>
+
+        <div class="menu__modal modal-top" id="select-city" data-modal>
+          <h2 class="h3">Выберите свой город</h2>
+          <div class="menu__modal-row">
+            <form class="menu__modal-form row" action="/">
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-1" id="city-1">
+                  <label for="city-1">Москва</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-2" id="city-2">
+                  <label for="city-2">Санкт-Петербург</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-3" id="city-3">
+                  <label for="city-3">Краснодар</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-4" id="city-4">
+                  <label for="city-4">Ростов-на-Дону</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-5" id="city-5">
+                  <label for="city-5">Екатеринбург</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-6" id="city-6">
+                  <label for="city-6">Самара</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-7" id="city-7">
+                  <label for="city-7">Уфа</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-8" id="city-8">
+                  <label for="city-8">Нижний Новгород</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-9" id="city-9">
+                  <label for="city-9">Казань</label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <h2 class="h3">Или найдите свой город</h2>
+          <form action="/" class="menu__modal-form">
+            <div class="d-flex">
+              <input class="search__input" type="search" placeholder="Пермь...">
+              <button class="btn btn-bg ml-s">Выбрать</button>
+            </div>
+
+            <div class="modal__search-res scroll active">
+              <div class="modal__search-item">
+                Москва г
+              </div>
+              <div class="modal__search-item">
+                Москакасинское с/п, Моргаушский р-н, Чувашская Республика - Чувашия
+              </div>
+              <div class="modal__search-item">
+                Московский с/с, Усть-Абаканский р-н, Хакасия Респ
+              </div>
+              <div class="modal__search-item">
+                Московский г., Московский п, Москва г
+              </div>
+              <div class="modal__search-item">
+                55 км автодороги Москва-Дубна тер, Дмитровский р-н, Московская обл
+              </div>
+              <div class="modal__search-item">
+                Морозки 54 км авторороги Москва-Дубна тер, Дмитровский р-н, Московская обл
+              </div>
+              <div class="modal__search-item">
+                Москва д, Верхошижемский р-н, Кировская обл
+              </div>
+              <div class="modal__search-item">
+                600м западнее ГИБДД на а/дМосква-Иваново тер, Ивановский р-н, Ивановская обл
+              </div>
+              <div class="modal__search-item">
+                355 км и 356 км автотрассы Москва-Киев нп, Брянский р-н, Брянская обл
+              </div>
+            </div>
+          </form>
+
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+        </div>
       </div>
     </div>
     <!-- Меню -->
@@ -213,7 +354,7 @@
               <a class="header__tel tel" href="tel:84955653525">8 495 565-35-25</a>
               <p>Каждый день с 9 до 22</p>
             </div>
-            <button class="header__btn btn btn-small" data-open-modal="#modal-feedback">Заказать звонок</button>
+            <button class="header__btn btn btn-small" data-open-modal="#modal-cb">Заказать звонок</button>
           </div>
 
           <div class="header__cart cart d-none d-md-flex">
@@ -252,12 +393,12 @@
 
           <ul class="header__nav d-xl-flex">
             <li class="header__nav-item">
-              <button class="header__nav-btn" aria-label="Открыть каталог" data-open="#header-catalog">
-                <div class="btn-burger" aria-hidden="true">
+              <button class="header__nav-btn" aria-label="Открыть каталог" data-toggle-modal="#header-catalog">
+                <span class="btn-burger" aria-hidden="true">
                   <span></span>
                   <span></span>
                   <span></span>
-                </div>
+                </span>
                 <span>Все товары</span>
               </button>
             </li>
@@ -266,9 +407,9 @@
             </li>
           </ul>
 
-          <div class="header__catalog">
+          <!-- <div class="header__catalog" id="header-catalog" data-modal>
             Каталог
-          </div>
+          </div> -->
 
 
           <ul class="header__nav d-md-flex">
@@ -1714,8 +1855,6 @@
               <img src="img/assets/banner-3.jpg" alt="Клавиша смыва в подарок">
             </a>
           </div>
-
-
         </div>
 
       </div>
@@ -1842,7 +1981,7 @@
           </div>
 
         </div>
-        <button class="modal__close" type="button" aria-hidden="Закрыть информацию о доставке"></button>
+        <button class="modal__close" type="button" aria-label="Закрыть информацию о доставке"></button>
       </div>
     </div>
   </section>
@@ -1858,7 +1997,7 @@
           сиденьем Микролифт и клавишей смыва Хром</p>
 
         <div class="modal__content install">
-          <div class="checkbox-line mb-s">
+          <div class="checkbox-line checkbox-line-or mb-s">
             <input type="checkbox" name="install-agree" id="install-agree">
             <label for="install-agree">Мне требуется установка этого товара вашими специалистами</label>
           </div>
@@ -2025,7 +2164,7 @@
               <ul class="list-unmarked text-blue text-und">
                 <li>Самовывозом из всех ПВЗ</li>
               </ul>
-              <!-- //если ссылка 
+              <!-- //если ссылка
                   <p><a class="text-und" href="/">Самовывозом из всех ПВЗ</a></p> -->
 
               <!-- // если кнопка и открывается попап
@@ -2229,9 +2368,9 @@
               сиденьем Микролифт и клавишей смыва Хром</p>
 
             <div class="modal__content install">
-              <div class="checkbox-line mb-s">
-                <input type="checkbox" name="install-agree" id="install-agree">
-                <label for="install-agree">Мне требуется установка этого товара вашими специалистами</label>
+              <div class="checkbox-line checkbox-line-or mb-s">
+                <input type="checkbox" name="install-agree" id="install-agree2">
+                <label for="install-agree2">Мне требуется установка этого товара вашими специалистами</label>
               </div>
 
               <div class="row">
@@ -2390,7 +2529,7 @@
                   <ul class="list-unmarked text-blue text-und">
                     <li>Самовывозом из всех ПВЗ</li>
                   </ul>
-                  <!-- //если ссылка 
+                  <!-- //если ссылка
                   <p><a class="text-und" href="/">Самовывозом из всех ПВЗ</a></p> -->
 
                   <!-- // если кнопка и открывается попап
@@ -2430,7 +2569,7 @@
           </div>
         </div>
       </div>
-      <button class="modal__close" type="button" aria-label="Закрыть информацию об оплате"></button>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
   </section>
   <!-- Модальное окно: вся информация  -->
@@ -2465,6 +2604,303 @@
   </section>
   <!-- Модальное окно: клубная цена -->
 
+
+  <!-- Модальное окно: заказ звонка -->
+  <section class="modal modal-sm" id="modal-cb" data-modal>
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Заказать «Обратный звонок»</h2>
+        <p>Перезвоним: Пн-Пт с 9:00 до 19:00</p>
+
+        <div class="modal__content">
+          <form class="modal__form form" action="/">
+            <div class="form__item">
+              <label class="form__label" for="cb-name">Ваше имя</label>
+              <input type="text" id="cb-name" name="cb-name">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="cb-phone">Номер телефона</label>
+              <input type="tel" id="cb-phone" name="cb-phone">
+              <div class="add">
+                <p>Пожалуйста, введите номер в формате</p>
+                <p>+7 xxx xxx-xx-xx</p>
+              </div>
+
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="cb-preftime">Удобное время для звонка</label>
+              <div class="select">
+                <select id="cb-preftime" name="cb-preftime">
+                  <option value="1">Как можно скорее</option>
+                  <option value="2">До обеда</option>
+                  <option value="3">После обеда</option>
+                  <option value="4">Вечером</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="cb-comment">Комментарий</label>
+              <textarea rows="5" id="cb-comment" name="cb-comment"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="cb-code">Введите защитный код:</label>
+              <input type="text" id="cb-code" name="cb-code">
+              <div class="add">
+                <img src="https://santehnika-tut.ru/png_f.php" alt="">
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="checkbox-line">
+                <input type="checkbox" name="cb-agree" id="cb-agree">
+                <label for="cb-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                  конфиденциальности и обработки персональных данных.<br>
+                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-bg">Заказать</button>
+          </form>
+        </div>
+      </div>
+
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </section>
+  <!-- Модальное окно: заказ звонка -->
+
+
+  <!-- Модальное окно: поблагодарить -->
+  <section class="modal modal-sm" id="modal-grat" data-modal>
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Поблагодарить</h2>
+
+        <div class="modal__content">
+          <form class="modal__form form" action="/">
+            <div class="form__item">
+              <label class="form__label" for="grat-order">Номер заказа</label>
+              <input type="text" id="grat-order" name="grat-order">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="grat-name">Ваше имя</label>
+              <input type="text" id="grat-name" name="grat-name">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="grat-comment">Благодарность</label>
+              <textarea rows="5" id="grat-comment" name="grat-comment"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="grat-phone">Телефон для связи</label>
+              <input type="tel" id="grat-phone" name="grat-phone">
+              <div class="add">
+                <p>Пожалуйста, введите номер в формате</p>
+                <p>+7 xxx xxx-xx-xx</p>
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="grat-email">Электронная почта</label>
+              <input type="email" id="grat-email" name="grat-email">
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="grat-code">Введите защитный код:</label>
+              <input type="text" id="grat-code" name="grat-code">
+              <div class="add">
+                <img src="https://santehnika-tut.ru/png_f.php" alt="">
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="checkbox-line">
+                <input type="checkbox" name="grat-agree" id="grat-agree" required>
+                <label for="grat-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                  конфиденциальности и обработки персональных данных.<br>
+                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-bg">Поблагодарить</button>
+          </form>
+        </div>
+      </div>
+
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </section>
+  <!-- Модальное окно: поблагодарить -->
+
+
+  <!-- Модальное окно: пожаловаться -->
+  <section class="modal modal-sm" id="modal-comp" data-modal>
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Пожаловаться</h2>
+
+        <div class="modal__content">
+          <form class="modal__form form" action="/">
+            <div class="form__item">
+              <label class="form__label" for="comp-order">Номер заказа</label>
+              <input type="text" id="comp-order" name="comp-order">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="comp-name">Ваше имя</label>
+              <input type="text" id="comp-name" name="comp-name">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="comp-comment">Описание претензии</label>
+              <textarea rows="5" id="comp-comment" name="comp-comment"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="comp-phone">Телефон для связи</label>
+              <input type="tel" id="comp-phone" name="comp-phone">
+              <div class="add">
+                <p>Пожалуйста, введите номер в формате</p>
+                <p>+7 xxx xxx-xx-xx</p>
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="comp-email">Электронная почта</label>
+              <input type="email" id="comp-email" name="comp-email">
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="comp-code">Введите защитный код:</label>
+              <input type="text" id="comp-code" name="comp-code">
+              <div class="add">
+                <img src="https://santehnika-tut.ru/png_f.php" alt="">
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="checkbox-line">
+                <input type="checkbox" name="comp-agree" id="comp-agree" required>
+                <label for="comp-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                  конфиденциальности и обработки персональных данных.<br>
+                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-bg">Отправить жалобу</button>
+          </form>
+        </div>
+      </div>
+
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </section>
+  <!-- Модальное окно: пожаловаться -->
+
+
+  <!-- Модальное окно: нашли ошибку -->
+  <section class="modal modal-sm" id="modal-mistake" data-modal>
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Нашли ошибку на сайте</h2>
+
+        <div class="modal__content">
+          <form class="modal__form form" action="/">
+            <div class="form__item">
+              <label class="form__label" for="mistake-link">Ссылка на страницу, на которой допущена ошибка</label>
+              <input type="text" id="mistake-link" name="mistake-link">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="mistake-comment">Описание ошибки</label>
+              <textarea rows="5" id="mistake-comment" name="mistake-comment"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="mistake-name">Ваше имя</label>
+              <input type="text" id="mistake-name" name="mistake-name">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="mistake-email">Электронная почта</label>
+              <input type="email" id="mistake-email" name="mistake-email">
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="mistake-code">Введите защитный код:</label>
+              <input type="text" id="mistake-code" name="mistake-code">
+              <div class="add">
+                <img src="https://santehnika-tut.ru/png_f.php" alt="">
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="checkbox-line">
+                <input type="checkbox" name="mistake-agree" id="mistake-agree" required>
+                <label for="mistake-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                  конфиденциальности и обработки персональных данных.<br>
+                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-bg">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </section>
+  <!-- Модальное окно: нашли ошибку -->
+
+
+  <!-- Модальное окно: неудобно пользоваться сайтом -->
+  <section class="modal modal-sm" id="modal-uncomf" data-modal>
+    <div class="modal__wrapper">
+      <div class="modal__container">
+        <h2 class="modal__title">Неудобно пользоваться сайтом?</h2>
+
+        <div class="modal__content">
+          <form class="modal__form form" action="/">
+            <div class="form__item">
+              <label class="form__label" for="uncomf-comment">Описание проблемы</label>
+              <textarea rows="5" id="uncomf-comment" name="uncomf-comment"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="uncomf-comf">Как сделать удобнее</label>
+              <textarea rows="5" id="uncomf-comf" name="uncomf-comf"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="uncomf-name">Ваше имя</label>
+              <input type="text" id="uncomf-name" name="uncomf-name">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="uncomf-email">Электронная почта</label>
+              <input type="email" id="uncomf-email" name="uncomf-email">
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="uncomf-code">Введите защитный код:</label>
+              <input type="text" id="uncomf-code" name="uncomf-code">
+              <div class="add">
+                <img src="https://santehnika-tut.ru/png_f.php" alt="">
+              </div>
+            </div>
+
+            <div class="form__item">
+              <div class="checkbox-line">
+                <input type="checkbox" name="uncomf-agree" id="uncomf-agree" required>
+                <label for="uncomf-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                  конфиденциальности и обработки персональных данных.<br>
+                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-bg">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+    </div>
+  </section>
+  <!-- Модальное окно: неудобно пользоваться сайтом -->
 
 
 
@@ -2524,20 +2960,19 @@
                 <p>Бесплатные звонки по России</p>
               </li>
               <li>
-                <a class="footer__tel tel" href="tel:84955653525" class="phone"><span itemprop="telephone">8 495
-                    565-35-25</span></a>
+                <a class="footer__tel tel" href="tel:84955653525">8 495 565-35-25</a>
                 <p>Многоканальный номер</p>
               </li>
               <li>
-                <a class="footer__tel tel" href="tel:88127482877" class="phone">8 812 748-28-77</a>
+                <a class="footer__tel tel" href="tel:88127482877">8 812 748-28-77</a>
                 <p>Офис продаж в Санкт-Петербурге</p>
               </li>
               <li>
-                <a class="footer__tel tel" href="tel:88612052567" class="phone">8 861 205-25-67</a>
+                <a class="footer__tel tel" href="tel:88612052567">8 861 205-25-67</a>
                 <p>Офис продаж в Краснодаре</p>
               </li>
               <li>
-                <a class="footer__tel tel" href="tel:88633220018" class="phone">8 863 322-00-18</a>
+                <a class="footer__tel tel" href="tel:88633220018">8 863 322-00-18</a>
                 <p>Офис продаж в Ростове-на-Дону</p>
               </li>
               <li>
@@ -2579,19 +3014,19 @@
 
             <ul class="footer__list">
               <li>
-                <a class="footer__link" href="/">Заказать обратный звонок</a>
+                <button class="footer__link" data-open-modal="#modal-cb">Заказать обратный звонок</button>
               </li>
               <li>
-                <a class="footer__link" href="/">Поблагодарить</a>
+                <button class="footer__link" data-open-modal="#modal-grat">Поблагодарить</button>
               </li>
               <li>
-                <a class="footer__link" href="/">Пожаловаться</a>
+                <button class="footer__link" data-open-modal="#modal-comp">Пожаловаться</button>
               </li>
               <li>
-                <a class="footer__link" href="/">Обнаружили ошибку?</a>
+                <button class="footer__link" data-open-modal="#modal-mistake">Обнаружили ошибку?</button>
               </li>
               <li>
-                <a class="footer__link" href="/">Неудобно пользоваться сайтом?</a>
+                <button class="footer__link" data-open-modal="#modal-uncomf">Неудобно пользоваться сайтом?</button>
               </li>
             </ul>
 
@@ -2600,32 +3035,32 @@
 
               <ul class="social__list">
                 <li>
-                  <a href="/" target="_blank" aria-lablel="Перейти на нашу страницу Вконтакте">
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу Вконтакте">
                     <img src="img/assets/social-vk.svg" alt="Вконтакте" title="Вконтакте">
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank" aria-lablel="Перейти на нашу страницу в FaceBook">
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в FaceBook">
                     <img src="img/assets/social-fb.svg" alt="FaceBook" title="FaceBook">
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank" aria-lablel="Перейти на нашу страницу в Twitter">
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Twitter">
                     <img src="img/assets/social-tw.svg" alt="Twitter" title="Twitter">
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank" aria-lablel="Перейти на нашу страницу в Instagram">
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Instagram">
                     <img src="img/assets/social-inst.svg" alt="Instagram" title="Instagram">
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank" aria-lablel="Перейти на нашу страницу в Одноклассниках">
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Одноклассниках">
                     <img src="img/assets/social-odn.svg" alt="Одноклассники" title="Одноклассники">
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank" aria-lablel="Перейти на нашу страницу в Pinterest">
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Pinterest">
                     <img src="img/assets/social-pint.svg" alt="Pinterest" title="Pinterest">
                   </a>
                 </li>

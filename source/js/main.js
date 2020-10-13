@@ -51,22 +51,42 @@ $(document).ready(function () {
   });
 
 
-  $('[data-open]').on('mouseover', function () {
-    $(this).addClass('opened')
-  });
-  $('[data-open]').on('mouseout', function () {
-    $(this).removeClass('opened')
-  });
-
-
   // MODAL
+  // MODAL TOGGLE
+  $('[data-toggle-modal]').on('click', function (event) {
+    event.stopPropagation();
+    $('[data-toggle-modal]').not($(this)).removeClass('active');
+    $('[data-modal]').not($(this).attr('data-toggle-modal')).removeClass('active');
+    
+    $($(this).attr('data-toggle-modal')).toggleClass('active');
+    $(this).toggleClass('active');
+
+    if(!$(this).hasClass('active')) {
+      $(this).blur();
+    }
+
+    if($($(this).attr('data-toggle-modal')).hasClass('active')) {
+      document.addEventListener('click', closeAll);
+    }
+  });
+
+  const closeAll = function (evt) {
+    if(!evt.target.hasAttribute('data-modal') && evt.target.closest('[data-modal]') === null) {
+    $('[data-modal]').removeClass('active');
+    $('[data-toggle-modal]').removeClass('active');
+    $('[data-toggle-modal]').blur();
+    $('[data-modal]').find('form').trigger("reset");
+    document.removeEventListener('click', closeAll);
+    }
+  }
+
   // MODAL OPENING
   $('[data-open-modal]').on('click', function () {
     $('[data-modal]').removeClass('active');
     $($(this).attr('data-open-modal')).addClass('active');
   });
-  // MODAL CLOSING
 
+  // MODAL CLOSING
   const modals = $('[data-modal]');
   modals.each(function () {
     const modalCloseBtn = $(this).find('.modal__close');
@@ -80,18 +100,23 @@ $(document).ready(function () {
 
     const closeModal = () => {
       $(this).removeClass('active');
+      $('[data-toggle-modal]').removeClass('active');
+      $('[data-toggle-modal]').blur();
 
       const form = $(this).find('form');
       if (form) {
         // CLEAR FORM
         form.trigger("reset");
       }
+      document.removeEventListener('click', closeAll);
     };
 
-    $(this).on('click', closeModal)
-      .children().click(function(e) {
-      return false;
+    $(this).on('click', function(e) {
+      if($(e.target).is($(this)) && $(this).find('.modal__wrapper').length) {
+        closeModal();
+      }
     });
+
     modalCloseBtn.on('click', closeModal);
     $(document).on('keydown', closeModalByEsc);
   });

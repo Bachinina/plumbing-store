@@ -8,10 +8,22 @@
 }
 
 .header__top {
-  display: none;
   padding: 8px 0;
   background-color: @color-light-gray2;
   border-bottom: 1px solid @color-light-gray1;
+
+  .container {
+    position: relative;
+  }
+
+  @media (max-width: @md) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.header__menu {
+  display: none;
 }
 
 .header__center {
@@ -148,6 +160,8 @@
   padding: 16px 20px 16px 20px;
 }
 
+
+
 .header__nav-btn {
   .btn-default();
   display: flex;
@@ -161,8 +175,14 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.active {
     color: @color-blue;
+    outline: none;
+
+    &::before {
+      opacity: 1;
+    }
 
     .btn-burger {
       span {
@@ -201,6 +221,23 @@
 .header__catalog,
 .header__mobile {
   display: none;
+}
+
+.header__catalog {
+  position: absolute;
+  top: calc(100% + 2px);
+  width: 100%;
+  background-color: @color-white;
+}
+
+.header__catalog.active {
+  display: block;
+}
+
+.header__bottom {
+  .container {
+    position: relative;
+  }
 }
 
 @media (min-width: @md + 1) {
