@@ -2582,6 +2582,7 @@ button.menu__link.active svg {
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
   page-break-inside: avoid;
+  min-width: 235px;
 }
 .catalog__links {
   display: -webkit-box;
