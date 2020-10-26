@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "less": "^3.8.1",
-    "npm": "^6.0.1",
+    "npm": "^6.14.6",
     "regexp-js-minificator": "0.0.2"
   }
 }
