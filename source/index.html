@@ -199,27 +199,27 @@
           <h2 class="h3">Выберите страну</h2>
           <div class="menu__modal-row mb-0">
 
-          <form class="menu__modal-form row" action="/">
-            <div class="form__item col-12 col-md-4">
-              <div class="checkbox-round">
-                <input type="checkbox" name="country-rf" id="country-rf">
-                <label for="country-rf">Россия</label>
+            <form class="menu__modal-form row" action="/">
+              <div class="form__item col-12 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="country-rf" id="country-rf">
+                  <label for="country-rf">Россия</label>
+                </div>
               </div>
-            </div>
-            <div class="form__item col-12 col-md-4">
-              <div class="checkbox-round">
-                <input type="checkbox" name="country-kh" id="country-kh">
-                <label for="country-kh">Казахстан</label>
+              <div class="form__item col-12 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="country-kh" id="country-kh">
+                  <label for="country-kh">Казахстан</label>
+                </div>
               </div>
-            </div>
-            <div class="form__item col-12 col-md-4">
-              <div class="checkbox-round">
-                <input type="checkbox" name="country-bel" id="country-bel">
-                <label for="country-bel">Белоруссия</label>
+              <div class="form__item col-12 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="country-bel" id="country-bel">
+                  <label for="country-bel">Белоруссия</label>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
+            </form>
+          </div>
 
           <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
         </div>
@@ -374,15 +374,13 @@
               <p>30 039 руб.</p>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
 
     <!-- Навигация -->
     <div class="header__bottom">
-      <div class="container d-flex ">
+      <div class="container d-flex">
         <nav class="header__nav-wrap">
           <button class="header__open-btn">
             <svg viewBox="0 0 384.97 384.97" width="20" height="20">
@@ -393,7 +391,7 @@
 
           <ul class="header__nav d-xl-flex">
             <li class="header__nav-item">
-              <button class="header__nav-btn" aria-label="Открыть каталог" data-toggle-modal="#header-catalog">
+              <button class="header__nav-btn" aria-label="Открыть каталог" data-toggle-catalog="#header-catalog">
                 <span class="btn-burger" aria-hidden="true">
                   <span></span>
                   <span></span>
@@ -406,10 +404,6 @@
               <a href="/" class="header__nav-link">Бренды</a>
             </li>
           </ul>
-
-          <!-- <div class="header__catalog" id="header-catalog" data-modal>
-            Каталог
-          </div> -->
 
 
           <ul class="header__nav d-md-flex">
@@ -457,6 +451,659 @@
       </div>
     </div>
     <!-- Навигация -->
+
+
+    <div class="header__catalog catalog" id="header-catalog" data-catalog>
+      <div class="catalog__container container">
+        <div class="catalog__categories-wrap">
+          <ul class="catalog__categories with-arrows">
+            <li class="catalog__category">
+              <a class="catalog__link" href="/">Акции <span class="text-blue">%</span></a>
+            </li>
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-1">
+                <img src="img/assets/icon-category-1.svg" alt="">
+                <span>Мебель</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-2">
+                <img src="img/assets/icon-category-2.svg" alt="">
+                <span>Сантехника</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-3">
+                <img src="img/assets/icon-category-3.svg" alt="">
+                <span>Инженерная сантехника</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-4">
+                <img src="img/assets/icon-category-4.svg" alt="">
+                <span>Отопление</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-5">
+                <img src="img/assets/icon-category-5.svg" alt="">
+                <span>Климат</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-6">
+                <img src="img/assets/icon-category-6.svg" alt="">
+                <span>Плитка</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-7">
+                <img src="img/assets/icon-category-7.svg" alt="">
+                <span>Паркет и ламинат</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-8">
+                <img src="img/assets/icon-category-8.svg" alt="">
+                <span>Кухня</span>
+              </button>
+            </li>
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-9">
+                <img src="img/assets/icon-category-9.svg" alt="">
+                <span>Аксессуары</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__list-wrap">
+          <!-- Мебель -->
+          <div class="catalog__list" id="category-1">
+            <p class="catalog__title"><a href="/">Мебель</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-2">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Мебель для ванной</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты мебели <img src="img/assets/icon-tag.svg" alt=""></a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы с раковиной</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы без раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркала</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Мебель для ванной</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты мебели</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы с раковиной</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы без раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркала</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Сантехника и товары для ванной</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты мебели</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы с раковиной</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы без раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркала</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__banners">
+                <a href="/" class="catalog__banner" aria-label="Узнать больше об акции">
+                  <img src="img/assets/catalog-banner.jpg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="catalog__logo">
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/419.jpg" alt="Laufen"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/251.jpg" alt="Riho" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/462.jpg" alt="Roca" class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Мебель -->
+
+          <!-- Сантехника -->
+          <div class="catalog__list" id="category-2">
+            <p class="catalog__title"><a href="/">Сантехника</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-3">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Ванны</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Акриловые</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Чугунные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Стальные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Из искусственного камня</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Панели для ванн</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Унитазы</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Напольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Подвесные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Приставные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Без ободка</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">С инсталляцией в комплекте</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Раковины</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Подвесные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Раковины-чаши</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Накладные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Встраиваемые</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">На стиральную машину</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Раковины с пьедесталом</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Смесители</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Для раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для ванны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для кухни</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для душа</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты смесителей</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевая программа</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые системы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые гарнитуры</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Верхние души</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые панели</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Гигиенические души</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые кабины</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Четверть круга</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Прямоугольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Квадратные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Асимметричные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">В форме призмы</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые боксы</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Прямоугольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Четверть круга</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">С турецкой баней</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые ограждения</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые уголки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые двери</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Шторки на ванну</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые перегородки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые перегородки</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Четверть круга</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Квадратные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Прямоугольные</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Биде</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Напольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Подвесные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Крышки-биде</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Писсуары</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">С внутренним подводом воды</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">С внешним подводом воды</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сенсорный</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Смывные устройства</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Комплектующие</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Сауны</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Бассейны</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Биотуалеты</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Чистящие средства</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Инсталляции</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Для подвесных унитазов</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты инсталляций с унитазом</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для писсуаров</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Кнопки смыва</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Слив</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые лотки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые трапы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сифоны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Донные клапаны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сливы-переливы</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Полотенцесушители</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__logo" data-slider-logo>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/816.jpg" alt="AM.PM" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/322.jpg" alt="Aquanet"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/3814.jpg" alt="BelBagno"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/941.jpg" alt="Jacob Delafon"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/1662.jpg" alt="Kolpa San"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/419.jpg" alt="Laufen"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/251.jpg" alt="Riho" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/462.jpg" alt="Roca" class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Сантехника -->
+
+          <!-- Инженерная сантехника -->
+          <div class="catalog__list" id="category-3">
+            <p class="catalog__title"><a href="/">Инженерная сантехника</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-2">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Инсталляции</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Для подвесных унитазов</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты инсталляций с унитазом</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для биде</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для писсуаров</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Кнопки смыва</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Фильтры</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Трубы и фитинги</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Насосы</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Слив</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые лотки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые трапы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сифоны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Донные клапаны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сливы-переливы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__banners">
+                <a href="/" class="catalog__banner" aria-label="Узнать больше об акции">
+                  <img src="img/assets/catalog-banner.jpg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="catalog__logo" data-slider-logo>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/1662.jpg" alt="Kolpa San"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/419.jpg" alt="Laufen"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/251.jpg" alt="Riho" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/462.jpg" alt="Roca" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/816.jpg" alt="AM.PM" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/322.jpg" alt="Aquanet"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/3814.jpg" alt="BelBagno"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/941.jpg" alt="Jacob Delafon"
+                    class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Инженерная сантехника -->
+
+          <!-- Отопление -->
+          <div class="catalog__list" id="category-4">
+            <p class="catalog__title"><a href="/">Отопление</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-1">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Обогреватели</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Теплые полы</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Полотенцесушители</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Радиаторы отопления</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Водонагреватели</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Котлы отопления</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__logo">
+              <div class="item">
+                <a href="/"><img src="https://santehnika-tut.ru/img/brand/9220.jpg" alt="Kolpa San"
+                    class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Отопление -->
+
+          <!-- Климат -->
+          <div class="catalog__list" id="category-5">
+            <p class="catalog__title"><a href="/">Климат</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-1">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Увлажнители воздуха</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Мойки воздуха</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Вентиляторы</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Вытяжные вентиляторы</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- Климат -->
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
 
@@ -1859,1048 +2506,1056 @@
 
       </div>
     </section>
+
+
+
+    <!-- Модальное окно: самовывоз -->
+    <section class="modal" id="modal-pickup" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Самовывоз: Москва</h2>
+          <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+            сиденьем Микролифт и
+            клавишей смыва Хром</p>
+
+          <form action="/" class="modal__search search">
+            <input class="search__input" type="search" placeholder="Начните набирать адрес">
+            <button type="reset" class="search__btn" aria-label="Очистить поисковую строку">
+              <svg width="12" height="12" viewBox="0 0 12 12">
+                <use xlink:href="#icon-cancel"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="modal__content">
+            <div class="modal__scroll scroll">
+              <div class="branch">
+                <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                <p>Способ оплаты: картой на сайте</p>
+                <ul class="branch__detail">
+                  <li>срок хранения 3 дня</li>
+                  <li>средне-габарит - 699 руб.</li>
+                  <li>крупный габарит - бесплатно</li>
+                </ul>
+              </div>
+              <div class="branch">
+                <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                <p>Способ оплаты: картой на сайте</p>
+                <ul class="branch__detail">
+                  <li>срок хранения 3 дня</li>
+                  <li>средне-габарит - 699 руб.</li>
+                  <li>крупный габарит - бесплатно</li>
+                </ul>
+              </div>
+              <div class="branch">
+                <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                <p>Способ оплаты: картой на сайте</p>
+                <ul class="branch__detail">
+                  <li>срок хранения 3 дня</li>
+                  <li>средне-габарит - 699 руб.</li>
+                  <li>крупный габарит - бесплатно</li>
+                </ul>
+              </div>
+              <div class="branch">
+                <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                <p>Способ оплаты: картой на сайте</p>
+                <ul class="branch__detail">
+                  <li>срок хранения 3 дня</li>
+                  <li>средне-габарит - 699 руб.</li>
+                  <li>крупный габарит - бесплатно</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="modal__bottom">
+            <span>Вы сможете выбрать ПВЗ при оформлении заказа.</span>
+          </div>
+          <button class="modal__close" type="button" aria-label="Закрыть информацию о самовывозе"></button>
+        </div>
+      </div>
+    </section>
+    <!-- Модальное окно: самовывоз -->
+
+
+    <!-- Модальное окно: доставка -->
+    <section class="modal" id="modal-delivery" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Доставка: Санкт-Петербург</h2>
+          <p class="modal__desc mb-s">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+            сиденьем Микролифт и клавишей смыва Хром</p>
+
+          <div class="modal__content mb-s">
+            <div class="modal__item">
+              <h3>Ожидаемая дата доставки:</h3>
+              <p>с 06 сентября по 08 сентября 2020 г.</p>
+            </div>
+
+            <div class="modal__item">
+              <h3>Ожидаемая стоимость доставки:</h3>
+              <p>200 ₽</p>
+            </div>
+          </div>
+
+          <div class="modal__bottom">
+            <p>При заказе нескольких позиций, стоимость доставки партнерской службой может быть увеличена. </p>
+            <p>Партнерская доставка по адресу и в пункты выдачи осуществляется партнерскими курьерскими службами. Вы
+              можете выбрать любую службу доставки при оформлении заказа или указать в комментарии другую службу.</p>
+
+            <div class="modal__img-block img-block def">
+              <img src="img/assets/logo-1.svg" alt="Деловые линии">
+              <img src="img/assets/logo-2.svg" alt="ПЭК">
+              <img src="img/assets/logo-8.svg" alt="DPD">
+              <img src="img/assets/logo-9.svg" alt="CDEK">
+              <img src="img/assets/logo-4.svg" alt="Boxberry">
+              <img src="img/assets/logo-5.svg" alt="PickPoint">
+              <img src="img/assets/logo-10.svg" alt="IML">
+              <img src="img/assets/logo-11.svg" alt="Почта России">
+            </div>
+
+          </div>
+          <button class="modal__close" type="button" aria-label="Закрыть информацию о доставке"></button>
+        </div>
+      </div>
+    </section>
+    <!-- Модальное окно: доставка -->
+
+
+    <!-- Модальное окно: установка -->
+    <section class="modal" id="modal-install" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Установка</h2>
+          <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+            сиденьем Микролифт и клавишей смыва Хром</p>
+
+          <div class="modal__content install">
+            <div class="checkbox-line checkbox-line-or mb-s">
+              <input type="checkbox" name="install-agree" id="install-agree">
+              <label for="install-agree">Мне требуется установка этого товара вашими специалистами</label>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-7">
+                <div class="modal__item">
+                  <h3 class="mb-xs">Чугунные ванны</h3>
+
+                  <div class="install-table table-wrap">
+                    <table>
+                      <tr>
+                        <td>Установка чугунной ванны</td>
+                        <td class="text-right">4500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Сборка каркаса под ванну</td>
+                        <td class="text-right">1000-1200 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Демонтаж чугунной ванны</td>
+                        <td class="text-right">1500-2000 ₽</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal__item">
+                  <h3 class="mb-xs">Дополнительные работы</h3>
+
+                  <div class="install-table  table-wrap">
+                    <table>
+                      <tr>
+                        <td>Герметизация ванны по периметру</td>
+                        <td class="text-right">600-1000 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Монтаж сифона</td>
+                        <td class="text-right">500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Установка смесителя на борт ванны</td>
+                        <td class="text-right">2500-3500 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Установка фронтальной панели</td>
+                        <td class="text-right">800-2000 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>Подгонка фронтальной панели, под трубы</td>
+                        <td class="text-right">600 ₽/рез.</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="install__info bg--gray">
+                  <ul class="list-icon list-icon--info">
+                    <li>В стоимость монтажа не входят расходные материалы и доп. комплектующие</li>
+                  </ul>
+                </div>
+
+                <div class="install__info bg--gray">
+                  <h4>Монтаж включает в себя следующие работы: </h4>
+
+                  <ul class="list-icon list-icon--checked">
+                    <li>осмотр комплектации</li>
+                    <li> осмотр на возможные дефекты и брак</li>
+                    <li> сборка каркаса (если необходимо)</li>
+                    <li>установка на место эксплуатации</li>
+                    <li> регулировка положения по уровню для качественного оттока воды</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="bg--gray">
+          <div class="modal__container step-row">
+            <h3 class="text-center">Порядок работы</h3>
+
+            <ul class="step-row__list row">
+              <li class="step-row__item col-12 col-md-4">
+                <div class="step-row__img-wrap">
+                  <img src="img/assets/install-step-1.svg" alt="Добавьте услугу установки при оформлении заказа">
+                </div>
+                <p class="step-row__desc">
+                  Добавьте услугу установки при оформлении заказа
+                </p>
+              </li>
+              <li class="step-row__item col-12 col-md-4">
+                <div class="step-row__img-wrap">
+                  <img src="img/assets/install-step-2.svg" alt="Обсудите детали установки с менеджером">
+                </div>
+                <p class="step-row__desc">
+                  Обсудите детали установки с менеджером
+                </p>
+              </li>
+              <li class="step-row__item col-12 col-md-4">
+                <div class="step-row__img-wrap">
+                  <img src="img/assets/install-step-3.svg"
+                    alt="Примите заказ у службы доставки или на пункте самовывоза">
+                </div>
+                <p class="step-row__desc">
+                  Примите заказ у службы доставки или на пункте самовывоза
+                </p>
+              </li>
+            </ul>
+
+            <ul class="step-row__list row">
+              <li class="step-row__item col-12 col-md-4">
+                <div class="step-row__img-wrap">
+                  <img src="img/assets/install-step-4.svg" alt="Встретьте бригаду мастеров">
+                </div>
+                <p class="step-row__desc">
+                  Встретьте бригаду мастеров
+                </p>
+              </li>
+              <li class="step-row__item col-12 col-md-4">
+                <div class="step-row__img-wrap">
+                  <img src="img/assets/install-step-5.svg" alt="Примите выполенную работу">
+                </div>
+                <p class="step-row__desc">
+                  Примите выполенную работу
+                </p>
+              </li>
+              <li class="step-row__item col-12 col-md-4">
+                <div class="step-row__img-wrap">
+                  <img src="img/assets/install-step-6.svg" alt="Наслаждайтесь новой сантехникой">
+                </div>
+                <p class="step-row__desc">
+                  Наслаждайтесь новой сантехникой
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <button class="modal__close" type="button" aria-label="Закрыть информацию об установке"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: установка -->
+
+
+    <!-- Модальное окно: оплата -->
+    <section class="modal" id="modal-payment" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Оплата</h2>
+          <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+            сиденьем Микролифт и клавишей смыва Хром</p>
+
+          <div class="modal__content">
+            <div class="row">
+              <div class="modal__col col-12 col-md-6">
+                <img class="mb-xs" src="img/assets/payment-1.svg" alt="Оплата наличными">
+                <h3 class="mb-xs">Наличными</h3>
+
+                <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
+                  самовывозе<br> из ПВЗ Сантехника - Тут.</p>
+                <!-- // если текст -->
+                <ul class="list-unmarked text-blue text-und">
+                  <li>Самовывозом из всех ПВЗ</li>
+                </ul>
+                <!-- //если ссылка
+                  <p><a class="text-und" href="/">Самовывозом из всех ПВЗ</a></p> -->
+
+                <!-- // если кнопка и открывается попап
+                  <button class="btn-und" data-open-modal="#modal-pickup" arial-label="Узнать больше о самовывозе">Самовывозом из всех ПВЗ</button> -->
+              </div>
+
+              <div class="modal__col col-12 col-md-6">
+                <img class="mb-xs" src="img/assets/payment-2.svg" alt="Оплата по счету">
+                <h3 class="mb-xs">По счету</h3>
+
+                <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
+                  самовывозе<br> из ПВЗ Сантехника - Тут.</p>
+                <ul class="list-unmarked text-blue text-und">
+                  <li>При доставке курьером</li>
+                  <li>При доставке транспортными компаниями</li>
+                  <li>Самовывозом из всех ПВЗ</li>
+                </ul>
+                <p class="text-blue text-und mb-0"></p>
+                <p class="text-blue text-und mb-0"></p>
+                <p class="text-blue text-und mb-0"></p>
+              </div>
+
+              <div class="col-12 col-md-12">
+                <img class="mb-xs" src="img/assets/payment-3.svg" alt="Оплата картой">
+                <h3 class="mb-xs">Оплата картой</h3>
+
+                <p>Оплата заказа производится в личном кабинете, после подтверждения доступности всех составляющих
+                  заказа.</p>
+                <ul class="list-unmarked text-blue text-und">
+                  <li>При доставке курьером</li>
+                  <li>При доставке транспортными компаниями</li>
+                  <li>Самовывозом из всех ПВЗ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть информацию об оплате"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: оплата -->
+
+
+    <!-- Модальное окно: вся информация -->
+    <section class="modal" id="modal-info" data-modal>
+      <div class="modal__wrapper">
+
+        <ul class="modal__tabs tabs" data-tabs="product-info-tabs">
+          <li class="tabs-toggle col-3" data-tabs-toggle="delivery"><button aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="#img-delivery"></use>
+              </svg>
+              <span>Доставка</span>
+            </button>
+          </li>
+          <li class="tabs-toggle col-3" data-tabs-toggle="pickup"><button aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="#img-pickup"></use>
+              </svg>
+              <span>Самовывоз</span>
+            </button>
+          </li>
+          <li class="tabs-toggle col-3 active" data-tabs-toggle="install"><button aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="#img-install"></use>
+              </svg>
+              <span>Установка</span>
+            </button>
+          </li>
+          <li class="tabs-toggle col-3" data-tabs-toggle="payment"><button aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="#img-payment"></use>
+              </svg>
+              <span>Оплата</span>
+            </button>
+          </li>
+        </ul>
+
+
+        <div class="modal__tabs-content tabs-content" data-tabs-content="product-info-tabs">
+          <div class="tabs-item" data-tabs-item="delivery">
+            <div class="modal__tabs-container">
+
+              <h2 class="modal__title">Доставка: Санкт-Петербург</h2>
+              <p class="modal__desc mb-s">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL
+                38772001
+                с сиденьем Микролифт и клавишей смыва Хром</p>
+
+              <div class="modal__content mb-s">
+                <div class="modal__item">
+                  <h3>Ожидаемая дата доставки:</h3>
+                  <p>с 06 сентября по 08 сентября 2020 г.</p>
+                </div>
+
+                <div class="modal__item">
+                  <h3>Ожидаемая стоимость доставки:</h3>
+                  <p>200 ₽</p>
+                </div>
+              </div>
+
+              <div class="modal__bottom">
+                <p>При заказе нескольких позиций, стоимость доставки партнерской службой может быть увеличена. </p>
+                <p>Партнерская доставка по адресу и в пункты выдачи осуществляется партнерскими курьерскими службами. Вы
+                  можете выбрать любую службу доставки при оформлении заказа или указать в комментарии другую службу.
+                </p>
+
+                <div class="modal__img-block img-block def">
+                  <img src="img/assets/logo-1.svg" alt="Деловые линии">
+                  <img src="img/assets/logo-2.svg" alt="ПЭК">
+                  <img src="img/assets/logo-8.svg" alt="DPD">
+                  <img src="img/assets/logo-9.svg" alt="CDEK">
+                  <img src="img/assets/logo-4.svg" alt="Boxberry">
+                  <img src="img/assets/logo-5.svg" alt="PickPoint">
+                  <img src="img/assets/logo-10.svg" alt="IML">
+                  <img src="img/assets/logo-11.svg" alt="Почта России">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs-item" data-tabs-item="pickup">
+            <div class="modal__tabs-container">
+              <h2 class="modal__title">Самовывоз: Москва</h2>
+              <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+                сиденьем Микролифт и
+                клавишей смыва Хром</p>
+
+              <form action="/" class="modal__search search">
+                <input class="search__input" type="search" placeholder="Начните набирать адрес">
+                <button type="reset" class="search__btn" aria-label="Очистить поисковую строку">
+                  <svg width="12" height="12" viewBox="0 0 12 12">
+                    <use xlink:href="#icon-cancel"></use>
+                  </svg>
+                </button>
+              </form>
+
+              <div class="modal__content">
+                <div class="modal__scroll scroll">
+                  <div class="branch">
+                    <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                    <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                    <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                    <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                    <p>Способ оплаты: картой на сайте</p>
+                    <ul class="branch__detail">
+                      <li>срок хранения 3 дня</li>
+                      <li>средне-габарит - 699 руб.</li>
+                      <li>крупный габарит - бесплатно</li>
+                    </ul>
+                  </div>
+                  <div class="branch">
+                    <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                    <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                    <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                    <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                    <p>Способ оплаты: картой на сайте</p>
+                    <ul class="branch__detail">
+                      <li>срок хранения 3 дня</li>
+                      <li>средне-габарит - 699 руб.</li>
+                      <li>крупный габарит - бесплатно</li>
+                    </ul>
+                  </div>
+                  <div class="branch">
+                    <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                    <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                    <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                    <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                    <p>Способ оплаты: картой на сайте</p>
+                    <ul class="branch__detail">
+                      <li>срок хранения 3 дня</li>
+                      <li>средне-габарит - 699 руб.</li>
+                      <li>крупный габарит - бесплатно</li>
+                    </ul>
+                  </div>
+                  <div class="branch">
+                    <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
+                    <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
+                    <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
+                    <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
+                    <p>Способ оплаты: картой на сайте</p>
+                    <ul class="branch__detail">
+                      <li>срок хранения 3 дня</li>
+                      <li>средне-габарит - 699 руб.</li>
+                      <li>крупный габарит - бесплатно</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="modal__bottom">
+                <span>Вы сможете выбрать ПВЗ при оформлении заказа.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tabs-item" data-tabs-item="install">
+            <div class="modal__tabs-container">
+              <h2 class="modal__title">Установка</h2>
+              <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+                сиденьем Микролифт и клавишей смыва Хром</p>
+
+              <div class="modal__content install">
+                <div class="checkbox-line checkbox-line-or mb-s">
+                  <input type="checkbox" name="install-agree" id="install-agree2">
+                  <label for="install-agree2">Мне требуется установка этого товара вашими специалистами</label>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-7">
+                    <div class="modal__item">
+                      <h3 class="mb-xs">Чугунные ванны</h3>
+
+                      <div class="install-table table-wrap">
+                        <table>
+                          <tr>
+                            <td>Установка чугунной ванны</td>
+                            <td class="text-right">4500 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Сборка каркаса под ванну</td>
+                            <td class="text-right">1000-1200 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Демонтаж чугунной ванны</td>
+                            <td class="text-right">1500-2000 ₽</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="modal__item">
+                      <h3 class="mb-xs">Дополнительные работы</h3>
+
+                      <div class="install-table  table-wrap">
+                        <table>
+                          <tr>
+                            <td>Герметизация ванны по периметру</td>
+                            <td class="text-right">600-1000 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Монтаж сифона</td>
+                            <td class="text-right">500 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Установка смесителя на борт ванны</td>
+                            <td class="text-right">2500-3500 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Установка фронтальной панели</td>
+                            <td class="text-right">800-2000 ₽</td>
+                          </tr>
+                          <tr>
+                            <td>Подгонка фронтальной панели, под трубы</td>
+                            <td class="text-right">600 ₽/рез.</td>
+                          </tr>
+                        </table>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <div class="install__info bg--gray">
+                      <ul class="list-icon list-icon--info">
+                        <li>В стоимость монтажа не входят расходные материалы и доп. комплектующие</li>
+                      </ul>
+                    </div>
+
+                    <div class="install__info bg--gray">
+                      <h4>Монтаж включает в себя следующие работы: </h4>
+
+                      <ul class="list-icon list-icon--checked">
+                        <li>осмотр комплектации</li>
+                        <li> осмотр на возможные дефекты и брак</li>
+                        <li> сборка каркаса (если необходимо)</li>
+                        <li>установка на место эксплуатации</li>
+                        <li> регулировка положения по уровню для качественного оттока воды</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section class="bg--gray">
+              <div class="modal__container step-row">
+                <h3 class="text-center">Порядок работы</h3>
+
+                <ul class="step-row__list row">
+                  <li class="step-row__item col-12 col-md-4">
+                    <div class="step-row__img-wrap">
+                      <img src="img/assets/install-step-1.svg" alt="Добавьте услугу установки при оформлении заказа">
+                    </div>
+                    <p class="step-row__desc">
+                      Добавьте услугу установки при оформлении заказа
+                    </p>
+                  </li>
+                  <li class="step-row__item col-12 col-md-4">
+                    <div class="step-row__img-wrap">
+                      <img src="img/assets/install-step-2.svg" alt="Обсудите детали установки с менеджером">
+                    </div>
+                    <p class="step-row__desc">
+                      Обсудите детали установки с менеджером
+                    </p>
+                  </li>
+                  <li class="step-row__item col-12 col-md-4">
+                    <div class="step-row__img-wrap">
+                      <img src="img/assets/install-step-3.svg"
+                        alt="Примите заказ у службы доставки или на пункте самовывоза">
+                    </div>
+                    <p class="step-row__desc">
+                      Примите заказ у службы доставки или на пункте самовывоза
+                    </p>
+                  </li>
+                </ul>
+
+                <ul class="step-row__list row">
+                  <li class="step-row__item col-12 col-md-4">
+                    <div class="step-row__img-wrap">
+                      <img src="img/assets/install-step-4.svg" alt="Встретьте бригаду мастеров">
+                    </div>
+                    <p class="step-row__desc">
+                      Встретьте бригаду мастеров
+                    </p>
+                  </li>
+                  <li class="step-row__item col-12 col-md-4">
+                    <div class="step-row__img-wrap">
+                      <img src="img/assets/install-step-5.svg" alt="Примите выполенную работу">
+                    </div>
+                    <p class="step-row__desc">
+                      Примите выполенную работу
+                    </p>
+                  </li>
+                  <li class="step-row__item col-12 col-md-4">
+                    <div class="step-row__img-wrap">
+                      <img src="img/assets/install-step-6.svg" alt="Наслаждайтесь новой сантехникой">
+                    </div>
+                    <p class="step-row__desc">
+                      Наслаждайтесь новой сантехникой
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs-item" data-tabs-item="payment">
+            <div class="modal__tabs-container">
+              <h2 class="modal__title">Оплата</h2>
+              <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
+                сиденьем Микролифт и клавишей смыва Хром</p>
+
+              <div class="modal__content">
+                <div class="row">
+                  <div class="modal__col col-12 col-md-6">
+                    <img class="mb-xs" src="img/assets/payment-1.svg" alt="Оплата наличными">
+                    <h3 class="mb-xs">Наличными</h3>
+
+                    <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
+                      самовывозе<br> из ПВЗ Сантехника - Тут.</p>
+                    <!-- // если текст -->
+                    <ul class="list-unmarked text-blue text-und">
+                      <li>Самовывозом из всех ПВЗ</li>
+                    </ul>
+                    <!-- //если ссылка
+                  <p><a class="text-und" href="/">Самовывозом из всех ПВЗ</a></p> -->
+
+                    <!-- // если кнопка и открывается попап
+                  <button class="btn-und" data-open-modal="#modal-pickup" arial-label="Узнать больше о самовывозе">Самовывозом из всех ПВЗ</button> -->
+                  </div>
+
+                  <div class="modal__col col-12 col-md-6">
+                    <img class="mb-xs" src="img/assets/payment-2.svg" alt="Оплата по счету">
+                    <h3 class="mb-xs">По счету</h3>
+
+                    <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
+                      самовывозе<br> из ПВЗ Сантехника - Тут.</p>
+                    <ul class="list-unmarked text-blue text-und">
+                      <li>При доставке курьером</li>
+                      <li>При доставке транспортными компаниями</li>
+                      <li>Самовывозом из всех ПВЗ</li>
+                    </ul>
+                    <p class="text-blue text-und mb-0"></p>
+                    <p class="text-blue text-und mb-0"></p>
+                    <p class="text-blue text-und mb-0"></p>
+                  </div>
+
+                  <div class="col-12 col-md-12">
+                    <img class="mb-xs" src="img/assets/payment-3.svg" alt="Оплата картой">
+                    <h3 class="mb-xs">Оплата картой</h3>
+
+                    <p>Оплата заказа производится в личном кабинете, после подтверждения доступности всех составляющих
+                      заказа.</p>
+                    <ul class="list-unmarked text-blue text-und">
+                      <li>При доставке курьером</li>
+                      <li>При доставке транспортными компаниями</li>
+                      <li>Самовывозом из всех ПВЗ</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: вся информация  -->
+
+
+    <!-- Модальное окно: клубная цена -->
+    <section class="modal" id="modal-club" data-modal>
+      <div class="modal__wrapper club-offer">
+
+        <div class="club-offer__img">
+          <svg viewBox="0 0 28 28" width="40" height="40">
+            <use xlink:href="#icon-crown"></use>
+          </svg>
+        </div>
+
+        <p class="modal__desc club-offer__desc">Стань участником закрытого клуба!</p>
+        <h2 class="modal__title text-orange">Покупай по «вкусным» ценам
+          с первого заказа!</h2>
+
+        <div class="modal__content">
+          <form action="/" class="modal__form">
+            <input type="email" name="email" placeholder="Введите свою почту" required>
+            <button class="btn btn-bg">Получить клубную карту</button>
+
+            <p>Нажимая кнопку “Получить клубную карту”, подтверждаю, что ознакомлен и согласен с условиями <a
+                href="/">политики конфиденциальности</a> и <a href="/">обработки персональных данных</a>.</p>
+          </form>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть информацию об участии в закрытом клубе"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: клубная цена -->
+
+
+    <!-- Модальное окно: заказ звонка -->
+    <section class="modal modal-sm" id="modal-cb" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Заказать «Обратный звонок»</h2>
+          <p>Перезвоним: Пн-Пт с 9:00 до 19:00</p>
+
+          <div class="modal__content">
+            <form class="modal__form form" action="/">
+              <div class="form__item">
+                <label class="form__label" for="cb-name">Ваше имя</label>
+                <input type="text" id="cb-name" name="cb-name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="cb-phone">Номер телефона</label>
+                <input type="tel" id="cb-phone" name="cb-phone">
+                <div class="add">
+                  <p>Пожалуйста, введите номер в формате</p>
+                  <p>+7 xxx xxx-xx-xx</p>
+                </div>
+
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="cb-preftime">Удобное время для звонка</label>
+                <div class="select">
+                  <select id="cb-preftime" name="cb-preftime">
+                    <option value="1">Как можно скорее</option>
+                    <option value="2">До обеда</option>
+                    <option value="3">После обеда</option>
+                    <option value="4">Вечером</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="cb-comment">Комментарий</label>
+                <textarea rows="5" id="cb-comment" name="cb-comment"></textarea>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="cb-code">Введите защитный код:</label>
+                <input type="text" id="cb-code" name="cb-code">
+                <div class="add">
+                  <img src="https://santehnika-tut.ru/png_f.php" alt="">
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="checkbox-line">
+                  <input type="checkbox" name="cb-agree" id="cb-agree">
+                  <label for="cb-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                    конфиденциальности и обработки персональных данных.<br>
+                    <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn-bg">Заказать</button>
+            </form>
+          </div>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: заказ звонка -->
+
+
+    <!-- Модальное окно: поблагодарить -->
+    <section class="modal modal-sm" id="modal-grat" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Поблагодарить</h2>
+
+          <div class="modal__content">
+            <form class="modal__form form" action="/">
+              <div class="form__item">
+                <label class="form__label" for="grat-order">Номер заказа</label>
+                <input type="text" id="grat-order" name="grat-order">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="grat-name">Ваше имя</label>
+                <input type="text" id="grat-name" name="grat-name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="grat-comment">Благодарность</label>
+                <textarea rows="5" id="grat-comment" name="grat-comment"></textarea>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="grat-phone">Телефон для связи</label>
+                <input type="tel" id="grat-phone" name="grat-phone">
+                <div class="add">
+                  <p>Пожалуйста, введите номер в формате</p>
+                  <p>+7 xxx xxx-xx-xx</p>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="grat-email">Электронная почта</label>
+                <input type="email" id="grat-email" name="grat-email">
+              </div>
+
+              <div class="form__item">
+                <label class="form__label" for="grat-code">Введите защитный код:</label>
+                <input type="text" id="grat-code" name="grat-code">
+                <div class="add">
+                  <img src="https://santehnika-tut.ru/png_f.php" alt="">
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="checkbox-line">
+                  <input type="checkbox" name="grat-agree" id="grat-agree" required>
+                  <label for="grat-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                    конфиденциальности и обработки персональных данных.<br>
+                    <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn-bg">Поблагодарить</button>
+            </form>
+          </div>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: поблагодарить -->
+
+
+    <!-- Модальное окно: пожаловаться -->
+    <section class="modal modal-sm" id="modal-comp" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Пожаловаться</h2>
+
+          <div class="modal__content">
+            <form class="modal__form form" action="/">
+              <div class="form__item">
+                <label class="form__label" for="comp-order">Номер заказа</label>
+                <input type="text" id="comp-order" name="comp-order">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="comp-name">Ваше имя</label>
+                <input type="text" id="comp-name" name="comp-name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="comp-comment">Описание претензии</label>
+                <textarea rows="5" id="comp-comment" name="comp-comment"></textarea>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="comp-phone">Телефон для связи</label>
+                <input type="tel" id="comp-phone" name="comp-phone">
+                <div class="add">
+                  <p>Пожалуйста, введите номер в формате</p>
+                  <p>+7 xxx xxx-xx-xx</p>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="comp-email">Электронная почта</label>
+                <input type="email" id="comp-email" name="comp-email">
+              </div>
+
+              <div class="form__item">
+                <label class="form__label" for="comp-code">Введите защитный код:</label>
+                <input type="text" id="comp-code" name="comp-code">
+                <div class="add">
+                  <img src="https://santehnika-tut.ru/png_f.php" alt="">
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="checkbox-line">
+                  <input type="checkbox" name="comp-agree" id="comp-agree" required>
+                  <label for="comp-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                    конфиденциальности и обработки персональных данных.<br>
+                    <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn-bg">Отправить жалобу</button>
+            </form>
+          </div>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: пожаловаться -->
+
+
+    <!-- Модальное окно: нашли ошибку -->
+    <section class="modal modal-sm" id="modal-mistake" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Нашли ошибку на сайте</h2>
+
+          <div class="modal__content">
+            <form class="modal__form form" action="/">
+              <div class="form__item">
+                <label class="form__label" for="mistake-link">Ссылка на страницу, на которой допущена ошибка</label>
+                <input type="text" id="mistake-link" name="mistake-link">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="mistake-comment">Описание ошибки</label>
+                <textarea rows="5" id="mistake-comment" name="mistake-comment"></textarea>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="mistake-name">Ваше имя</label>
+                <input type="text" id="mistake-name" name="mistake-name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="mistake-email">Электронная почта</label>
+                <input type="email" id="mistake-email" name="mistake-email">
+              </div>
+
+              <div class="form__item">
+                <label class="form__label" for="mistake-code">Введите защитный код:</label>
+                <input type="text" id="mistake-code" name="mistake-code">
+                <div class="add">
+                  <img src="https://santehnika-tut.ru/png_f.php" alt="">
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="checkbox-line">
+                  <input type="checkbox" name="mistake-agree" id="mistake-agree" required>
+                  <label for="mistake-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                    конфиденциальности и обработки персональных данных.<br>
+                    <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn-bg">Отправить</button>
+            </form>
+          </div>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: нашли ошибку -->
+
+
+    <!-- Модальное окно: неудобно пользоваться сайтом -->
+    <section class="modal modal-sm" id="modal-uncomf" data-modal>
+      <div class="modal__wrapper">
+        <div class="modal__container">
+          <h2 class="modal__title">Неудобно пользоваться сайтом?</h2>
+
+          <div class="modal__content">
+            <form class="modal__form form" action="/">
+              <div class="form__item">
+                <label class="form__label" for="uncomf-comment">Описание проблемы</label>
+                <textarea rows="5" id="uncomf-comment" name="uncomf-comment"></textarea>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="uncomf-comf">Как сделать удобнее</label>
+                <textarea rows="5" id="uncomf-comf" name="uncomf-comf"></textarea>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="uncomf-name">Ваше имя</label>
+                <input type="text" id="uncomf-name" name="uncomf-name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="uncomf-email">Электронная почта</label>
+                <input type="email" id="uncomf-email" name="uncomf-email">
+              </div>
+
+              <div class="form__item">
+                <label class="form__label" for="uncomf-code">Введите защитный код:</label>
+                <input type="text" id="uncomf-code" name="uncomf-code">
+                <div class="add">
+                  <img src="https://santehnika-tut.ru/png_f.php" alt="">
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="checkbox-line">
+                  <input type="checkbox" name="uncomf-agree" id="uncomf-agree" required>
+                  <label for="uncomf-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
+                    конфиденциальности и обработки персональных данных.<br>
+                    <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn-bg">Отправить</button>
+            </form>
+          </div>
+        </div>
+
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </section>
+    <!-- Модальное окно: неудобно пользоваться сайтом -->
   </main>
 
+  <div class="overlay"></div>
 
-  <!-- Модальное окно: самовывоз -->
-  <section class="modal" id="modal-pickup" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Самовывоз: Москва</h2>
-        <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-          сиденьем Микролифт и
-          клавишей смыва Хром</p>
 
-        <form action="/" class="modal__search search">
-          <input class="search__input" type="search" placeholder="Начните набирать адрес">
-          <button type="reset" class="search__btn" aria-label="Очистить поисковую строку">
-            <svg width="12" height="12" viewBox="0 0 12 12">
-              <use xlink:href="#icon-cancel"></use>
-            </svg>
-          </button>
-        </form>
-
-        <div class="modal__content">
-          <div class="modal__scroll scroll">
-            <div class="branch">
-              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-              <p>Способ оплаты: картой на сайте</p>
-              <ul class="branch__detail">
-                <li>срок хранения 3 дня</li>
-                <li>средне-габарит - 699 руб.</li>
-                <li>крупный габарит - бесплатно</li>
-              </ul>
-            </div>
-            <div class="branch">
-              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-              <p>Способ оплаты: картой на сайте</p>
-              <ul class="branch__detail">
-                <li>срок хранения 3 дня</li>
-                <li>средне-габарит - 699 руб.</li>
-                <li>крупный габарит - бесплатно</li>
-              </ul>
-            </div>
-            <div class="branch">
-              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-              <p>Способ оплаты: картой на сайте</p>
-              <ul class="branch__detail">
-                <li>срок хранения 3 дня</li>
-                <li>средне-габарит - 699 руб.</li>
-                <li>крупный габарит - бесплатно</li>
-              </ul>
-            </div>
-            <div class="branch">
-              <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-              <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-              <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-              <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-              <p>Способ оплаты: картой на сайте</p>
-              <ul class="branch__detail">
-                <li>срок хранения 3 дня</li>
-                <li>средне-габарит - 699 руб.</li>
-                <li>крупный габарит - бесплатно</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="modal__bottom">
-          <span>Вы сможете выбрать ПВЗ при оформлении заказа.</span>
-        </div>
-        <button class="modal__close" type="button" aria-label="Закрыть информацию о самовывозе"></button>
-      </div>
-    </div>
-  </section>
-  <!-- Модальное окно: самовывоз -->
-
-
-  <!-- Модальное окно: доставка -->
-  <section class="modal" id="modal-delivery" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Доставка: Санкт-Петербург</h2>
-        <p class="modal__desc mb-s">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-          сиденьем Микролифт и клавишей смыва Хром</p>
-
-        <div class="modal__content mb-s">
-          <div class="modal__item">
-            <h3>Ожидаемая дата доставки:</h3>
-            <p>с 06 сентября по 08 сентября 2020 г.</p>
-          </div>
-
-          <div class="modal__item">
-            <h3>Ожидаемая стоимость доставки:</h3>
-            <p>200 ₽</p>
-          </div>
-        </div>
-
-        <div class="modal__bottom">
-          <p>При заказе нескольких позиций, стоимость доставки партнерской службой может быть увеличена. </p>
-          <p>Партнерская доставка по адресу и в пункты выдачи осуществляется партнерскими курьерскими службами. Вы
-            можете выбрать любую службу доставки при оформлении заказа или указать в комментарии другую службу.</p>
-
-          <div class="modal__img-block img-block def">
-            <img src="img/assets/logo-1.svg" alt="Деловые линии">
-            <img src="img/assets/logo-2.svg" alt="ПЭК">
-            <img src="img/assets/logo-8.svg" alt="DPD">
-            <img src="img/assets/logo-9.svg" alt="CDEK">
-            <img src="img/assets/logo-4.svg" alt="Boxberry">
-            <img src="img/assets/logo-5.svg" alt="PickPoint">
-            <img src="img/assets/logo-10.svg" alt="IML">
-            <img src="img/assets/logo-11.svg" alt="Почта России">
-          </div>
-
-        </div>
-        <button class="modal__close" type="button" aria-label="Закрыть информацию о доставке"></button>
-      </div>
-    </div>
-  </section>
-  <!-- Модальное окно: доставка -->
-
-
-  <!-- Модальное окно: установка -->
-  <section class="modal" id="modal-install" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Установка</h2>
-        <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-          сиденьем Микролифт и клавишей смыва Хром</p>
-
-        <div class="modal__content install">
-          <div class="checkbox-line checkbox-line-or mb-s">
-            <input type="checkbox" name="install-agree" id="install-agree">
-            <label for="install-agree">Мне требуется установка этого товара вашими специалистами</label>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <div class="modal__item">
-                <h3 class="mb-xs">Чугунные ванны</h3>
-
-                <div class="install-table table-wrap">
-                  <table>
-                    <tr>
-                      <td>Установка чугунной ванны</td>
-                      <td class="text-right">4500 ₽</td>
-                    </tr>
-                    <tr>
-                      <td>Сборка каркаса под ванну</td>
-                      <td class="text-right">1000-1200 ₽</td>
-                    </tr>
-                    <tr>
-                      <td>Демонтаж чугунной ванны</td>
-                      <td class="text-right">1500-2000 ₽</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="modal__item">
-                <h3 class="mb-xs">Дополнительные работы</h3>
-
-                <div class="install-table  table-wrap">
-                  <table>
-                    <tr>
-                      <td>Герметизация ванны по периметру</td>
-                      <td class="text-right">600-1000 ₽</td>
-                    </tr>
-                    <tr>
-                      <td>Монтаж сифона</td>
-                      <td class="text-right">500 ₽</td>
-                    </tr>
-                    <tr>
-                      <td>Установка смесителя на борт ванны</td>
-                      <td class="text-right">2500-3500 ₽</td>
-                    </tr>
-                    <tr>
-                      <td>Установка фронтальной панели</td>
-                      <td class="text-right">800-2000 ₽</td>
-                    </tr>
-                    <tr>
-                      <td>Подгонка фронтальной панели, под трубы</td>
-                      <td class="text-right">600 ₽/рез.</td>
-                    </tr>
-                  </table>
-                </div>
-
-              </div>
-
-            </div>
-            <div class="col-12 col-md-5">
-              <div class="install__info bg--gray">
-                <ul class="list-icon list-icon--info">
-                  <li>В стоимость монтажа не входят расходные материалы и доп. комплектующие</li>
-                </ul>
-              </div>
-
-              <div class="install__info bg--gray">
-                <h4>Монтаж включает в себя следующие работы: </h4>
-
-                <ul class="list-icon list-icon--checked">
-                  <li>осмотр комплектации</li>
-                  <li> осмотр на возможные дефекты и брак</li>
-                  <li> сборка каркаса (если необходимо)</li>
-                  <li>установка на место эксплуатации</li>
-                  <li> регулировка положения по уровню для качественного оттока воды</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="bg--gray">
-        <div class="modal__container step-row">
-          <h3 class="text-center">Порядок работы</h3>
-
-          <ul class="step-row__list row">
-            <li class="step-row__item col-12 col-md-4">
-              <div class="step-row__img-wrap">
-                <img src="img/assets/install-step-1.svg" alt="Добавьте услугу установки при оформлении заказа">
-              </div>
-              <p class="step-row__desc">
-                Добавьте услугу установки при оформлении заказа
-              </p>
-            </li>
-            <li class="step-row__item col-12 col-md-4">
-              <div class="step-row__img-wrap">
-                <img src="img/assets/install-step-2.svg" alt="Обсудите детали установки с менеджером">
-              </div>
-              <p class="step-row__desc">
-                Обсудите детали установки с менеджером
-              </p>
-            </li>
-            <li class="step-row__item col-12 col-md-4">
-              <div class="step-row__img-wrap">
-                <img src="img/assets/install-step-3.svg" alt="Примите заказ у службы доставки или на пункте самовывоза">
-              </div>
-              <p class="step-row__desc">
-                Примите заказ у службы доставки или на пункте самовывоза
-              </p>
-            </li>
-          </ul>
-
-          <ul class="step-row__list row">
-            <li class="step-row__item col-12 col-md-4">
-              <div class="step-row__img-wrap">
-                <img src="img/assets/install-step-4.svg" alt="Встретьте бригаду мастеров">
-              </div>
-              <p class="step-row__desc">
-                Встретьте бригаду мастеров
-              </p>
-            </li>
-            <li class="step-row__item col-12 col-md-4">
-              <div class="step-row__img-wrap">
-                <img src="img/assets/install-step-5.svg" alt="Примите выполенную работу">
-              </div>
-              <p class="step-row__desc">
-                Примите выполенную работу
-              </p>
-            </li>
-            <li class="step-row__item col-12 col-md-4">
-              <div class="step-row__img-wrap">
-                <img src="img/assets/install-step-6.svg" alt="Наслаждайтесь новой сантехникой">
-              </div>
-              <p class="step-row__desc">
-                Наслаждайтесь новой сантехникой
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <button class="modal__close" type="button" aria-label="Закрыть информацию об установке"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: установка -->
-
-
-  <!-- Модальное окно: оплата -->
-  <section class="modal" id="modal-payment" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Оплата</h2>
-        <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-          сиденьем Микролифт и клавишей смыва Хром</p>
-
-        <div class="modal__content">
-          <div class="row">
-            <div class="modal__col col-12 col-md-6">
-              <img class="mb-xs" src="img/assets/payment-1.svg" alt="Оплата наличными">
-              <h3 class="mb-xs">Наличными</h3>
-
-              <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
-                самовывозе<br> из ПВЗ Сантехника - Тут.</p>
-              <!-- // если текст -->
-              <ul class="list-unmarked text-blue text-und">
-                <li>Самовывозом из всех ПВЗ</li>
-              </ul>
-              <!-- //если ссылка
-                  <p><a class="text-und" href="/">Самовывозом из всех ПВЗ</a></p> -->
-
-              <!-- // если кнопка и открывается попап
-                  <button class="btn-und" data-open-modal="#modal-pickup" arial-label="Узнать больше о самовывозе">Самовывозом из всех ПВЗ</button> -->
-            </div>
-
-            <div class="modal__col col-12 col-md-6">
-              <img class="mb-xs" src="img/assets/payment-2.svg" alt="Оплата по счету">
-              <h3 class="mb-xs">По счету</h3>
-
-              <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
-                самовывозе<br> из ПВЗ Сантехника - Тут.</p>
-              <ul class="list-unmarked text-blue text-und">
-                <li>При доставке курьером</li>
-                <li>При доставке транспортными компаниями</li>
-                <li>Самовывозом из всех ПВЗ</li>
-              </ul>
-              <p class="text-blue text-und mb-0"></p>
-              <p class="text-blue text-und mb-0"></p>
-              <p class="text-blue text-und mb-0"></p>
-            </div>
-
-            <div class="col-12 col-md-12">
-              <img class="mb-xs" src="img/assets/payment-3.svg" alt="Оплата картой">
-              <h3 class="mb-xs">Оплата картой</h3>
-
-              <p>Оплата заказа производится в личном кабинете, после подтверждения доступности всех составляющих
-                заказа.</p>
-              <ul class="list-unmarked text-blue text-und">
-                <li>При доставке курьером</li>
-                <li>При доставке транспортными компаниями</li>
-                <li>Самовывозом из всех ПВЗ</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть информацию об оплате"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: оплата -->
-
-
-  <!-- Модальное окно: вся информация -->
-  <section class="modal" id="modal-info" data-modal>
-    <div class="modal__wrapper">
-
-      <ul class="modal__tabs tabs" data-tabs="product-info-tabs">
-        <li class="tabs-toggle col-3" data-tabs-toggle="delivery"><button aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40">
-              <use xlink:href="#img-delivery"></use>
-            </svg>
-            <span>Доставка</span>
-          </button>
-        </li>
-        <li class="tabs-toggle col-3" data-tabs-toggle="pickup"><button aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40">
-              <use xlink:href="#img-pickup"></use>
-            </svg>
-            <span>Самовывоз</span>
-          </button>
-        </li>
-        <li class="tabs-toggle col-3 active" data-tabs-toggle="install"><button aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40">
-              <use xlink:href="#img-install"></use>
-            </svg>
-            <span>Установка</span>
-          </button>
-        </li>
-        <li class="tabs-toggle col-3" data-tabs-toggle="payment"><button aria-hidden="true">
-            <svg width="40" height="40" viewBox="0 0 40 40">
-              <use xlink:href="#img-payment"></use>
-            </svg>
-            <span>Оплата</span>
-          </button>
-        </li>
-      </ul>
-
-
-      <div class="modal__tabs-content tabs-content" data-tabs-content="product-info-tabs">
-        <div class="tabs-item" data-tabs-item="delivery">
-          <div class="modal__tabs-container">
-
-            <h2 class="modal__title">Доставка: Санкт-Петербург</h2>
-            <p class="modal__desc mb-s">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001
-              с сиденьем Микролифт и клавишей смыва Хром</p>
-
-            <div class="modal__content mb-s">
-              <div class="modal__item">
-                <h3>Ожидаемая дата доставки:</h3>
-                <p>с 06 сентября по 08 сентября 2020 г.</p>
-              </div>
-
-              <div class="modal__item">
-                <h3>Ожидаемая стоимость доставки:</h3>
-                <p>200 ₽</p>
-              </div>
-            </div>
-
-            <div class="modal__bottom">
-              <p>При заказе нескольких позиций, стоимость доставки партнерской службой может быть увеличена. </p>
-              <p>Партнерская доставка по адресу и в пункты выдачи осуществляется партнерскими курьерскими службами. Вы
-                можете выбрать любую службу доставки при оформлении заказа или указать в комментарии другую службу.</p>
-
-              <div class="modal__img-block img-block def">
-                <img src="img/assets/logo-1.svg" alt="Деловые линии">
-                <img src="img/assets/logo-2.svg" alt="ПЭК">
-                <img src="img/assets/logo-8.svg" alt="DPD">
-                <img src="img/assets/logo-9.svg" alt="CDEK">
-                <img src="img/assets/logo-4.svg" alt="Boxberry">
-                <img src="img/assets/logo-5.svg" alt="PickPoint">
-                <img src="img/assets/logo-10.svg" alt="IML">
-                <img src="img/assets/logo-11.svg" alt="Почта России">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tabs-item" data-tabs-item="pickup">
-          <div class="modal__tabs-container">
-            <h2 class="modal__title">Самовывоз: Москва</h2>
-            <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-              сиденьем Микролифт и
-              клавишей смыва Хром</p>
-
-            <form action="/" class="modal__search search">
-              <input class="search__input" type="search" placeholder="Начните набирать адрес">
-              <button type="reset" class="search__btn" aria-label="Очистить поисковую строку">
-                <svg width="12" height="12" viewBox="0 0 12 12">
-                  <use xlink:href="#icon-cancel"></use>
-                </svg>
-              </button>
-            </form>
-
-            <div class="modal__content">
-              <div class="modal__scroll scroll">
-                <div class="branch">
-                  <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-                  <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-                  <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-                  <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-                  <p>Способ оплаты: картой на сайте</p>
-                  <ul class="branch__detail">
-                    <li>срок хранения 3 дня</li>
-                    <li>средне-габарит - 699 руб.</li>
-                    <li>крупный габарит - бесплатно</li>
-                  </ul>
-                </div>
-                <div class="branch">
-                  <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-                  <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-                  <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-                  <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-                  <p>Способ оплаты: картой на сайте</p>
-                  <ul class="branch__detail">
-                    <li>срок хранения 3 дня</li>
-                    <li>средне-габарит - 699 руб.</li>
-                    <li>крупный габарит - бесплатно</li>
-                  </ul>
-                </div>
-                <div class="branch">
-                  <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-                  <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-                  <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-                  <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-                  <p>Способ оплаты: картой на сайте</p>
-                  <ul class="branch__detail">
-                    <li>срок хранения 3 дня</li>
-                    <li>средне-габарит - 699 руб.</li>
-                    <li>крупный габарит - бесплатно</li>
-                  </ul>
-                </div>
-                <div class="branch">
-                  <h3 class="branch__title">ПВЗ №11668 DPD ПВЗ: 109012 Москва, пер Черкасский Б., 4, стр 6</h3>
-                  <p class="text-gray">109012 Москва, пер Черкасский Б., 4, стр 6 </p>
-                  <p>Режим работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00, Вс с выходной </p>
-                  <p>Срок доставки: с 22 июня 2020 по 24 июня 2020</p>
-                  <p>Способ оплаты: картой на сайте</p>
-                  <ul class="branch__detail">
-                    <li>срок хранения 3 дня</li>
-                    <li>средне-габарит - 699 руб.</li>
-                    <li>крупный габарит - бесплатно</li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="modal__bottom">
-              <span>Вы сможете выбрать ПВЗ при оформлении заказа.</span>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="tabs-item" data-tabs-item="install">
-          <div class="modal__tabs-container">
-            <h2 class="modal__title">Установка</h2>
-            <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-              сиденьем Микролифт и клавишей смыва Хром</p>
-
-            <div class="modal__content install">
-              <div class="checkbox-line checkbox-line-or mb-s">
-                <input type="checkbox" name="install-agree" id="install-agree2">
-                <label for="install-agree2">Мне требуется установка этого товара вашими специалистами</label>
-              </div>
-
-              <div class="row">
-                <div class="col-12 col-md-7">
-                  <div class="modal__item">
-                    <h3 class="mb-xs">Чугунные ванны</h3>
-
-                    <div class="install-table table-wrap">
-                      <table>
-                        <tr>
-                          <td>Установка чугунной ванны</td>
-                          <td class="text-right">4500 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Сборка каркаса под ванну</td>
-                          <td class="text-right">1000-1200 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Демонтаж чугунной ванны</td>
-                          <td class="text-right">1500-2000 ₽</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="modal__item">
-                    <h3 class="mb-xs">Дополнительные работы</h3>
-
-                    <div class="install-table  table-wrap">
-                      <table>
-                        <tr>
-                          <td>Герметизация ванны по периметру</td>
-                          <td class="text-right">600-1000 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Монтаж сифона</td>
-                          <td class="text-right">500 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Установка смесителя на борт ванны</td>
-                          <td class="text-right">2500-3500 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Установка фронтальной панели</td>
-                          <td class="text-right">800-2000 ₽</td>
-                        </tr>
-                        <tr>
-                          <td>Подгонка фронтальной панели, под трубы</td>
-                          <td class="text-right">600 ₽/рез.</td>
-                        </tr>
-                      </table>
-                    </div>
-
-                  </div>
-
-                </div>
-                <div class="col-12 col-md-5">
-                  <div class="install__info bg--gray">
-                    <ul class="list-icon list-icon--info">
-                      <li>В стоимость монтажа не входят расходные материалы и доп. комплектующие</li>
-                    </ul>
-                  </div>
-
-                  <div class="install__info bg--gray">
-                    <h4>Монтаж включает в себя следующие работы: </h4>
-
-                    <ul class="list-icon list-icon--checked">
-                      <li>осмотр комплектации</li>
-                      <li> осмотр на возможные дефекты и брак</li>
-                      <li> сборка каркаса (если необходимо)</li>
-                      <li>установка на место эксплуатации</li>
-                      <li> регулировка положения по уровню для качественного оттока воды</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <section class="bg--gray">
-            <div class="modal__container step-row">
-              <h3 class="text-center">Порядок работы</h3>
-
-              <ul class="step-row__list row">
-                <li class="step-row__item col-12 col-md-4">
-                  <div class="step-row__img-wrap">
-                    <img src="img/assets/install-step-1.svg" alt="Добавьте услугу установки при оформлении заказа">
-                  </div>
-                  <p class="step-row__desc">
-                    Добавьте услугу установки при оформлении заказа
-                  </p>
-                </li>
-                <li class="step-row__item col-12 col-md-4">
-                  <div class="step-row__img-wrap">
-                    <img src="img/assets/install-step-2.svg" alt="Обсудите детали установки с менеджером">
-                  </div>
-                  <p class="step-row__desc">
-                    Обсудите детали установки с менеджером
-                  </p>
-                </li>
-                <li class="step-row__item col-12 col-md-4">
-                  <div class="step-row__img-wrap">
-                    <img src="img/assets/install-step-3.svg"
-                      alt="Примите заказ у службы доставки или на пункте самовывоза">
-                  </div>
-                  <p class="step-row__desc">
-                    Примите заказ у службы доставки или на пункте самовывоза
-                  </p>
-                </li>
-              </ul>
-
-              <ul class="step-row__list row">
-                <li class="step-row__item col-12 col-md-4">
-                  <div class="step-row__img-wrap">
-                    <img src="img/assets/install-step-4.svg" alt="Встретьте бригаду мастеров">
-                  </div>
-                  <p class="step-row__desc">
-                    Встретьте бригаду мастеров
-                  </p>
-                </li>
-                <li class="step-row__item col-12 col-md-4">
-                  <div class="step-row__img-wrap">
-                    <img src="img/assets/install-step-5.svg" alt="Примите выполенную работу">
-                  </div>
-                  <p class="step-row__desc">
-                    Примите выполенную работу
-                  </p>
-                </li>
-                <li class="step-row__item col-12 col-md-4">
-                  <div class="step-row__img-wrap">
-                    <img src="img/assets/install-step-6.svg" alt="Наслаждайтесь новой сантехникой">
-                  </div>
-                  <p class="step-row__desc">
-                    Наслаждайтесь новой сантехникой
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-
-        <div class="tabs-item" data-tabs-item="payment">
-          <div class="modal__tabs-container">
-            <h2 class="modal__title">Оплата</h2>
-            <p class="modal__desc">Комплект унитаза Vitra S 50 5956B003-0101 с инсталляцией Grohe Rapid SL 38772001 с
-              сиденьем Микролифт и клавишей смыва Хром</p>
-
-            <div class="modal__content">
-              <div class="row">
-                <div class="modal__col col-12 col-md-6">
-                  <img class="mb-xs" src="img/assets/payment-1.svg" alt="Оплата наличными">
-                  <h3 class="mb-xs">Наличными</h3>
-
-                  <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
-                    самовывозе<br> из ПВЗ Сантехника - Тут.</p>
-                  <!-- // если текст -->
-                  <ul class="list-unmarked text-blue text-und">
-                    <li>Самовывозом из всех ПВЗ</li>
-                  </ul>
-                  <!-- //если ссылка
-                  <p><a class="text-und" href="/">Самовывозом из всех ПВЗ</a></p> -->
-
-                  <!-- // если кнопка и открывается попап
-                  <button class="btn-und" data-open-modal="#modal-pickup" arial-label="Узнать больше о самовывозе">Самовывозом из всех ПВЗ</button> -->
-                </div>
-
-                <div class="modal__col col-12 col-md-6">
-                  <img class="mb-xs" src="img/assets/payment-2.svg" alt="Оплата по счету">
-                  <h3 class="mb-xs">По счету</h3>
-
-                  <p>Стандартный способ оплаты покупки при доставке курьером по Москве и Московской области, при
-                    самовывозе<br> из ПВЗ Сантехника - Тут.</p>
-                  <ul class="list-unmarked text-blue text-und">
-                    <li>При доставке курьером</li>
-                    <li>При доставке транспортными компаниями</li>
-                    <li>Самовывозом из всех ПВЗ</li>
-                  </ul>
-                  <p class="text-blue text-und mb-0"></p>
-                  <p class="text-blue text-und mb-0"></p>
-                  <p class="text-blue text-und mb-0"></p>
-                </div>
-
-                <div class="col-12 col-md-12">
-                  <img class="mb-xs" src="img/assets/payment-3.svg" alt="Оплата картой">
-                  <h3 class="mb-xs">Оплата картой</h3>
-
-                  <p>Оплата заказа производится в личном кабинете, после подтверждения доступности всех составляющих
-                    заказа.</p>
-                  <ul class="list-unmarked text-blue text-und">
-                    <li>При доставке курьером</li>
-                    <li>При доставке транспортными компаниями</li>
-                    <li>Самовывозом из всех ПВЗ</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: вся информация  -->
-
-
-  <!-- Модальное окно: клубная цена -->
-  <section class="modal" id="modal-club" data-modal>
-    <div class="modal__wrapper club-offer">
-
-      <div class="club-offer__img">
-        <svg viewBox="0 0 28 28" width="40" height="40">
-          <use xlink:href="#icon-crown"></use>
-        </svg>
-      </div>
-
-      <p class="modal__desc club-offer__desc">Стань участником закрытого клуба!</p>
-      <h2 class="modal__title text-orange">Покупай по «вкусным» ценам
-        с первого заказа!</h2>
-
-      <div class="modal__content">
-        <form action="/" class="modal__form">
-          <input type="email" name="email" placeholder="Введите свою почту" required>
-          <button class="btn btn-bg">Получить клубную карту</button>
-
-          <p>Нажимая кнопку “Получить клубную карту”, подтверждаю, что ознакомлен и согласен с условиями <a
-              href="/">политики конфиденциальности</a> и <a href="/">обработки персональных данных</a>.</p>
-        </form>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть информацию об участии в закрытом клубе"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: клубная цена -->
-
-
-  <!-- Модальное окно: заказ звонка -->
-  <section class="modal modal-sm" id="modal-cb" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Заказать «Обратный звонок»</h2>
-        <p>Перезвоним: Пн-Пт с 9:00 до 19:00</p>
-
-        <div class="modal__content">
-          <form class="modal__form form" action="/">
-            <div class="form__item">
-              <label class="form__label" for="cb-name">Ваше имя</label>
-              <input type="text" id="cb-name" name="cb-name">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="cb-phone">Номер телефона</label>
-              <input type="tel" id="cb-phone" name="cb-phone">
-              <div class="add">
-                <p>Пожалуйста, введите номер в формате</p>
-                <p>+7 xxx xxx-xx-xx</p>
-              </div>
-
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="cb-preftime">Удобное время для звонка</label>
-              <div class="select">
-                <select id="cb-preftime" name="cb-preftime">
-                  <option value="1">Как можно скорее</option>
-                  <option value="2">До обеда</option>
-                  <option value="3">После обеда</option>
-                  <option value="4">Вечером</option>
-                </select>
-              </div>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="cb-comment">Комментарий</label>
-              <textarea rows="5" id="cb-comment" name="cb-comment"></textarea>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="cb-code">Введите защитный код:</label>
-              <input type="text" id="cb-code" name="cb-code">
-              <div class="add">
-                <img src="https://santehnika-tut.ru/png_f.php" alt="">
-              </div>
-            </div>
-
-            <div class="form__item">
-              <div class="checkbox-line">
-                <input type="checkbox" name="cb-agree" id="cb-agree">
-                <label for="cb-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
-                  конфиденциальности и обработки персональных данных.<br>
-                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
-                </label>
-              </div>
-            </div>
-
-            <button class="btn btn-bg">Заказать</button>
-          </form>
-        </div>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: заказ звонка -->
-
-
-  <!-- Модальное окно: поблагодарить -->
-  <section class="modal modal-sm" id="modal-grat" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Поблагодарить</h2>
-
-        <div class="modal__content">
-          <form class="modal__form form" action="/">
-            <div class="form__item">
-              <label class="form__label" for="grat-order">Номер заказа</label>
-              <input type="text" id="grat-order" name="grat-order">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="grat-name">Ваше имя</label>
-              <input type="text" id="grat-name" name="grat-name">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="grat-comment">Благодарность</label>
-              <textarea rows="5" id="grat-comment" name="grat-comment"></textarea>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="grat-phone">Телефон для связи</label>
-              <input type="tel" id="grat-phone" name="grat-phone">
-              <div class="add">
-                <p>Пожалуйста, введите номер в формате</p>
-                <p>+7 xxx xxx-xx-xx</p>
-              </div>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="grat-email">Электронная почта</label>
-              <input type="email" id="grat-email" name="grat-email">
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="grat-code">Введите защитный код:</label>
-              <input type="text" id="grat-code" name="grat-code">
-              <div class="add">
-                <img src="https://santehnika-tut.ru/png_f.php" alt="">
-              </div>
-            </div>
-
-            <div class="form__item">
-              <div class="checkbox-line">
-                <input type="checkbox" name="grat-agree" id="grat-agree" required>
-                <label for="grat-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
-                  конфиденциальности и обработки персональных данных.<br>
-                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
-                </label>
-              </div>
-            </div>
-
-            <button class="btn btn-bg">Поблагодарить</button>
-          </form>
-        </div>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: поблагодарить -->
-
-
-  <!-- Модальное окно: пожаловаться -->
-  <section class="modal modal-sm" id="modal-comp" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Пожаловаться</h2>
-
-        <div class="modal__content">
-          <form class="modal__form form" action="/">
-            <div class="form__item">
-              <label class="form__label" for="comp-order">Номер заказа</label>
-              <input type="text" id="comp-order" name="comp-order">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="comp-name">Ваше имя</label>
-              <input type="text" id="comp-name" name="comp-name">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="comp-comment">Описание претензии</label>
-              <textarea rows="5" id="comp-comment" name="comp-comment"></textarea>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="comp-phone">Телефон для связи</label>
-              <input type="tel" id="comp-phone" name="comp-phone">
-              <div class="add">
-                <p>Пожалуйста, введите номер в формате</p>
-                <p>+7 xxx xxx-xx-xx</p>
-              </div>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="comp-email">Электронная почта</label>
-              <input type="email" id="comp-email" name="comp-email">
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="comp-code">Введите защитный код:</label>
-              <input type="text" id="comp-code" name="comp-code">
-              <div class="add">
-                <img src="https://santehnika-tut.ru/png_f.php" alt="">
-              </div>
-            </div>
-
-            <div class="form__item">
-              <div class="checkbox-line">
-                <input type="checkbox" name="comp-agree" id="comp-agree" required>
-                <label for="comp-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
-                  конфиденциальности и обработки персональных данных.<br>
-                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
-                </label>
-              </div>
-            </div>
-
-            <button class="btn btn-bg">Отправить жалобу</button>
-          </form>
-        </div>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: пожаловаться -->
-
-
-  <!-- Модальное окно: нашли ошибку -->
-  <section class="modal modal-sm" id="modal-mistake" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Нашли ошибку на сайте</h2>
-
-        <div class="modal__content">
-          <form class="modal__form form" action="/">
-            <div class="form__item">
-              <label class="form__label" for="mistake-link">Ссылка на страницу, на которой допущена ошибка</label>
-              <input type="text" id="mistake-link" name="mistake-link">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="mistake-comment">Описание ошибки</label>
-              <textarea rows="5" id="mistake-comment" name="mistake-comment"></textarea>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="mistake-name">Ваше имя</label>
-              <input type="text" id="mistake-name" name="mistake-name">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="mistake-email">Электронная почта</label>
-              <input type="email" id="mistake-email" name="mistake-email">
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="mistake-code">Введите защитный код:</label>
-              <input type="text" id="mistake-code" name="mistake-code">
-              <div class="add">
-                <img src="https://santehnika-tut.ru/png_f.php" alt="">
-              </div>
-            </div>
-
-            <div class="form__item">
-              <div class="checkbox-line">
-                <input type="checkbox" name="mistake-agree" id="mistake-agree" required>
-                <label for="mistake-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
-                  конфиденциальности и обработки персональных данных.<br>
-                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
-                </label>
-              </div>
-            </div>
-
-            <button class="btn btn-bg">Отправить</button>
-          </form>
-        </div>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: нашли ошибку -->
-
-
-  <!-- Модальное окно: неудобно пользоваться сайтом -->
-  <section class="modal modal-sm" id="modal-uncomf" data-modal>
-    <div class="modal__wrapper">
-      <div class="modal__container">
-        <h2 class="modal__title">Неудобно пользоваться сайтом?</h2>
-
-        <div class="modal__content">
-          <form class="modal__form form" action="/">
-            <div class="form__item">
-              <label class="form__label" for="uncomf-comment">Описание проблемы</label>
-              <textarea rows="5" id="uncomf-comment" name="uncomf-comment"></textarea>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="uncomf-comf">Как сделать удобнее</label>
-              <textarea rows="5" id="uncomf-comf" name="uncomf-comf"></textarea>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="uncomf-name">Ваше имя</label>
-              <input type="text" id="uncomf-name" name="uncomf-name">
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="uncomf-email">Электронная почта</label>
-              <input type="email" id="uncomf-email" name="uncomf-email">
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="uncomf-code">Введите защитный код:</label>
-              <input type="text" id="uncomf-code" name="uncomf-code">
-              <div class="add">
-                <img src="https://santehnika-tut.ru/png_f.php" alt="">
-              </div>
-            </div>
-
-            <div class="form__item">
-              <div class="checkbox-line">
-                <input type="checkbox" name="uncomf-agree" id="uncomf-agree" required>
-                <label for="uncomf-agree"> Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики
-                  конфиденциальности и обработки персональных данных.<br>
-                  <a href="/" rel="nofollow" target="_blank">Конфиденциальность и обработка персональных данных.</a>
-                </label>
-              </div>
-            </div>
-
-            <button class="btn btn-bg">Отправить</button>
-          </form>
-        </div>
-      </div>
-
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
-    </div>
-  </section>
-  <!-- Модальное окно: неудобно пользоваться сайтом -->
 
 
 

@@ -1,3 +1,9 @@
+.header {
+  position: relative;
+  z-index: 100;
+  background-color: @color-white;
+}
+
 .header__banner {
   padding: 10px 0;
 
@@ -32,9 +38,11 @@
 
 .header__logo {
   width: 244px;
+
   @media (max-width: @lg) {
     width: 200px;
   }
+
   @media (max-width: @md) {
     width: 180px;
   }
@@ -47,7 +55,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  > * {
+  >* {
     flex-shrink: 0;
   }
 }
@@ -74,7 +82,7 @@
 }
 
 .header__tel {
-  & + * {
+  &+* {
     margin: 0;
     margin-top: 4px;
     font-size: 13px;
@@ -110,12 +118,12 @@
   display: flex;
   align-items: center;
 
-  & > *:not(.header__nav-link):not(.header__nav-btn) {
+  &>*:not(.header__nav-link):not(.header__nav-btn) {
     margin: 0 20px;
   }
 
-  & > .header__nav-link,
-  & > .header__nav-btn {
+  &>.header__nav-link,
+  &>.header__nav-btn {
     &::before {
       .trans-linear();
       content: "";
@@ -129,15 +137,15 @@
     }
   }
 
-  & > *:hover,
-  & > *:focus {
+  &>*:hover,
+  &>*:focus {
     &::before {
       opacity: 1;
     }
   }
 }
 
-.header__nav-item + .header__nav-item {
+.header__nav-item+.header__nav-item {
   &::after {
     position: absolute;
     content: "";
@@ -170,7 +178,7 @@
   font-size: 14px;
   height: 100%;
 
-  & > * + * {
+  &>*+* {
     margin-left: 8px;
   }
 
@@ -205,7 +213,7 @@
     height: 24px;
     fill: @color-blue;
 
-    & + * {
+    &+* {
       margin-left: 10px;
     }
   }
@@ -225,9 +233,11 @@
 
 .header__catalog {
   position: absolute;
-  top: calc(100% + 2px);
+  top: calc(100%);
+  left: 0;
   width: 100%;
-  background-color: @color-white;
+  background: linear-gradient(90deg, #f7f7f7 50%, #fff 0);
+  z-index: 101;
 }
 
 .header__catalog.active {
@@ -260,7 +270,7 @@
     justify-content: space-around;
     flex-grow: 1;
 
-    & > * + * {
+    &>*+* {
       margin-left: 10px;
     }
   }

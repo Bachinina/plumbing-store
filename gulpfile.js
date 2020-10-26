@@ -34,8 +34,8 @@ gulp.task("style-css", function () {
 
 gulp.task("html", function () {
   return gulp.src([
-    "source/*.html"
-  ], {
+      "source/*.html"
+    ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
@@ -44,11 +44,11 @@ gulp.task("html", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**",
-    "source/img/assets/**",
-    "source/js/**",
-    "source/*.html"
-  ], {
+      "source/fonts/**",
+      "source/img/assets/**",
+      "source/js/**",
+      "source/*.html"
+    ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
@@ -71,8 +71,8 @@ gulp.task("server", function () {
   gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("add", server.reload);
-  gulp.watch("source/img/assets/*.{img, png}", ["copy"]).on("change", server.reload);
-  gulp.watch("source/img/assets/*.{img, png}", ["copy"]).on("add", server.reload);
+  gulp.watch("source/img/assets/*.{jpg, png}", ["copy"]).on("change", server.reload);
+  gulp.watch("source/img/assets/*.{jpg, png}", ["copy"]).on("add", server.reload);
   gulp.watch("source/img/assets/**/*.svg", ["copy"]).on("change", server.reload);
   gulp.watch("source/js/*.js", ["copy"]).on("change", server.reload);
   gulp.watch("source/css/*.css", ["style-css"]).on("change", server.reload);
@@ -87,4 +87,3 @@ gulp.task("build", function (done) {
     done
   );
 });
-

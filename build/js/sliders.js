@@ -41,23 +41,23 @@ $(document).ready(function () {
 
     if ($(document).width() > 767) {
       childSlider.owlCarousel({
-        margin: 10,
-        smartSpeed: 300,
-        nav: true,
-        dots: false,
-        loop: true,
-        center: true,
-        mouseDrag: false,
-        navText: [prevBtnContent, nextBtnContent],
-        responsive: {
-          768: {
-            items: 3,
-          },
-          1200: {
-            items: slideCount <= 5 ? slideCount : 5,
+          margin: 10,
+          smartSpeed: 300,
+          nav: true,
+          dots: false,
+          loop: true,
+          center: true,
+          mouseDrag: false,
+          navText: [prevBtnContent, nextBtnContent],
+          responsive: {
+            768: {
+              items: 3,
+            },
+            1200: {
+              items: slideCount <= 5 ? slideCount : 5,
+            }
           }
-        }
-      })
+        })
         .on('translated.owl.carousel', syncPosition);
 
 
@@ -136,6 +136,27 @@ $(document).ready(function () {
         },
         1200: {
           items: 3,
+        },
+      }
+    });
+  })
+
+  // MENU LOGO SLIDER
+  $('[data-slider-logo]').each(function () {
+    $(this).addClass('owl-carousel');
+    $(this).owlCarousel({
+      dots: false,
+      loop: false,
+      nav: false,
+      smartSpeed: 50,
+      margin: 0,
+
+      responsive: {
+        992: {
+          items: 3,
+        },
+        1200: {
+          items: 4,
         },
       }
     });
