@@ -23,6 +23,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  -webkit-border-radius: 0;
 }
 
 input,
@@ -47,7 +48,7 @@ input[type="checkbox"] {
   box-sizing: border-box;
   border-radius: 2px;
 
-  & + label {
+  &+label {
     margin-left: 5px;
   }
 }
@@ -106,7 +107,7 @@ textarea {
   input[type="checkbox"] {
     display: none;
 
-    & + label {
+    &+label {
       margin-left: 0;
     }
   }
@@ -114,6 +115,7 @@ textarea {
   label {
     display: flex;
     cursor: pointer;
+
     &::before {
       .trans-linear();
       content: "";
@@ -126,7 +128,7 @@ textarea {
     }
   }
 
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox"]:checked+label {
     &::before {
       background-color: @color-blue;
       background-image: url(../img/assets/icon-check-white.svg);

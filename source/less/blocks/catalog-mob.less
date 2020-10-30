@@ -29,9 +29,9 @@
       width: 100%;
       -webkit-overflow-scrolling: touch;
       z-index: 1;
-      transform: translateZ(0);
       transform: translateX(0);
       transition: transform 0.3s;
+      opacity: 1;
 
       .go-back a {
         cursor: pointer;
@@ -42,6 +42,7 @@
 
     ul.hidden {
       transform: translateX(100%);
+      opacity: 0;
     }
   }
 
@@ -53,6 +54,7 @@
 
 
   .catalog__item {
+    overflow: hidden;
     color: @color-blue;
     padding: 14px;
   }
