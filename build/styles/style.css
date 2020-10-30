@@ -2677,6 +2677,9 @@ button.menu__link.active svg {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
+.catalog-mob .catalog__categories {
+  overflow: hidden;
+}
 .catalog-mob .catalog__categories > .catalog__category > .catalog__item {
   border-bottom: 1px solid #dadada;
 }
