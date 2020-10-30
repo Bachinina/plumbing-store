@@ -219,6 +219,17 @@
   }
 }
 
+.header__menu-btn {
+  .btn-default();
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: @sm) {
+    max-width: 80px;
+  }
+}
+
 .header__mobile {
   display: flex;
   justify-content: space-between;
@@ -227,28 +238,41 @@
 
 .header__nav,
 .header__catalog,
+.header__mobile-menu,
 .header__mobile {
   display: none;
 }
 
-.header__catalog {
+.header__catalog,
+.header__mobile-menu {
   position: absolute;
-  top: calc(100%);
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #f7f7f7 50%, #fff 0);
   z-index: 101;
 }
 
-.header__catalog.active {
+.header__catalog {
+  top: calc(100%);
+  background: linear-gradient(90deg, #f7f7f7 50%, #fff 0);
+}
+
+.header__mobile-menu {
+  top: 0;
+  background-color: @color-white;
+}
+
+.header__catalog.active,
+.header__mobile-menu.active {
   display: block;
 }
+
 
 .header__bottom {
   .container {
     position: relative;
   }
 }
+
 
 @media (min-width: @md + 1) {
   .header__bottom {

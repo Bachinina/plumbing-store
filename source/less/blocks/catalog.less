@@ -18,8 +18,8 @@
 .catalog__categories {
   .list-style();
 
-  &.with-arrows {
-    .catalog__item {
+  &.with-arrows>.catalog__category {
+    &>.catalog__item {
 
       &::after {
         .trans-linear();
@@ -86,6 +86,10 @@
     filter: brightness(0);
   }
 
+  & *+img {
+    margin-left: 10px;
+  }
+
 
   &:hover,
   &:focus,
@@ -140,7 +144,7 @@
 
 .catalog__block-item {
   a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
     img {

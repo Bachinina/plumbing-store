@@ -7,7 +7,7 @@
   display: flex;
 }
 
-.menu__item + .menu__item {
+.menu__item+.menu__item {
   margin-left: 22px;
 }
 
@@ -40,7 +40,6 @@ button.menu__link {
 }
 
 .menu__modal {
-
   border: 1px solid @color-light-gray1;
   padding: 30px;
   font-size: 14px;
@@ -58,15 +57,25 @@ button.menu__link {
   }
 
   @media (max-width: @lg) {
-    top: 135px;
+    top: 0;
     padding: 25px 15px;
+  }
+
+  @media (max-width: @md) {
+    top: 20px;
+  }
+
+  @media (max-width: @sm) {
+    top: 35px;
   }
 }
 
 .menu__modal-form {
   position: relative;
+
   .form__item {
     margin-bottom: 15px;
+
     @media (max-width: @sm) {
       padding: 0px 9px;
     }
@@ -80,4 +89,3 @@ button.menu__link {
 .menu__modal-row {
   margin: 25px 0;
 }
-

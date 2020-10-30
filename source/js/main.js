@@ -51,6 +51,7 @@ $(document).ready(function () {
 
 
   // MODAL
+  let isMobileMenuActive = false;
   // MODAL TOGGLE
   $('[data-toggle-modal]').on('click', function (event) {
     event.stopPropagation();
@@ -95,9 +96,10 @@ $(document).ready(function () {
 
   // MODAL OPENING
   $('[data-open-modal]').on('click', function () {
+    const modal = $($(this).attr('data-open-modal'));
     $('[data-modal]').removeClass('active');
     $('[data-catalog]').removeClass('active');
-    $($(this).attr('data-open-modal')).addClass('active');
+    modal.addClass('active');
   });
 
   // MODAL CLOSING
@@ -162,7 +164,10 @@ $(document).ready(function () {
 
   function closeCatalog() {
     catalog.removeClass('active');
-    overlay.removeClass('active');
+
+    if (!isMobileMenuActive) {
+      overlay.removeClass('active');
+    }
 
     catalogOpenBtn.removeClass('active');
     catalogOpenBtn.blur();
@@ -217,4 +222,82 @@ $(document).ready(function () {
   });
 
   setFirstCatalogItemActive();
+
+
+  // MOBILE MENU
+  const mobileMenu = $($('[data-open-menu]').attr('data-open-menu'));
+  const mobileMenuCloseBtn = mobileMenu.find('.modal__close');
+
+  // MOBILE CATALOG
+  const catalogMobile = $('[data-catalog-mobile]');
+  const list = catalogMobile.find('> [data-catalog-links]');
+  let defaultHeight = 0;
+  const categories = list.find('[data-catalog-category]');
+
+  const openMobileMenu = function () {
+    isMobileMenuActive = true;
+    mobileMenu.addClass('active');
+    defaultHeight = list.height();
+    overlay.addClass('active');
+
+    overlay.on('click', closeMobileMenu);
+    overlay.on('click', closeModals);
+  };
+
+  const closeMobileMenu = function () {
+    isMobileMenuActive = false;
+    mobileMenu.removeClass('active');
+    overlay.removeClass('active');
+
+    overlay.off('click', closeMobileMenu);
+    overlay.off('click', closeModals);
+    resetMobileCatalog();
+  };
+
+
+  $('[data-open-menu]').on('click', openMobileMenu);
+  mobileMenuCloseBtn.on('click', closeMobileMenu);
+
+
+  // MOBILE CATALOG 
+
+
+  categories.each(function () {
+    const openBtn = $(this).find(' > [data-catalog-item]');
+    const links = $(this).find(' > [data-catalog-links]');
+    const goBackBtn = links.find('> [data-catalog-back] > button');
+
+    openBtn.on('click', function () {
+      links.removeClass('hidden');
+      links.parent().closest('[data-catalog-links]').addClass('moved-out');
+
+      list.height(links.height());
+    });
+
+    goBackBtn.on('click', function () {
+      links.addClass('hidden');
+      links.parent().closest('[data-catalog-links]').removeClass('moved-out');
+
+      const parentList = links.parent().closest('[data-catalog-links]');
+
+      if (list[0] === parentList[0]) {
+        list.height(defaultHeight);
+      } else {
+        list.height(parentList.height());
+      }
+    });
+  })
+
+
+  function resetMobileCatalog() {
+    categories.each(function () {
+      const openBtn = $(this).find(' > [data-catalog-item]');
+      const links = $(this).find(' > [data-catalog-links]');
+      const goBackBtn = links.find('> [data-catalog-back] > button');
+
+      links.addClass('hidden');
+      links.parent().closest('[data-catalog-links]').removeClass('moved-out');
+      list.height(defaultHeight);
+    })
+  }
 });
