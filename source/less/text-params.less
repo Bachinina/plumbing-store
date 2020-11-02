@@ -30,6 +30,7 @@ h2,
   font-size: 18px;
   line-height: 21px;
 }
+
 h3,
 .h3 {
   font-style: normal;
@@ -37,6 +38,7 @@ h3,
   font-size: 16px;
   line-height: 18px;
 }
+
 h4,
 .h4 {
   font-style: normal;
@@ -57,14 +59,15 @@ a {
   .trans-linear();
   color: @color-blue;
   text-decoration: none;
+
   &:focus {
     opacity: 0.7;
   }
 }
 
-p > a,
-span > a,
-li > a {
+p>a,
+span>a,
+li>a {
   .link-underline-on-hover();
 }
 
@@ -78,6 +81,10 @@ li > a {
 
 .text-left {
   text-align: left;
+}
+
+.text-black {
+  color: @color-black;
 }
 
 .text-blue {
@@ -99,6 +106,7 @@ li > a {
 .symb {
   font-size: 0.75em;
 }
+
 .symb-sm {
   font-size: 0.6em;
 }
@@ -132,7 +140,7 @@ ul {
     background-position: center 0;
   }
 
-  li + li {
+  li+li {
     margin-top: 10px;
   }
 }

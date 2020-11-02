@@ -22,8 +22,193 @@
 
   &:focus {
     outline: none;
+
     svg {
       fill: @color-blue;
     }
   }
+
+  &.reset {
+    width: 18px;
+    height: 21px;
+    right: 40px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+
+
+.search-res {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: @color-white;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .res {
+    font-style: normal;
+    color: @color-blue;
+  }
+}
+
+.search-res__tags {
+  display: none;
+
+  &>* {
+    margin: 0;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  &+* {
+    margin-top: 20px;
+  }
+}
+
+.search-res__list {
+  .list-style();
+
+  li+li {
+    margin-top: 10px;
+  }
+
+  &:not(.prod) {
+    a {
+      .link-default();
+      .link-black-blue();
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p+p {
+    margin-top: 5px;
+  }
+
+  &.prod {
+    li+li {
+      margin-top: 15px;
+    }
+  }
+}
+
+.search-res__title {
+  margin-bottom: 10px;
+}
+
+.search-res__title-mini {
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: @color-gray;
+}
+
+.search-res__his {
+  display: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 10px;
+}
+
+.search-res__his-list {
+  .list-style();
+
+  li {
+    display: flex;
+
+    a {
+      margin-right: auto;
+      color: #4d2486;
+    }
+  }
+
+  li+li {
+    margin-top: 10px;
+  }
+}
+
+.search-res__block {
+  display: none;
+
+  @media(max-width: @lg) {
+    &+* {
+      margin-top: 20px;
+    }
+  }
+
+  @media(min-width: @lg + 1) {
+    padding: 15px;
+
+    &+.search-res__block {
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+}
+
+
+
+.search-res__prod {
+  display: flex;
+  .link-default();
+
+  @media(max-width: @lg) {
+    border-bottom: 1px solid @color-light-gray1;
+  }
+
+}
+
+.search-res__prod-img {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.search-res__prod-desc {
+  flex-grow: 1;
+  .text-black();
+  .trans-linear();
+  padding: 15px;
+  padding-right: 25px;
+
+  &:hover {
+    color: @color-blue;
+  }
+
+
+  .art {
+    text-align: right;
+    color: @color-gray;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 7px;
+  }
+}
+
+.search-res__col {
+  border-left: 1px solid #e8e8e8;
 }
