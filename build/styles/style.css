@@ -3108,7 +3108,7 @@ button.menu__link.active svg {
     margin-bottom: 24px;
   }
 }
-.catalog__category + .catalog__category {
+.catalog__cat + .catalog__cat {
   margin-top: 70px;
 }
 .catalog-mob {
