@@ -3111,6 +3111,11 @@ button.menu__link.active svg {
 .catalog__cat + .catalog__cat {
   margin-top: 70px;
 }
+@media (min-width: 768px) {
+  .catalog.content-page__section {
+    padding-bottom: 72px;
+  }
+}
 .catalog-mob {
   overflow: hidden;
   margin: 20px 0 0;
