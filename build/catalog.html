@@ -1,0 +1,3241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="https://cdn.santehnika-tut.ru/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Официальный сайт компании Сантехника-Тут">
+  <title>Каталог</title>
+
+  <link rel="stylesheet" href="styles/bootstrap-grid.css">
+  <link rel="stylesheet" href="styles/owl-carousel.css">
+  <link rel="stylesheet" href="styles/style.min.css">
+
+
+  <!-- Подключение шрифтов -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Подключение шрифтов -->
+</head>
+
+<body>
+  <header class="header">
+    <!-- Баннер -->
+    <div class="header__banner">
+      <div class="container p-0">
+        <a class="banner" href="/" aria-label="Узнать больше об акции">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/assets/banner-top-desktop.jpg">
+            <img src="img/assets/banner-top-mobile.jpg" alt="Скидка на более чем 2020 товаров">
+          </picture>
+        </a>
+      </div>
+    </div>
+    <!-- Баннер -->
+
+    <!-- Меню -->
+    <div class="header__top">
+      <div class="container">
+        <ul class="header__menu menu d-lg-flex">
+          <li class="menu__item menu__item--modal">
+            <button class="menu__link" aria-label="Выбрать город" data-toggle-modal="#select-country">
+              <svg viewBox="0 0 384.97 384.97" width="16" height="16">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+              Россия
+            </button>
+          </li>
+          <li class="menu__item menu__item--modal">
+            <button class="menu__link" aria-label="Выбрать город" data-toggle-modal="#select-city">
+              <svg viewBox="0 0 477 477" width="16" height="16">
+                <use xlink:href="#icon-location"></use>
+              </svg>
+              Москва
+            </button>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">Оплата</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">Самовывоз</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">Установка и подключение</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">Обмен и возврат</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+
+
+        <div class="menu__modal sm modal-top" id="select-country" data-modal>
+          <h2 class="h3">Выберите страну</h2>
+          <div class="menu__modal-row mb-0">
+
+            <form class="menu__modal-form row" action="/">
+              <div class="form__item col-12 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="country-rf" id="country-rf">
+                  <label for="country-rf">Россия</label>
+                </div>
+              </div>
+              <div class="form__item col-12 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="country-kh" id="country-kh">
+                  <label for="country-kh">Казахстан</label>
+                </div>
+              </div>
+              <div class="form__item col-12 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="country-bel" id="country-bel">
+                  <label for="country-bel">Белоруссия</label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+        </div>
+
+        <div class="menu__modal modal-top" id="select-city" data-modal>
+          <h2 class="h3">Выберите свой город</h2>
+          <div class="menu__modal-row">
+            <form class="menu__modal-form row" action="/">
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-1" id="city-1">
+                  <label for="city-1">Москва</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-2" id="city-2">
+                  <label for="city-2">Санкт-Петербург</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-3" id="city-3">
+                  <label for="city-3">Краснодар</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-4" id="city-4">
+                  <label for="city-4">Ростов-на-Дону</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-5" id="city-5">
+                  <label for="city-5">Екатеринбург</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-6" id="city-6">
+                  <label for="city-6">Самара</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-7" id="city-7">
+                  <label for="city-7">Уфа</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-8" id="city-8">
+                  <label for="city-8">Нижний Новгород</label>
+                </div>
+              </div>
+              <div class="form__item col-6 col-md-4">
+                <div class="checkbox-round">
+                  <input type="checkbox" name="city-9" id="city-9">
+                  <label for="city-9">Казань</label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <h2 class="h3">Или найдите свой город</h2>
+          <form action="/" class="menu__modal-form">
+            <div class="d-flex">
+              <input class="search__input" type="search" placeholder="Пермь...">
+              <button class="btn btn-bg ml-s">Выбрать</button>
+            </div>
+
+            <div class="modal__search-res search-res scroll active">
+              <div class="modal__search-item">
+                Москва г
+              </div>
+              <div class="modal__search-item">
+                Москакасинское с/п, Моргаушский р-н, Чувашская Республика - Чувашия
+              </div>
+              <div class="modal__search-item">
+                Московский с/с, Усть-Абаканский р-н, Хакасия Респ
+              </div>
+              <div class="modal__search-item">
+                Московский г., Московский п, Москва г
+              </div>
+              <div class="modal__search-item">
+                55 км автодороги Москва-Дубна тер, Дмитровский р-н, Московская обл
+              </div>
+              <div class="modal__search-item">
+                Морозки 54 км авторороги Москва-Дубна тер, Дмитровский р-н, Московская обл
+              </div>
+              <div class="modal__search-item">
+                Москва д, Верхошижемский р-н, Кировская обл
+              </div>
+              <div class="modal__search-item">
+                600м западнее ГИБДД на а/дМосква-Иваново тер, Ивановский р-н, Ивановская обл
+              </div>
+              <div class="modal__search-item">
+                355 км и 356 км автотрассы Москва-Киев нп, Брянский р-н, Брянская обл
+              </div>
+            </div>
+          </form>
+
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+        </div>
+      </div>
+    </div>
+    <!-- Меню -->
+
+
+    <div class="header__center">
+      <div class="container">
+        <div class="header__list">
+          <a href="/" aria-label="Перейти на главную страницу сайта">
+            <img class="header__logo d-none d-md-block" src="img/assets/logo.svg" alt="Интернет-магазин сантехники"
+              width="244" height="50">
+          </a>
+
+          <form action="/" class="header__search search">
+            <input class="search__input" type="search"
+              placeholder="Поиск среди 88000 товаров. Введите название товара.">
+            <button class="search__btn" aria-label="Найти">
+              <svg viewBox="0 0 451 451" width="18" height="18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+
+            <div class="header__search-res search-res">
+              <div class="row no-gutters">
+                <div class="search-res__col col-4">
+                  <!-- История поиска -->
+                  <div class="search-res__block active">
+                    <p class="search-res__title-mini">История поиска</p>
+                    <ul class="search-res__his-list">
+                      <li>
+                        <a href="">Раковины</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- История поиска -->
+
+                  <!-- Часто ищут -->
+                  <div class="search-res__block active">
+                    <p class="search-res__title-mini">Часто ищут</p>
+                    <ul class="search-res__list">
+                      <li>
+                        <a href="/">dorff</a>
+                      </li>
+                      <li>
+                        <a href="/"><i class="res">гигиенический</i></a>
+                      </li>
+                      <li>
+                        <a href="/">зеркало</a>
+                      </li>
+                      <li>
+                        <a href="/">тумба с раковиной</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Часто ищут -->
+
+                  <!-- Категории -->
+                  <div class="search-res__block active">
+                    <p class="search-res__title-mini">Категории</p>
+                    <ul class="search-res__list">
+                      <li>
+                        <a href="/">Раковины</a>
+                      </li>
+                      <li>
+                        <a href="/">Комплектующие</a>
+                      </li>
+                      <li>
+                        <a href="/">Душевые кабины</a>
+                      </li>
+                      <li>
+                        <a href="/">Душевая программа</a>
+                      </li>
+                      <li>
+                        <a href="/">Душевые поддоны</a>
+                      </li>
+                      <li>
+                        <a href="/">Радиаторы отопления</a>
+                      </li>
+                      <li>
+                        <a href="/">Распродажа</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Категории -->
+                </div>
+
+                <div class="search-res__col col-8">
+                  <!-- Товары: с картинкой -->
+                  <div class="search-res__block active">
+                    <ul class="search-res__list prod">
+                      <li>
+                        <a class="search-res__prod" href="/">
+                          <div class="search-res__prod-img">
+                            <img src="https://santehnika-tut.ru/img/catphotos/1/0/8/6/1/9/108619_323900_sm.jpg" alt="">
+                          </div>
+
+                          <div class="search-res__prod-desc">
+                            <p class="text-blue">Runo</p>
+                            <p>Акриловая ванна Kolpa San String 160x70 Special
+                            </p>
+                            <p>268 731 руб.</p>
+                            <p class="art">Товарный код: 206873</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="search-res__prod" href="/">
+                          <div class="search-res__prod-img">
+                            <img src="https://santehnika-tut.ru/img/catphotos/1/0/8/5/7/0/108570_323831_sm.jpg" alt="">
+                          </div>
+
+                          <div class="search-res__prod-desc">
+                            <p class="text-blue">Runo</p>
+                            <p>Мебель для ванной Runo Парма 75 Белая
+                            </p>
+                            <p> 15 360 руб. </p>
+                            <p class="art">Товарный код: 206824</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="search-res__prod" href="/">
+                          <div class="search-res__prod-img">
+                            <img src="https://santehnika-tut.ru/img/catphotos/1/0/8/6/0/9/108609_323939_sm.jpg" alt="">
+                          </div>
+
+                          <div class="search-res__prod-desc">
+                            <p class="text-blue">Runo</p>
+                            <p> Мебель для ванной Runo Эко 60 Белая
+                            </p>
+                            <p> 6 680 руб. </p>
+                            <p class="art">Товарный код: 206743</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Товары: с картинкой  -->
+                </div>
+
+                <div class="col-12">
+                  <!-- Товары: без картинки -->
+                  <div class="search-res__block">
+                    <p class="search-res__title h4 text-gray">Найдено в товарах</p>
+                    <ul class="search-res__list prod">
+                      <li>
+                        <a href="/">
+                          <p><b>Код: 066048</b> Арт.: Акриловая ванна Kolpa San String 160x70 Special
+                          </p>
+                          <p class="text-black">268 731 руб.</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <p><b>Код: 001536</b> Арт.: Акриловая ванна Акватек Калипсо 146x146 с гидромассажем
+                            стандартные
+                            форсунки
+                          </p>
+                          <p class="text-black">40 626 руб.</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <p><b>Код: 001792</b> Арт.: 2309G000R Чугунная ванна Roca Malibu 170x75 2309G000R с
+                            отверстиями
+                            для ручек с антискользящим покрытием
+                          </p>
+                          <p class="text-black">39 709 руб.</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Товары: без картинки -->
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="header__contacts">
+            <div class="d-flex flex-column">
+              <a class="header__tel tel" href="tel:84955653525">8 495 565-35-25</a>
+              <p>Каждый день с 9 до 22</p>
+            </div>
+            <button class="header__btn btn btn-small" data-open-modal="#modal-cb">Заказать звонок</button>
+          </div>
+
+          <div class="header__cart cart d-none d-md-flex">
+            <div class="cart__img-wrap">
+              <a class="cart__img" href="/" aria-label="Перейти в корзину">
+                <svg viewBox="0 0 486.569 486.569" width="28" height="28">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+
+                <div class="cart__count count">
+                  10
+                </div>
+              </a>
+            </div>
+            <div class="cart__info d-none d-lg-block">
+              <p><a href="/" aria-label="Перейти в корзину">Корзина</a></p>
+              <p>30 039 руб.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Навигация -->
+    <div class="header__bottom">
+      <div class="container d-flex">
+        <nav class="header__nav-wrap">
+          <button class="header__menu-btn d-xl-none" data-open-menu="#mobile-menu">
+            <svg width="87" height="32" viewBox="0 0 87 32" fill="none">
+              <path
+                d="M36.8199 16.5C36.8199 17.3254 37.0311 18.0476 37.4534 18.5635C37.8758 19.0794 38.4037 19.2857 39.0373 19.2857C39.6708 19.2857 40.1988 19.0794 40.6211 18.5635C41.0435 18.0476 41.2547 17.3254 41.2547 16.3968C41.2547 15.5714 41.0435 14.8492 40.6211 14.3333C40.1988 13.8175 39.6708 13.5079 39.0373 13.5079C38.4037 13.5079 37.8758 13.7143 37.4534 14.2302C36.9255 14.8492 36.8199 15.5714 36.8199 16.5ZM44.3168 20.2143V12.6825H47.3789C48.4348 12.6825 49.1739 12.8889 49.8075 13.1984C50.3354 13.5079 50.6522 14.0238 50.6522 14.746C50.6522 15.0556 50.5466 15.3651 50.3354 15.6746C50.1242 15.9841 49.8075 16.1905 49.3851 16.2937C49.8075 16.3968 50.2298 16.6032 50.5466 16.9127C50.8634 17.2222 50.9689 17.6349 50.9689 18.0476C50.9689 18.7698 50.7578 19.2857 50.2298 19.6984C49.7019 20.1111 48.9627 20.2143 48.0124 20.2143H44.3168ZM45.6894 16.9127V19.1825H47.9068C48.4348 19.1825 48.8571 19.0794 49.1739 18.873C49.4907 18.6667 49.5963 18.3571 49.5963 18.0476C49.5963 17.3254 49.0683 16.9127 47.9068 16.9127H45.6894ZM55.1925 19.2857C55.6149 19.2857 56.0373 19.1825 56.354 18.9762C56.7764 18.7698 56.9876 18.4603 57.1988 18.1508V16.6032H56.1429C54.559 16.6032 53.7143 17.119 53.7143 18.0476C53.7143 18.4603 53.8199 18.7698 54.1366 18.9762C54.4534 19.1825 54.7702 19.2857 55.1925 19.2857ZM67.2298 16.5C67.2298 17.6349 66.913 18.5635 66.3851 19.2857C65.8571 20.0079 65.118 20.3175 64.1677 20.3175C63.2174 20.3175 62.4783 20.0079 61.9503 19.3889V23H60.5776V12.6825H61.8447L61.9503 13.5079C62.4783 12.8889 63.2174 12.4762 64.1677 12.4762C65.118 12.4762 65.8571 12.7857 66.3851 13.5079C66.913 14.2302 67.2298 15.1587 67.2298 16.3968V16.5ZM35.1304 11.1349H31.7516V20.2143H30.3789V11.1349H27V10H35.1304V11.1349ZM35.4472 16.3968C35.4472 15.6746 35.5528 14.9524 35.8696 14.4365C36.1863 13.8175 36.6087 13.4048 37.1366 13.0952C37.6646 12.6825 38.2981 12.4762 38.9317 12.4762C39.9876 12.4762 40.8323 12.7857 41.4658 13.5079C42.0994 14.2302 42.4161 15.1587 42.4161 16.3968V16.5C42.4161 17.2222 42.3106 17.9444 41.9938 18.4603C41.677 19.0794 41.2547 19.4921 40.7267 19.8016C40.1988 20.1111 39.5652 20.3175 38.8261 20.3175C37.7702 20.3175 36.9255 20.0079 36.2919 19.2857C35.764 18.5635 35.4472 17.6349 35.4472 16.3968ZM45.6894 15.881H47.3789C48.646 15.881 49.2795 15.5714 49.2795 14.8492C49.2795 14.127 48.646 13.8175 47.4845 13.7143H45.6894V15.881ZM57.4099 20.2143C57.3043 20.1111 57.3043 19.8016 57.1988 19.3889C56.5652 20.0079 55.8261 20.3175 54.9814 20.3175C54.2422 20.3175 53.6087 20.1111 53.0807 19.6984C52.5528 19.2857 52.3416 18.7698 52.3416 18.0476C52.3416 17.2222 52.6584 16.6032 53.2919 16.1905C53.9255 15.7778 54.7702 15.5714 55.9317 15.5714H57.1988V14.9524C57.1988 14.5397 57.0932 14.127 56.7764 13.9206C56.4596 13.6111 56.0373 13.5079 55.5093 13.5079C55.087 13.5079 54.6646 13.6111 54.3478 13.8175C54.0311 14.0238 53.8199 14.3333 53.8199 14.6429H52.4472C52.4472 14.2302 52.5528 13.9206 52.8696 13.5079C53.1863 13.1984 53.5031 12.8889 54.0311 12.6825C54.559 12.5794 55.087 12.4762 55.6149 12.4762C56.4596 12.4762 57.1988 12.6825 57.7267 13.0952C58.2547 13.5079 58.4658 14.127 58.4658 14.9524V18.4603C58.4658 19.1825 58.5714 19.6984 58.7826 20.1111V20.2143H57.4099ZM65.8571 16.3968C65.8571 15.5714 65.646 14.8492 65.3292 14.3333C64.9068 13.8175 64.4845 13.6111 63.7453 13.6111C62.9006 13.6111 62.3727 13.9206 61.9503 14.6429V18.254C62.3727 18.9762 63.0062 19.2857 63.7453 19.2857C64.3789 19.2857 64.9068 19.0794 65.2236 18.5635C65.646 18.1508 65.8571 17.3254 65.8571 16.3968ZM70.2919 15.2619H72.2981C73.1429 15.2619 73.882 15.4683 74.4099 15.9841C74.9379 16.3968 75.1491 17.0159 75.1491 17.7381C75.1491 18.4603 74.9379 19.0794 74.4099 19.5952C73.882 20.0079 73.1429 20.3175 72.2981 20.3175H69.0248V12.6825H70.3975V15.2619H70.2919ZM78 20.2143H76.6273V12.6825H78V20.2143ZM70.2919 16.2937V19.1825H72.2981C72.8261 19.1825 73.1429 19.0794 73.4596 18.7698C73.7764 18.5635 73.882 18.1508 73.882 17.7381C73.882 17.3254 73.7764 17.0159 73.4596 16.7063C73.2484 16.3968 72.8261 16.2937 72.2981 16.2937H70.2919Z"
+                fill="#00A6DF"></path>
+              <path
+                d="M2.53472 1H84.4653C85.2917 1 86 1.78947 86 2.84211V29.1579C86 30.2105 85.2917 31 84.4653 31H2.53472C1.70833 31 1 30.2105 1 29.1579V2.84211C1.11806 1.78947 1.70833 1 2.53472 1Z"
+                stroke="#00A6DF" stroke-width="1.1"></path>
+              <path d="M8.52716 10.6545H20.7453" stroke="#00A6DF" stroke-width="1.1" stroke-linecap="round"></path>
+              <path d="M8.52716 16.109H20.7453" stroke="#00A6DF" stroke-width="1.1" stroke-linecap="round"></path>
+              <path d="M8.52716 21.5636H20.7453" stroke="#00A6DF" stroke-width="1.1" stroke-linecap="round"></path>
+            </svg>
+          </button>
+
+          <ul class="header__nav d-xl-flex">
+            <li class="header__nav-item">
+              <button class="header__nav-btn" aria-label="Открыть каталог" data-toggle-catalog="#header-catalog">
+                <span class="btn-burger" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <span>Все товары</span>
+              </button>
+            </li>
+            <li class="header__nav-item">
+              <a href="/" class="header__nav-link">Бренды</a>
+            </li>
+          </ul>
+
+
+          <ul class="header__nav d-md-flex">
+            <li class="header__nav-item">
+              <a href="/" class="btn btn--orange">Распродажа</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/" class="btn btn--orange">
+                <svg viewBox="0 0 320.648 320.648" width="14" height="14">
+                  <use xlink:href="#icon-percent"></use>
+                </svg>
+                Акции</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="header__mobile">
+          <a href="/" aria-label="Перейти на главную страницу сайта">
+            <img class="header__logo" src="img/assets/logo.svg" alt="Интернет-магазин сантехники" width="180"
+              height="37">
+          </a>
+
+          <button class="header__open-btn" aria-label="Начать поиск по сайту" data-toggle-modal="#search-form-mobile">
+            <svg viewBox="0 0 451 451" width="18" height="18">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+
+          <div class="header__cart cart">
+            <div class="cart__img-wrap">
+              <a class="cart__img" href="/" aria-label="Перейти в корзину">
+                <svg viewBox="0 0 486.569 486.569" width="28" height="28">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+
+                <div class="cart__count count">
+                  10
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="header__search-mobile" id="search-form-mobile" data-modal>
+        <div class="container">
+          <form action="/" class="search">
+            <input class="search__input" type="text" placeholder="Поиск среди 88000 товаров. Введите название товара.">
+            <button class="search__btn reset active" type="reset">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475.2 475.2">
+                <path
+                  d="M405.6 69.6C360.7 24.7 301.1 0 237.6 0s-123.1 24.7-168 69.6S0 174.1 0 237.6s24.7 123.1 69.6 168 104.5 69.6 168 69.6 123.1-24.7 168-69.6 69.6-104.5 69.6-168-24.7-123.1-69.6-168zm-19.1 316.9c-39.8 39.8-92.7 61.7-148.9 61.7s-109.1-21.9-148.9-61.7c-82.1-82.1-82.1-215.7 0-297.8C128.5 48.9 181.4 27 237.6 27s109.1 21.9 148.9 61.7c82.1 82.1 82.1 215.7 0 297.8z">
+                </path>
+                <path
+                  d="M342.3 132.9c-5.3-5.3-13.8-5.3-19.1 0l-85.6 85.6-85.6-85.6c-5.3-5.3-13.8-5.3-19.1 0-5.3 5.3-5.3 13.8 0 19.1l85.6 85.6-85.6 85.6c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4l85.6-85.6 85.6 85.6c2.6 2.6 6.1 4 9.5 4 3.5 0 6.9-1.3 9.5-4 5.3-5.3 5.3-13.8 0-19.1l-85.4-85.6 85.6-85.6c5.3-5.3 5.3-13.8 0-19.1z">
+                </path>
+              </svg>
+            </button>
+            <button class="search__btn" aria-label="Найти">
+              <svg viewBox="0 0 451 451" width="18" height="18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+
+            <div class="search-res active">
+              <!-- История поиска -->
+              <div class="search-res__his active">
+                <ul class="search-res__his-list">
+                  <li>
+                    <a href="">Раковины</a>
+                    <button type="button" class="btn-cancel"></button>
+                  </li>
+                </ul>
+              </div>
+              <!-- История поиска -->
+
+              <div class="search-res__tags tags active">
+                <button type="button" class="tag tag--l-blue">
+                  dorff
+                </button>
+                <button type="button" class="tag tag--l-blue">
+                  гигиенический
+                </button>
+                <button type="button" class="tag tag--l-blue">
+                  зеркало
+                </button>
+                <button type="button" class="tag tag--l-blue">
+                  тумба
+                </button>
+              </div>
+
+
+              <!-- Категории -->
+              <div class="search-res__block active">
+                <p class="search-res__title h3 text-black">Категории</p>
+                <ul class="search-res__list">
+                  <li>
+                    <a href="/">Раковины</a>
+                  </li>
+                  <li>
+                    <a href="/">Комплектующие</a>
+                  </li>
+                  <li>
+                    <a href="/">Душевые кабины</a>
+                  </li>
+                  <li>
+                    <a href="/">Душевая программа</a>
+                  </li>
+                  <li>
+                    <a href="/">Душевые поддоны</a>
+                  </li>
+                  <li>
+                    <a href="/">Радиаторы отопления</a>
+                  </li>
+                  <li>
+                    <a href="/">Распродажа</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Категории -->
+
+
+              <!-- Товары: с картинкой -->
+              <div class="search-res__block active">
+                <ul class="search-res__list prod">
+                  <li>
+                    <a class="search-res__prod" href="/">
+                      <div class="search-res__prod-img">
+                        <img src="https://santehnika-tut.ru/img/catphotos/1/0/8/6/1/9/108619_323900_sm.jpg" alt="">
+                      </div>
+
+                      <div class="search-res__prod-desc">
+                        <p class="text-blue">Runo</p>
+                        <p>Акриловая ванна Kolpa San String 160x70 Special
+                        </p>
+                        <p>268 731 руб.</p>
+                        <p class="art">Товарный код: 206873</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="search-res__prod" href="/">
+                      <div class="search-res__prod-img">
+                        <img src="https://santehnika-tut.ru/img/catphotos/1/0/8/5/7/0/108570_323831_sm.jpg" alt="">
+                      </div>
+
+                      <div class="search-res__prod-desc">
+                        <p class="text-blue">Runo</p>
+                        <p>Мебель для ванной Runo Парма 75 Белая
+                        </p>
+                        <p> 15 360 руб. </p>
+                        <p class="art">Товарный код: 206824</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="search-res__prod" href="/">
+                      <div class="search-res__prod-img">
+                        <img src="https://santehnika-tut.ru/img/catphotos/1/0/8/6/0/9/108609_323939_sm.jpg" alt="">
+                      </div>
+
+                      <div class="search-res__prod-desc">
+                        <p class="text-blue">Runo</p>
+                        <p> Мебель для ванной Runo Эко 60 Белая
+                        </p>
+                        <p> 6 680 руб. </p>
+                        <p class="art">Товарный код: 206743</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Товары: с картинкой  -->
+
+
+              <!-- Товары: без картинки -->
+              <div class="search-res__block">
+                <p class="search-res__title h4 text-gray">Найдено в товарах</p>
+                <ul class="search-res__list prod">
+                  <li>
+                    <a href="/">
+                      <p><b>Код: 066048</b> Арт.: Акриловая ванна Kolpa San String 160x70 Special
+                      </p>
+                      <p class="text-black">268 731 руб.</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <p><b>Код: 001536</b> Арт.: Акриловая ванна Акватек Калипсо 146x146 с гидромассажем стандартные
+                        форсунки
+                      </p>
+                      <p class="text-black">40 626 руб.</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <p><b>Код: 001792</b> Арт.: 2309G000R Чугунная ванна Roca Malibu 170x75 2309G000R с отверстиями
+                        для ручек с антискользящим покрытием
+                      </p>
+                      <p class="text-black">39 709 руб.</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Товары: без картинки -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Навигация -->
+
+
+    <div class="header__catalog catalog" id="header-catalog" data-catalog>
+      <div class="catalog__container container">
+        <div class="catalog__categories-wrap">
+          <ul class="catalog__categories with-arrows">
+            <li class="catalog__category">
+              <a class="catalog__link" href="/">Акции <span class="text-blue">%</span></a>
+            </li>
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-1">
+                <img src="img/assets/icon-category-1.svg" alt="">
+                <span>Мебель</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-2">
+                <img src="img/assets/icon-category-2.svg" alt="">
+                <span>Сантехника</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-3">
+                <img src="img/assets/icon-category-3.svg" alt="">
+                <span>Инженерная сантехника</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-4">
+                <img src="img/assets/icon-category-4.svg" alt="">
+                <span>Отопление</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-5">
+                <img src="img/assets/icon-category-5.svg" alt="">
+                <span>Климат</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-6">
+                <img src="img/assets/icon-category-6.svg" alt="">
+                <span>Плитка</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-7">
+                <img src="img/assets/icon-category-7.svg" alt="">
+                <span>Паркет и ламинат</span>
+              </button>
+            </li>
+
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-8">
+                <img src="img/assets/icon-category-8.svg" alt="">
+                <span>Кухня</span>
+              </button>
+            </li>
+            <li class="catalog__category">
+              <button class="catalog__item" data-catalog-item="#category-9">
+                <img src="img/assets/icon-category-9.svg" alt="">
+                <span>Аксессуары</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__list-wrap">
+          <!-- Мебель -->
+          <div class="catalog__list" id="category-1">
+            <p class="catalog__title"><a href="/">Мебель</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-2">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Мебель для ванной</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты мебели <img src="img/assets/icon-tag.svg" alt=""></a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы с раковиной</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы без раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркала</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Мебель для ванной</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты мебели</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы с раковиной</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы без раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркала</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Сантехника и товары для ванной</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты мебели</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы с раковиной</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Тумбы без раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркала</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Зеркальные шкафы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Пеналы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Полки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комоды</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__banners">
+                <a href="/" class="catalog__banner" aria-label="Узнать больше об акции">
+                  <img src="img/assets/catalog-banner.jpg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="catalog__logo">
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/419.jpg" alt="Laufen"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/251.jpg" alt="Riho" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/462.jpg" alt="Roca" class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Мебель -->
+
+          <!-- Сантехника -->
+          <div class="catalog__list" id="category-2">
+            <p class="catalog__title"><a href="/">Сантехника</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-3">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Ванны</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Акриловые</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Чугунные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Стальные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Из искусственного камня</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Панели для ванн</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Унитазы</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Напольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Подвесные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Приставные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Без ободка</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">С инсталляцией в комплекте</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Раковины</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Подвесные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Раковины-чаши</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Накладные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Встраиваемые</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">На стиральную машину</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Раковины с пьедесталом</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Смесители</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Для раковины</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для ванны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для кухни</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для душа</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты смесителей</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевая программа</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые системы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые гарнитуры</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Верхние души</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые панели</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Гигиенические души</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые кабины</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Четверть круга</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Прямоугольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Квадратные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Асимметричные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">В форме призмы</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые боксы</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Прямоугольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Четверть круга</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">С турецкой баней</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые ограждения</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые уголки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые двери</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Шторки на ванну</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые перегородки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Душевые перегородки</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Четверть круга</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Квадратные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Прямоугольные</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Биде</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Напольные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Подвесные</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Крышки-биде</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Писсуары</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">С внутренним подводом воды</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">С внешним подводом воды</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сенсорный</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Смывные устройства</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Комплектующие</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Сауны</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Бассейны</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Биотуалеты</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Чистящие средства</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Инсталляции</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Для подвесных унитазов</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты инсталляций с унитазом</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для писсуаров</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Кнопки смыва</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Слив</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые лотки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые трапы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сифоны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Донные клапаны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сливы-переливы</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Полотенцесушители</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__logo" data-slider-logo>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/816.jpg" alt="AM.PM" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/322.jpg" alt="Aquanet"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/3814.jpg" alt="BelBagno"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/941.jpg" alt="Jacob Delafon"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/1662.jpg" alt="Kolpa San"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/419.jpg" alt="Laufen"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/251.jpg" alt="Riho" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/462.jpg" alt="Roca" class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Сантехника -->
+
+          <!-- Инженерная сантехника -->
+          <div class="catalog__list" id="category-3">
+            <p class="catalog__title"><a href="/">Инженерная сантехника</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-2">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Инсталляции</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Для подвесных унитазов</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Комплекты инсталляций с унитазом</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для биде</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Для писсуаров</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Кнопки смыва</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Фильтры</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Трубы и фитинги</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Насосы</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Слив</a></p>
+                  <ul class="catalog__block-list">
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые лотки</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Душевые трапы</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сифоны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Донные клапаны</a>
+                    </li>
+                    <li class="catalog__block-item">
+                      <a href="/">Сливы-переливы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="catalog__banners">
+                <a href="/" class="catalog__banner" aria-label="Узнать больше об акции">
+                  <img src="img/assets/catalog-banner.jpg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="catalog__logo" data-slider-logo>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/1662.jpg" alt="Kolpa San"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/419.jpg" alt="Laufen"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/251.jpg" alt="Riho" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/462.jpg" alt="Roca" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/816.jpg" alt="AM.PM" class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/322.jpg" alt="Aquanet"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/3814.jpg" alt="BelBagno"
+                    class="lazyload"></a>
+              </div>
+              <div class="item">
+                <a href="/"><img src="https://cdn.santehnika-tut.ru/img/brand/941.jpg" alt="Jacob Delafon"
+                    class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Инженерная сантехника -->
+
+          <!-- Отопление -->
+          <div class="catalog__list" id="category-4">
+            <p class="catalog__title"><a href="/">Отопление</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-1">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Обогреватели</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Теплые полы</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Полотенцесушители</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Радиаторы отопления</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Водонагреватели</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Котлы отопления</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__logo">
+              <div class="item">
+                <a href="/"><img src="https://santehnika-tut.ru/img/brand/9220.jpg" alt="Kolpa San"
+                    class="lazyload"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Отопление -->
+
+          <!-- Климат -->
+          <div class="catalog__list" id="category-5">
+            <p class="catalog__title"><a href="/">Климат</a></p>
+            <div class="catalog__links">
+              <div class="catalog__block-wrap col-count-1">
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Увлажнители воздуха</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Мойки воздуха</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Вентиляторы</a></p>
+                </div>
+                <div class="catalog__block">
+                  <p class="catalog__block-title"><a href="/">Вытяжные вентиляторы</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- Климат -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Мобильное меню -->
+    <div class="header__mobile-menu mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__top-line">
+        <div class="container">
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+        </div>
+      </div>
+      <div class="mobile-menu__top d-lg-none">
+        <div class="container">
+          <ul class="mobile-menu__list">
+            <li class="d-none">
+              <button class="menu__link" aria-label="Выбрать город" data-toggle-modal="#select-country">
+                <svg viewBox="0 0 384.97 384.97" width="16" height="16">
+                  <use xlink:href="#icon-burger"></use>
+                </svg>
+                Россия
+              </button>
+            </li>
+            <li>
+              <button class="menu__link" aria-label="Выбрать город" data-toggle-modal="#select-city">
+                <svg viewBox="0 0 477 477" width="16" height="16">
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                Москва
+              </button>
+            </li>
+            <li>
+              <a href="/" class="menu__link">
+                Самовывоз
+              </a>
+            </li>
+            <li class="ml-auto d-md-none">
+              <a href="/" class="btn btn--orange">
+                <svg viewBox="0 0 320.648 320.648" width="14" height="14">
+                  <use xlink:href="#icon-percent"></use>
+                </svg>
+                Акции</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobile-menu__center">
+        <div class="container">
+          <!-- Поиск -->
+          <form action="/" class="mobile-menu__search search">
+            <input class="search__input" type="text" placeholder="Поиск среди 88000 товаров. Введите название товара.">
+            <button class="search__btn" aria-label="Найти">
+              <svg viewBox="0 0 451 451" width="18" height="18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- Поиск -->
+
+
+          <div class="mobile-menu__catalog catalog-mob" data-catalog-mobile>
+            <ul class="catalog__categories" data-catalog-links>
+              <!-- Первый уровень -->
+              <li class="catalog__category" data-catalog-category>
+                <button class="catalog__item" data-catalog-item>
+                  <img src="img/assets/icon-category-1.svg" alt="">
+                  <span>Мебель</span>
+                </button>
+
+                <!-- Второй уровень -->
+                <ul class="catalog__categories hidden" data-catalog-links>
+                  <li class="catalog__category" data-catalog-back>
+                    <button class="catalog__item go-back" aria-hidden="true">
+                      <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                      <span>Назад</span>
+                    </button>
+                  </li>
+
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Мебель для ванной</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+
+
+                      <li class="catalog__category" data-catalog-category>
+                        <button class="catalog__item" data-catalog-item>
+                          <span>Обычная мебель</span>
+                        </button>
+
+                        <!-- Четвертый уровень -->
+                        <ul class="catalog__categories hidden" data-catalog-links>
+                          <li class="catalog__category" data-catalog-back>
+                            <button class="catalog__item go-back" aria-hidden="true">
+                              <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                              <span>Назад</span>
+                            </button>
+                          </li>
+
+
+                          <li class="catalog__category">
+                            <a class="catalog__item" href="/">
+                              <span>Комплекты мебели</span>
+                              <img src="img/assets/icon-tag.svg" alt="">
+                            </a>
+                          </li>
+
+                          <li class="catalog__category">
+                            <a href="/" class="catalog__item">
+                              <span>Тумбы с раковиной</span>
+                            </a>
+                          </li>
+
+                          <li class="catalog__category">
+                            <a href="/" class="catalog__item">
+                              <span>Тумбы без раковины</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- Четвертый уровень -->
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Необычная мебель</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category">
+                    <button class="catalog__item">
+                      <span>Сантехника и товары для ванной</span>
+                    </button>
+                  </li>
+                </ul>
+                <!-- Второй уровень -->
+
+              </li>
+              <!-- Первый уровень -->
+
+
+              <!-- Первый уровень -->
+              <li class="catalog__category" data-catalog-category>
+                <button class="catalog__item" data-catalog-item>
+                  <img src="img/assets/icon-category-2.svg" alt="">
+                  <span>Сантехника</span>
+                </button>
+
+                <!-- Второй уровень -->
+                <ul class="catalog__categories hidden" data-catalog-links>
+                  <li class="catalog__category" data-catalog-back>
+                    <button class="catalog__item go-back" aria-hidden="true">
+                      <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                      <span>Назад</span>
+                    </button>
+                  </li>
+
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Ванны</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Акриловые</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Чугунные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Стальные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Из искусственного камня</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Панели для ванн</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Унитазы</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Напольные</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Подвесные</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Приставные</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Без ободка</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>С инсталляцией в комплекте</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Раковины</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Подвесные</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Раковины-чаши</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Накладные</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Встраиваемые</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>На стиральную машину</span>
+                        </a>
+                      </li>
+
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Раковины с пьедесталом</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Смесители</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для раковины</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для ванны</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для кухни</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для душа</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Комплекты смесителей</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Душевая программа</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые системы</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые гарнитуры</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Верхние души</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые панели</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Гигиенические души</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Душевые кабины</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Четверть круга</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Прямоугольные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Квадратные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Асимметричные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>В форме призмы</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Душевые боксы</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Прямоугольные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Четверть круга</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>С турецкой баней</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Душевые ограждения</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые уголки</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые двери</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Шторки на ванну</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые перегородки</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Душевые перегородки</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Четверть круга</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Квадратные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Прямоугольные</span>
+                        </a>
+                      </li>
+
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Биде</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Напольные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Подвесные</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Крышки-биде</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Писсуары</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>С внутренним подводом воды</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>С внешним подводом воды</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Сенсорный</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Смывные устройства</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Комплектующие</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Сауны</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Бассейны</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Биотуалеты</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Чистящие средства</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Инсталляции</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для подвесных унитазов</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Комплекты инсталляций с унитазом</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для писсуаров</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Кнопки смыва</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Слив</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые лотки</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые трапы</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Сифоны</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Донные клапаны</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Сливы-переливы</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Полотенцесушители</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Второй уровень -->
+              </li>
+              <!-- Первый уровень -->
+
+
+              <!-- Первый уровень -->
+              <li class="catalog__category" data-catalog-category>
+                <button class="catalog__item" data-catalog-item>
+                  <img src="img/assets/icon-category-3.svg" alt="">
+                  <span>Инженерная сантехника</span>
+                </button>
+
+                <!-- Второй уровень -->
+                <ul class="catalog__categories hidden" data-catalog-links>
+                  <li class="catalog__category" data-catalog-back>
+                    <button class="catalog__item go-back" aria-hidden="true">
+                      <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                      <span>Назад</span>
+                    </button>
+                  </li>
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Инсталляции</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для подвесных унитазов</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Комплекты инсталляций с унитазом</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для биде</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Для писсуаров</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Кнопки смыва</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Фильтры</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Трубы и фитинги</span>
+                    </a>
+                  </li>
+
+                  <li class="catalog__category">
+                    <a href="/" class="catalog__item">
+                      <span>Насосы</span>
+                    </a>
+                  </li>
+
+
+                  <li class="catalog__category" data-catalog-category>
+                    <button class="catalog__item" data-catalog-item>
+                      <span>Слив</span>
+                    </button>
+
+                    <!-- Третий уровень -->
+                    <ul class="catalog__categories hidden" data-catalog-links>
+                      <li class="catalog__category" data-catalog-back>
+                        <button class="catalog__item go-back" aria-hidden="true">
+                          <img src="img/assets/icon-arrow-back.svg" alt="" width="12" height="12">
+                          <span>Назад</span>
+                        </button>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые лотки</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Душевые трапы</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Сифоны</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Донные клапаны</span>
+                        </a>
+                      </li>
+                      <li class="catalog__category">
+                        <a href="/" class="catalog__item">
+                          <span>Сливы-переливы</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- Третий уровень -->
+                  </li>
+
+                </ul>
+                <!-- Второй уровень -->
+              </li>
+              <!-- Первый уровень -->
+
+
+              <li class="catalog__category">
+                <button class="catalog__item" data-catalog-item="#category-4">
+                  <img src="img/assets/icon-category-4.svg" alt="">
+                  <span>Отопление</span>
+                </button>
+              </li>
+
+              <li class="catalog__category">
+                <button class="catalog__item" data-catalog-item="#category-5">
+                  <img src="img/assets/icon-category-5.svg" alt="">
+                  <span>Климат</span>
+                </button>
+              </li>
+
+              <li class="catalog__category">
+                <button class="catalog__item" data-catalog-item="#category-6">
+                  <img src="img/assets/icon-category-6.svg" alt="">
+                  <span>Плитка</span>
+                </button>
+              </li>
+
+              <li class="catalog__category">
+                <button class="catalog__item" data-catalog-item="#category-7">
+                  <img src="img/assets/icon-category-7.svg" alt="">
+                  <span>Паркет и ламинат</span>
+                </button>
+              </li>
+
+              <li class="catalog__category">
+                <button class="catalog__item" data-catalog-item="#category-8">
+                  <img src="img/assets/icon-category-8.svg" alt="">
+                  <span>Кухня</span>
+                </button>
+              </li>
+              <li class="catalog__category">
+                <button class="catalog__item" data-catalog-item="#category-9">
+                  <img src="img/assets/icon-category-9.svg" alt="">
+                  <span>Аксессуары</span>
+                </button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mobile-menu__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <ul class="menu-mobile__links">
+                <li>
+                  <a href="/catalog/">Каталог</a>
+                </li>
+                <li>
+                  <a href="/brands/">Бренды</a>
+                </li>
+                <li>
+                  <a href="/pay/">Оплата</a>
+                </li>
+                <li>
+                  <a href="/installation/">Установка</a>
+                </li>
+                <li>
+                  <a href="/delivery/">Доставка и оплата</a>
+                </li>
+                <li>
+                  <a href="/picpoints/">Самовывоз</a>
+                </li>
+                <li>
+                  <a href="/arts/">Гарантия, обмен, возврат</a>
+                </li>
+                <li>
+                  <a href="/sale/">Распродажа</a>
+                </li>
+                <li>
+                  <a href="/blog/">Блог</a>
+                </li>
+                <li>
+                  <a href="/arts/">Покупателям</a>
+                </li>
+                <li>
+                  <a href="/company/">О компании</a>
+                </li>
+                <li>
+                  <a href="/contacts/">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="mobile-menu__contacts">
+                <a class="mobile-menu__tel tel" href="tel:84955653525">8 495 565-35-25</a>
+                <button class="btn btn-small" data-open-modal="#modal-cb">Заказать звонок</button>
+              </div>
+
+              <p>
+                Сайт использует технологию cookie. Используя сайт, Вы соглашаетесь с <a href="/cookies/">правилами
+                  использования cookie</a>,
+                а также даете <a href="/agreement-personal/">согласие на обработку персональных данных</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Мобильное меню -->
+  </header>
+
+
+  <main class="content-page">
+    <!-- Хлебные крошки -->
+    <div class="content-page__bc bc">
+      <div class="bc__container container">
+        <ul class="bc__list">
+          <li class="bc__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="bc__item">
+            <a>Каталог товаров</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Хлебные крошки -->
+
+    <section class="content-page__section catalog">
+      <div class="container">
+        <div class="content-page__top">
+          <h1 class="content-page__title">Каталог товаров</h1>
+
+          <ul class="content-page__btns collapse" data-collapse data-selected="false">
+            <li class="toggle" data-toggle><a class="btn" href="/">Мебель</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Сантехника</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Инженерная сантехника</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Отопление</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Климат</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Плитка</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Паркет и ламинат</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Кухня</a></li>
+            <li class="toggle" data-toggle><a class="btn" href="/">Аксессуары</a></li>
+          </ul>
+        </div>
+
+        <!-- Предложено два варианта построения сетки.
+            Обусловлено тем, что на макете в планшете блоки перестраиваются не по сетке.
+
+          1 вариант - в случае, если порядок блоков в мобильных разрешениях и на планшете принципиален (два блока дублируются и скрываются в зависимости от разрешения - отмечены комментариями).
+          
+          2 вариант - без дублирования блоков, если разположение по сетке не принципиально.
+        -->
+
+
+        <!-- Мебель: 1 вариант -->
+        <div class="catalog__category category">
+          <h2 class="h1">Мебель</h2>
+
+          <div class="catalog__row row">
+            <div class="catalog__column main col-12 col-lg-8 col-xl-6">
+              <a class="block-bg" href="/" aria-label="Перейти на страницу категории">
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="catalog__column col-12 col-lg-4 col-xl-6 mb-0">
+              <div class="catalog__row row">
+                <div class="catalog__column col-12 col-md-6 col-lg-12 col-xl-6">
+                  <h3 class="category__title">Мебель для ванной</h3>
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-2.jpg" alt="">
+                    </div>
+
+                    <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6 col-lg-12 col-xl-6 mt-lg mt-xl-0">
+                  <h3 class="category__title">Комплекты мебели</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-4.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__row row d-lg-none d-xl-flex">
+                <div class="catalog__column col-12 col-md-6">
+                  <h3 class="category__title">Тумбы с раковиной</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-6.jpg" alt="">
+                    </div>
+
+                    <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6">
+                  <h3 class="category__title">Тумбы без раковины</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-12.jpg" alt="">
+                    </div>
+
+                    <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__row row col-mb-md">
+            <!-- Дублированные блоки -->
+            <div class="catalog__column col-md-6 col-lg-4 col-xl-3 d-none d-lg-flex d-xl-none">
+              <h3 class="category__title">Тумбы с раковиной</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-6.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-md-6 col-lg-4 col-xl-3 d-none d-lg-flex d-xl-none">
+              <h3 class="category__title">Тумбы без раковины</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-12.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Дублированные блоки -->
+
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Зеркала</h3>
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-10.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Зеркальные шкафы</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-15.jpg" alt="">
+                </div>
+
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Пеналы</h3>
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-8.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Подвесные шкафы</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-14.jpg" alt="">
+                </div>
+
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="category__btn btn-dashed">Показать больше</button>
+        </div>
+        <!-- Мебель: 1 вариант -->
+
+
+        <!-- Мебель: 2 вариант -->
+        <!-- <div class="catalog__category category">
+          <h2 class="h1">Мебель</h2>
+
+          <div class="catalog__row row">
+            <div class="catalog__column col-12 col-xl-6 mb-0">
+              <div class="catalog__row row">
+                <div class="catalog__column col-12 col-lg-8 col-xl-12 mb-0">
+                  <div class="catalog__row row col-mb-md col-mb-lg-0 col-mb-xl">
+                    <div class="catalog__column col-12">
+                      <a class="block-bg" href="/" aria-label="Перейти на страницу категории">
+                        <div class="block-bg__img-wrap">
+                          <img src="img/assets/catalog.jpg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="catalog__column col-12 col-lg-4 col-xl-12 mb-0">
+                  <div class="catalog__row row col-mb-md">
+                    <div class="catalog__column col-12 col-md-6 col-lg-12 col-xl-6">
+                      <h3 class="category__title">Зеркала</h3>
+                      <div class="block-bg" tabindex="0" data-hidden-wrap>
+                        <div class="block-bg__img-wrap">
+                          <img src="img/assets/catalog-10.jpg" alt="">
+                        </div>
+
+                        <div class="category__info block-bg__info" data-hidden>
+                          <ul>
+                            <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                            <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                            <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                            <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                          </ul>
+
+                          <div class="category__info-bottom">
+                            <a class="btn-dashed" href="/">Показать больше</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__column col-12 col-md-6 col-lg-12 col-xl-6">
+                      <h3 class="category__title">Зеркальные шкафы</h3>
+
+                      <div class="block-bg" tabindex="0" data-hidden-wrap>
+                        <div class="block-bg__img-wrap">
+                          <img src="img/assets/catalog-15.jpg" alt="">
+                        </div>
+
+                        <div class="category__info block-bg__info" data-hidden>
+                          <ul>
+                            <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                            <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                            <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                            <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                          </ul>
+
+                          <div class="category__info-bottom">
+                            <a class="btn-dashed" href="/">Показать больше</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-xl-6 mb-0">
+              <div class="catalog__row row col-mb-md">
+                <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-6">
+                  <h3 class="category__title">Мебель для ванной</h3>
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-2.jpg" alt="">
+                    </div>
+
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-6">
+                  <h3 class="category__title">Комплекты мебели</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-4.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-6">
+                  <h3 class="category__title">Тумбы с раковиной</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-6.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-6">
+                  <h3 class="category__title">Тумбы без раковины</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-12.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-6">
+                  <h3 class="category__title">Пеналы</h3>
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-8.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-6">
+                  <h3 class="category__title">Подвесные шкафы</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-14.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="category__btn btn-dashed">Показать больше</button>
+        </div> -->
+        <!-- Мебель: 2 вариант -->
+
+
+        <!-- Сантехника -->
+        <div class="catalog__category category">
+          <h2 class="h1">Сантехника</h2>
+
+          <div class="catalog__row row">
+            <div class="catalog__column main col-12 col-lg-8 col-xl-6">
+              <a class="block-bg" href="/" aria-label="Перейти на страницу категории">
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-1.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="catalog__column col-12 col-lg-4 col-xl-6 mb-0">
+              <div class="catalog__row row">
+                <div class="catalog__column col-12 col-md-6 col-lg-12 col-xl-6">
+                  <h3 class="category__title">Ванны</h3>
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-3.jpg" alt="">
+                    </div>
+
+                    <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6 col-lg-12 col-xl-6 mt-lg mt-xl-0">
+                  <h3 class="category__title">Унитазы</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-5.jpg" alt="">
+                    </div>
+
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__row row d-lg-none d-xl-flex">
+                <div class="catalog__column col-12 col-md-6">
+                  <h3 class="category__title">Раковины</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-7.jpg" alt="">
+                    </div>
+
+                    <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__column col-12 col-md-6">
+                  <h3 class="category__title">Смесители</h3>
+
+                  <div class="block-bg" tabindex="0" data-hidden-wrap>
+                    <div class="block-bg__img-wrap">
+                      <img src="img/assets/catalog-13.jpg" alt="">
+                    </div>
+
+                    <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                    <div class="category__info block-bg__info" data-hidden>
+                      <ul>
+                        <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                        <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                        <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                      </ul>
+
+                      <div class="category__info-bottom">
+                        <a class="btn-dashed" href="/">Показать больше</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__row row col-mb-md">
+            <!-- Дублированные блоки -->
+            <div class="catalog__column col-md-6 col-lg-4 col-xl-3 d-none d-lg-flex d-xl-none">
+              <h3 class="category__title">Раковины</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-7.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-md-6 col-lg-4 col-xl-3 d-none d-lg-flex d-xl-none">
+              <h3 class="category__title">Смесители</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-13.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Дублированные блоки -->
+
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Душевая программа</h3>
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-11.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Душевые кабины</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-16.jpg" alt="">
+                </div>
+
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Душевые боксы</h3>
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-9.jpg" alt="">
+                </div>
+
+                <!-- Появление блока ссылок сделано на скриптах для доступности -->
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__column col-12 col-md-6 col-lg-4 col-xl-3">
+              <h3 class="category__title">Душевые боксы</h3>
+
+              <div class="block-bg" tabindex="0" data-hidden-wrap>
+                <div class="block-bg__img-wrap">
+                  <img src="img/assets/catalog-1.jpg" alt="">
+                </div>
+
+                <div class="category__info block-bg__info" data-hidden>
+                  <ul>
+                    <li><a class="btn-dashed" href="/">Душевые уголки</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые двери</a></li>
+                    <li><a class="btn-dashed" href="/">Шторки на ванну</a></li>
+                    <li><a class="btn-dashed" href="/">Душевые перегородки</a></li>
+                  </ul>
+
+                  <div class="category__info-bottom">
+                    <a class="btn-dashed" href="/">Показать больше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="category__btn btn-dashed">Показать больше</button>
+        </div>
+        <!-- Сантехника -->
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <div class="overlay"></div>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="footer__column col-12 col-md-4 col-xl-3">
+            <h3 class="footer__title">Информация</h3>
+
+            <ul class="footer__list">
+              <li>
+                <a class="footer__link" href="/pay/">Оплата</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/delivery/">Доставка</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/picpoints/">Самовывоз</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/installation/">Установка и подключение</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/arts/">Обмен и возврат</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/actions/">Акции</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/sale/">Распродажа</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/company/">О компании</a>
+              </li>
+              <li>
+                <a class="footer__link" href="/contacts/">Контакты</a>
+              </li>
+              <li class="mt-m">
+                <a class="footer__link" href="/blog/">Наш блог</a>
+              </li>
+            </ul>
+
+            <address class="mt-m">
+              Сантехника-Тут<br>
+              ООО «Элит Групп»<br>
+              ОГРН 1115029005123<br>
+              ИНН 5029152090
+            </address>
+          </div>
+          <div class="footer__column col-12 col-md-4 col-xl-3">
+            <h3 class="footer__title">Контакты</h3>
+
+            <ul class="footer__list">
+              <li>
+                <a class="footer__tel tel" href="tel:8005556613">8 800 555-66-13</a>
+                <p>Бесплатные звонки по России</p>
+              </li>
+              <li>
+                <a class="footer__tel tel" href="tel:84955653525">8 495 565-35-25</a>
+                <p>Многоканальный номер</p>
+              </li>
+              <li>
+                <a class="footer__tel tel" href="tel:88127482877">8 812 748-28-77</a>
+                <p>Офис продаж в Санкт-Петербурге</p>
+              </li>
+              <li>
+                <a class="footer__tel tel" href="tel:88612052567">8 861 205-25-67</a>
+                <p>Офис продаж в Краснодаре</p>
+              </li>
+              <li>
+                <a class="footer__tel tel" href="tel:88633220018">8 863 322-00-18</a>
+                <p>Офис продаж в Ростове-на-Дону</p>
+              </li>
+              <li>
+                <span>E-mail</span>
+                <div class="footer__mail mail">
+                  <img src="img/assets/icon-mail.png" alt="Почта">
+                  <a href="mailto:info@santehnika-tut.ru">info@santehnika-tut.ru</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column col-12 col-md-4 col-xl-3">
+            <h3 class="footer__title">Время работы</h3>
+
+            <ul class="footer__list">
+              <li>
+                <p>
+                  Контактный-центр:<br>
+                  ежедневно с 09:00 до 22:00
+                </p>
+              </li>
+              <li>
+                <p>
+                  Отдел продаж:<br>
+                  с 09:00 до 22:00
+                </p>
+              </li>
+              <li>
+                <p>
+                  Склад:<br>
+                  с 11:00 до 20:00<br>
+                  Сб.-Вс.: с 11:00 до 18:00
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-xl-block col-xl-3">
+            <h3 class="footer__title">Обратная связь</h3>
+
+            <ul class="footer__list">
+              <li>
+                <button class="footer__link" data-open-modal="#modal-cb">Заказать обратный звонок</button>
+              </li>
+              <li>
+                <button class="footer__link" data-open-modal="#modal-grat">Поблагодарить</button>
+              </li>
+              <li>
+                <button class="footer__link" data-open-modal="#modal-comp">Пожаловаться</button>
+              </li>
+              <li>
+                <button class="footer__link" data-open-modal="#modal-mistake">Обнаружили ошибку?</button>
+              </li>
+              <li>
+                <button class="footer__link" data-open-modal="#modal-uncomf">Неудобно пользоваться сайтом?</button>
+              </li>
+            </ul>
+
+            <div class="footer__social social mt-m">
+              <h4 class="footer__title">Мы в соц. сетях</h4>
+
+              <ul class="social__list">
+                <li>
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу Вконтакте">
+                    <img src="img/assets/social-vk.svg" alt="Вконтакте" title="Вконтакте">
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в FaceBook">
+                    <img src="img/assets/social-fb.svg" alt="FaceBook" title="FaceBook">
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Twitter">
+                    <img src="img/assets/social-tw.svg" alt="Twitter" title="Twitter">
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Instagram">
+                    <img src="img/assets/social-inst.svg" alt="Instagram" title="Instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Одноклассниках">
+                    <img src="img/assets/social-odn.svg" alt="Одноклассники" title="Одноклассники">
+                  </a>
+                </li>
+                <li>
+                  <a href="/" target="_blank" aria-label="Перейти на нашу страницу в Pinterest">
+                    <img src="img/assets/social-pint.svg" alt="Pinterest" title="Pinterest">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>
+          Сайт носит исключительно информационный характер, и ни при каких условиях не является публичной офертой,
+          определяемой положениями статьи 437(2) Гражданского кодекса Российской Федерации. Наличие и цены уточняйте у
+          наших операторов. © «Сантехника Тут» 2011-2020.
+          Копирование всех составляющих частей сайта в какой бы то ни было форме без письменного разрешения владельцев
+          авторских прав запрещено.
+          Сайт использует технологию cookie. Используя сайт, Вы соглашаетесь с <a href="/cookies/">правилами
+            использования</a> cookie,
+          а также даете согласие на <a href="/agreement-personal/">обработку персональных данных</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

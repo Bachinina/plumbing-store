@@ -1,0 +1,50 @@
+.block-bg {
+  display: block;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @media (min-width: @xl + 1) {
+    &:hover {
+      .block-bg__img-wrap {
+        img {
+          transform: scale(1.025);
+        }
+      }
+    }
+  }
+}
+
+.block-bg__img-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+
+  img {
+    .trans-linear();
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    transform-origin: center;
+  }
+}
+
+.block-bg__info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 24px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 500ms;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}

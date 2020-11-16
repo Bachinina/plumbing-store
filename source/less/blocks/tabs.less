@@ -57,7 +57,7 @@
     }
   }
 
-  .tabs-toggle + .tabs-toggle {
+  .tabs-toggle+.tabs-toggle {
     margin-left: 32px;
   }
 }
@@ -70,6 +70,7 @@
 
 .tabs-collapse {
   flex-wrap: wrap;
+
   .tabs-toggle {
     button {
       padding: 10px 12px;
@@ -129,6 +130,7 @@
 
     .tabs-toggle.active {
       order: -1;
+
       button {
         display: block;
         color: @color-white;
@@ -149,6 +151,7 @@
         &:first-of-type {
           button {
             display: block;
+
             &::after {
               transform: translateY(-50%) rotate(-45deg);
             }
@@ -159,6 +162,7 @@
       .tabs-toggle.active {
         button {
           display: block;
+
           &::after {
             transform: translateY(-50%) rotate(-45deg);
           }

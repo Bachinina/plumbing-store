@@ -1,0 +1,31 @@
+.category__title {
+  font-size: 18px;
+}
+
+.category__info {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+
+  ul {
+    .list-style();
+
+    li+li {
+      margin-top: 8px;
+    }
+  }
+
+  a {
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}
+
+.category__info-bottom {
+  margin-top: auto;
+
+}

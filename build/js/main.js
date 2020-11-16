@@ -50,6 +50,64 @@ $(document).ready(function () {
   });
 
 
+  // COLLAPSE
+  $('[data-collapse]').each(function () {
+    const collapse = $(this);
+    const toggles = collapse.find('[data-toggle]');
+    let activeToggle = 0;
+    const isSelected = collapse.attr('data-selected') === 'true';
+
+    toggles.each(function (index) {
+      const toggle = $(this);
+      toggle.hasClass('active') ? activeToggle = index : '';
+
+      toggle.on('click', function (evt) {
+        if ($(window).width() <= 767) {
+          const toggleCollapse = function () {
+            if (collapse.hasClass('opened')) {
+              collapse.removeClass('opened');
+            } else {
+              collapse.addClass('opened');
+            }
+          };
+
+          if (isSelected) {
+            evt.preventDefault();
+            toggleCollapse();
+            if (!toggle.hasClass('active')) {
+              toggles.removeClass('active');
+              toggle.addClass('active');
+              collapse.removeClass('opened');
+            }
+          } else {
+            if (toggle.hasClass('active')) {
+              evt.preventDefault();
+            }
+            toggleCollapse();
+          }
+        }
+      });
+    });
+
+    if (activeToggle === 0) {
+      if ($(window).width() <= 767) {
+        toggles.eq(activeToggle).addClass('active');
+      }
+    } else {
+      if ($(window).width() > 767) {
+        toggles.eq(activeToggle).addClass('remove');
+      }
+    }
+
+    $(window).on('resize', function () {
+      if ($(window).width() <= 767) {
+        toggles.eq(activeToggle).addClass('active');
+      } else {
+        toggles.removeClass('active');
+      }
+    });
+  });
+
   // MODAL
   let isMobileMenuActive = false;
   // MODAL TOGGLE
@@ -300,4 +358,26 @@ $(document).ready(function () {
       list.height(defaultHeight);
     })
   }
+
+
+  // HIDDEN BLOCK 
+  $('[data-hidden-wrap]').each(function () {
+    const block = $(this);
+    const hidden = block.find('[data-hidden]');
+
+    const showBlock = function () {
+      hidden.addClass('visible');
+      block.on('mouseout', hideBlock);
+      block.on('focusout', hideBlock);
+    };
+
+    const hideBlock = function () {
+      hidden.removeClass('visible');
+      block.off('mouseout', hideBlock);
+      block.off('focusout', hideBlock);
+    };
+
+    block.on('mouseover', showBlock);
+    block.on('focusin', showBlock);
+  });
 });

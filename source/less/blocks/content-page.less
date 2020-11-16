@@ -6,7 +6,7 @@
   padding: 32px 0;
 }
 
-.content-page__bc + .content-page__section {
+.content-page__bc+.content-page__section {
   padding-top: 0;
 }
 
@@ -14,3 +14,22 @@
   max-width: 850px;
 }
 
+.content-page__btns {
+
+  @media (min-width: @md + 1) {
+    margin-left: -8px;
+    margin-right: -8px;
+
+    &>* {
+      margin: 8px;
+    }
+  }
+}
+
+.content-page__top {
+  margin-bottom: 32px;
+
+  @media (max-width: @md) {
+    margin-bottom: 24px;
+  }
+}
