@@ -1,14 +1,26 @@
 .prod {
+  font-size: 14px;
+
   .b-t {
     padding-top: 25px;
     border-top: 1px solid @color-light-gray1;
   }
 }
+
+// .prod .tabs-content {
+//   .owl-carousel {
+//     @media (max-width: @md) {
+//       max-width: 420px;
+//       margin: 0 auto;
+//     }
+//   }
+// }
+
 .prod__top {
   .fluid-wrap();
   margin-bottom: 14px;
 
-  & > * {
+  &>* {
     margin-bottom: 10px;
   }
 }
@@ -19,7 +31,7 @@
   line-height: 15px;
 }
 
-.prod__slider + * {
+.prod__slider+* {
   margin-top: 10px;
 }
 
@@ -44,7 +56,7 @@
 .prod__price-ben {
   margin-left: auto;
 
-  & > * {
+  &>* {
     font-size: 10px;
     line-height: 12px;
   }
@@ -73,7 +85,7 @@
 .prod__price-club {
   margin-top: 15px;
 
-  & + .prod__calc {
+  &+.prod__calc {
     margin-top: 30px;
   }
 }
@@ -93,7 +105,7 @@
   line-height: 18px;
 }
 
-.prod__btn + .prod__btn {
+.prod__btn+.prod__btn {
   margin-top: 18px;
 }
 
@@ -133,6 +145,10 @@
 
 .prod__tabs-wrap {
   margin-top: 40px;
+
+  &+* {
+    padding-bottom: 32px;
+  }
 }
 
 .prod__card-slider {

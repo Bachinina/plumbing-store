@@ -2,20 +2,13 @@
   padding: 25px 0 15px;
 }
 
-.content-page__section {
-  padding: 32px 0;
-}
 
-.content-page__bc+.content-page__section {
-  padding-top: 0;
-}
 
 .content-page__title {
   max-width: 850px;
 }
 
 .content-page__btns {
-
   @media (min-width: @md + 1) {
     margin-left: -8px;
     margin-right: -8px;
@@ -31,5 +24,27 @@
 
   @media (max-width: @md) {
     margin-bottom: 24px;
+  }
+}
+
+.content-page__banner {
+  img {
+    width: 100%;
+  }
+
+  &.bn-bg {
+    overflow: hidden;
+
+    img {
+      max-height: 400px;
+
+      @media (max-width: @lg) {
+        max-height: 300px;
+      }
+
+      @media (max-width: @md) {
+        max-height: 200px;
+      }
+    }
   }
 }

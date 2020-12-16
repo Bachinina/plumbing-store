@@ -12,6 +12,7 @@
 @color-light-gray1: #DEDEDE;
 @color-light-gray2: #F7F7F7;
 @color-blue: #00A6DF;
+@color-beige: rgba(244, 236, 223, 0.25);
 @color-orange: #ED6B33;
 
 @color-yellow: #FFD248;
@@ -30,10 +31,19 @@ button:active {
 .mb-xs {
   margin-bottom: 12px;
 }
+
 .mb-s {
   margin-bottom: 32px;
+
+  @media (max-width: @md) {
+    margin-bottom: 24px;
+  }
 }
+
 .mt-m {
   margin-top: 40px;
 }
 
+.mt-auto {
+  margin-top: auto;
+}

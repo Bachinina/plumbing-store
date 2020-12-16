@@ -1,4 +1,5 @@
 .form__item {
+
   input:not([type="checkbox"]),
   select,
   textarea {
@@ -13,7 +14,7 @@
       margin: 0;
     }
 
-    p + p {
+    p+p {
       margin-top: 4px;
     }
   }
@@ -26,4 +27,33 @@
   cursor: pointer;
   margin-bottom: 10px;
   color: @color-black;
+}
+
+.form-item-with-label {
+  position: relative;
+
+  label {
+    .trans-linear();
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: @color-gray;
+    user-select: none;
+  }
+
+  input {
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+
+  input:focus+label,
+  input:not(:placeholder-shown)+label {
+    font-size: 11px;
+    top: 14px;
+  }
+
+  input::placeholder {
+    opacity: 0;
+  }
 }

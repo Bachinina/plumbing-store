@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   color: @color-light-black;
   background-color: @color-white;
 
@@ -11,6 +11,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+}
+
+html {
+  font-size: 16px;
+
+  @media (max-width: @xl) {
+    font-size: 14px;
+  }
 }
 
 *,
@@ -31,9 +39,19 @@ hr {
   background: @color-light-gray1;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden() {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -61,8 +79,16 @@ input[type="radio"].visually-hidden {
   background-color: @color-light-gray2;
 }
 
+.bg--beige {
+  background-color: @color-beige;
+}
+
 .fluid-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.multiply {
+  mix-blend-mode: multiply;
 }

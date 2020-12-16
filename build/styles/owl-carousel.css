@@ -60,7 +60,7 @@
 
 .owl-carousel .owl-item img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .owl-carousel .owl-nav.disabled,
@@ -299,19 +299,19 @@
   right: 0;
 }
 
-.owl-nav button:hover > *,
-.owl-nav button:focus > * {
+.owl-nav button:hover>*,
+.owl-nav button:focus>* {
   opacity: 0.7;
 }
 
 
 .owl-nav button.disabled {
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.4;
+  outline: none;
 }
 
 
-.owl-item > * {
+.owl-item>* {
   height: 100%;
 }
-
