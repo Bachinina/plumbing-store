@@ -23,10 +23,21 @@
   }
 }
 
-.range__btn + .range__btn {
+.range__btn+.range__btn {
   margin-left: 3px;
 }
 
-.range + a {
+.range+a {
   margin-left: 6px;
+}
+
+.range--yellow {
+  .range__btn {
+    &.active {
+      svg {
+        fill: #F6A305;
+
+      }
+    }
+  }
 }

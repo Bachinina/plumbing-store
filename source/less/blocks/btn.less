@@ -45,7 +45,8 @@
   border-radius: 3px;
 
   &:hover,
-  &:focus {
+  &:focus,
+  .active {
     background: @color-blue;
     color: @color-white;
 
@@ -112,7 +113,8 @@
 .btn-icon--orange {
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.active {
     color: @color-orange;
 
     svg {
@@ -124,11 +126,25 @@
 .btn-icon--blue {
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.active {
     color: @color-blue;
 
     svg {
       fill: @color-blue;
+    }
+  }
+}
+
+.btn-icon--var {
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: var(--var-color);
+
+    svg {
+      fill: var(--var-color);
     }
   }
 }
@@ -142,7 +158,8 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.active {
     background-color: @color-orange;
 
     svg {
@@ -203,4 +220,63 @@
   width: 10px;
   height: 10px;
   background: url(../img/assets/icon-cancel-black.svg) no-repeat center;
+}
+
+.btns-group {
+  display: flex;
+
+  &>*+* {
+    margin-left: 16px;
+  }
+}
+
+
+.color-var {
+  .btn {
+    border: 1px solid var(--var-color);
+    color: var(--var-color);
+
+    &:hover,
+    &:focus,
+    &.active {
+      background: var(--var-color);
+      color: @color-white;
+
+      svg {
+        fill: @color-white;
+      }
+    }
+
+    svg {
+
+      fill: var(--var-color);
+    }
+  }
+
+  .btn-dashed {
+    border-color: var(--var-color);
+  }
+}
+
+.color-var {
+  .btn-back {
+    color: var(--var-color);
+
+
+    svg {
+      stroke: var(--var-color);
+    }
+  }
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  color: @color-blue;
+  font-size: 14px;
+
+  svg {
+    margin-right: 5px;
+    stroke: @color-blue;
+  }
 }

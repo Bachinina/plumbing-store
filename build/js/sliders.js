@@ -83,6 +83,7 @@ $(document).ready(function () {
     // slideCount - количество слайдов, отображаемое на декстопе
     let slideCount = simpleSlider.attr('data-slide-count');
     const slideCountOnMob = simpleSlider.attr('data-slide-sm-count');
+    const slideCountOnMobX = simpleSlider.attr('data-slide-smx-count');
     const slideCountOnTabletMD = simpleSlider.attr('data-slide-md-count');
     const slideCountOnTabletLG = simpleSlider.attr('data-slide-lg-count');
 
@@ -99,6 +100,12 @@ $(document).ready(function () {
         slideCount = slideCountOnTabletMD;
       } else {
         slideCount = slideCount > 2 ? slideCount - 2 : slideCount;
+      }
+    } else if (screenWidth <= 767 && screenWidth > 575) {
+      if (slideCountOnMobX !== undefined) {
+        slideCount = slideCountOnMobX;
+      } else {
+        slideCount = 1;
       }
     } else if (screenWidth <= 767) {
       if (slideCountOnMob !== undefined) {

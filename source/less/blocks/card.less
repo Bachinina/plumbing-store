@@ -4,15 +4,16 @@
   border: 1px solid @color-light-gray1;
   padding: 10px;
   border-radius: 6px;
-  max-width: 320px;
+  // max-width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   @media (max-width: @md) {
-    max-width: 270px;
+    max-width: 320px;
   }
 
   @media (max-width: @sm) {
-    max-width: 220px;
+    max-width: 270px;
   }
 }
 
@@ -45,15 +46,28 @@
 
 .card__btn {
   min-width: 140px;
+  margin-right: 10px;
 }
 
 .card__btn+.card__btn {
   margin-top: 10px;
 }
 
-.card__top {
-  margin-bottom: 20px;
+.card__btn+.card__btns-group {
+  margin: 10px 0;
+}
 
+.card__top {
+  margin-bottom: 30px;
+
+  @media (max-width: @md) {
+    margin-bottom: 20px;
+  }
+
+}
+
+.card__country+.card__center {
+  margin-top: 0;
 }
 
 .card__center {
@@ -62,8 +76,37 @@
   margin-top: auto;
 }
 
+.card__fb {
+  border-top: 1px solid @color-light-gray1;
+  padding-top: 12px;
+  margin-bottom: 16px;
+
+  display: flex;
+}
+
+.card__country {
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  img {
+    margin-right: 8px;
+  }
+}
+
+.card__range {
+  margin-right: 16px;
+}
+
 .card__bottom {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 .card-line {
@@ -100,4 +143,18 @@
 .card-line__btn-close {
   margin-left: auto;
   padding: 5px;
+}
+
+
+
+.color-var {
+  a {
+    .link-var();
+  }
+
+  .card__title {
+    a {
+      .link-black-var();
+    }
+  }
 }

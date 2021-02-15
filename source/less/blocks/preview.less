@@ -1,0 +1,45 @@
+.preview {
+  border: 1px solid @color-light-gray1;
+  border-radius: 6px;
+}
+
+.preview__img {
+  display: flex;
+
+  img {
+    border-radius: 6px;
+    line-height: 0;
+    width: 100%;
+  }
+}
+
+.preview__desc {
+  padding: 16px 20px;
+}
+
+.preview__title {
+  .h3();
+  margin-bottom: 0;
+  text-decoration: underline;
+
+  a {
+    .link-black-blue();
+  }
+}
+
+.color-var {
+  .preview__title {
+
+    a {
+      .link-black-var();
+    }
+  }
+}
+
+.preview__text {
+  margin: 0;
+  margin-top: 12px;
+  color: @color-gray;
+  font-size: 14px;
+
+}

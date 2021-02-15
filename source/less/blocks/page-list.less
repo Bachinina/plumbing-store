@@ -1,0 +1,23 @@
+.page-list {
+
+  &.reverse {
+    .page-item {
+      margin-top: 30px;
+      margin-bottom: 0;
+
+      @media (max-width: @md) {
+        margin-top: 24px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.page-item {
+  display: flex;
+  margin-bottom: 30px;
+
+  @media (max-width: @md) {
+    margin-bottom: 24px;
+  }
+}

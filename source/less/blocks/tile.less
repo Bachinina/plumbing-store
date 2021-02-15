@@ -1,0 +1,28 @@
+.tile {
+  .link-underline();
+}
+
+.tile__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tile__title {
+  margin: 0;
+  font-size: 14px;
+
+
+  @media (max-width: @md) {
+    text-align: center;
+  }
+}
+
+.tile-slider {
+  .owl-item {
+    .tile {
+      width: max-content;
+      margin: 0 auto;
+    }
+  }
+}

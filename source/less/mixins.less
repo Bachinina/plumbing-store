@@ -49,6 +49,24 @@
   }
 }
 
+.link-var() {
+  color: var(--var-color);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.link-black-var() {
+  color: @color-black;
+
+  &:hover,
+  &:focus {
+    color: var(--var-color);
+  }
+}
+
 .link-black() {
   color: @color-black;
 

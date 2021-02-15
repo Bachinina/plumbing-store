@@ -1,0 +1,35 @@
+.feat {
+  width: 100%;
+}
+
+.feat__img {
+  overflow: hidden;
+  margin-bottom: 24px;
+
+  img {
+    border-radius: 6px;
+
+    @media (max-width: @md) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: @md) {
+    margin-bottom: 16px;
+  }
+}
+
+.feat__title {
+  .h3();
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.feat__text {
+  margin-top: 16px;
+  color: @color-gray;
+
+  &>* {
+    margin-bottom: 0;
+  }
+}
