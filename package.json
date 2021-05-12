@@ -13,7 +13,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^1.2.2",
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "run-sequence": "^2.2.1"
   },
   "scripts": {
