@@ -1,0 +1,46 @@
+.brands__list-wrap {
+  margin-top: 40px;
+
+  @media (max-width: @md) {
+    margin-top: 30px;
+  }
+}
+
+.brands-list {
+  column-count: 6;
+  column-gap: 20px;
+
+  a {
+    .link-underline();
+
+    break-inside: avoid;
+    page-break-inside: avoid;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: @lg) {
+    column-count: 5;
+  }
+
+  @media (max-width: @md) {
+    column-count: 2;
+  }
+}
+
+.brand-item__title {
+  display: block;
+  color: @color-gray;
+  text-align: center;
+  border-top: 1px solid #DEDEDE;
+  padding: 5px 0;
+  font-size: 14px;
+  max-width: 145px;
+  margin: 0 auto;
+}
+
+.brand-item__img-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}

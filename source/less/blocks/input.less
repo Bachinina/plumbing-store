@@ -9,6 +9,8 @@ input[type="number"] {
   -webkit-appearance: textfield;
 }
 
+
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -48,6 +50,14 @@ textarea {
     outline: none;
     box-shadow: 0 0 0 2px #9cacb2;
   }
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type="checkbox"] {
@@ -146,6 +156,67 @@ textarea {
       border-color: @color-blue;
     }
   }
+}
+
+
+.checkbox-row {
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    .visually-hidden();
+  }
+
+  input[type="checkbox"]+label,
+  input[type="radio"]+label {
+    margin: 0;
+  }
+
+  input[type="checkbox"]+label::before,
+  input[type="radio"]+label::before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    background-color: @color-white;
+    border: 1px solid @color-light-gray1;
+    border-radius: 4px;
+    border-color: #7C7C7C;
+  }
+
+  input[type="radio"]+label::before {
+    border-radius: 50%;
+  }
+
+  input[type="checkbox"]:checked+label::before {
+    transition: 0.3s;
+    background: @color-blue url(../img/assets/icon-checkbox.svg) center no-repeat;
+    border-color: @color-blue;
+    transition-property: background-color;
+  }
+
+  input[type="radio"]:checked+label::before {
+    transition: 0.3s;
+    background: @color-white;
+    border-color: @color-blue;
+    border-width: 7px;
+    transition-property: background-color;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      margin-right: 4px;
+    }
+  }
+}
+
+.checkbox-row+.checkbox-row {
+  margin-top: 12px;
 }
 
 .radio-btn {

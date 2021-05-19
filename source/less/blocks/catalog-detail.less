@@ -1,0 +1,138 @@
+.catalog-detail__aside {
+  margin-top: 48px;
+
+  .aside__block+.aside__block {
+    margin-top: 20px;
+  }
+
+  @media (max-width: @lg) {
+    display: none;
+  }
+}
+
+.catalog-detail__banners {
+  margin-top: 48px;
+
+  @media (max-width: @lg) {
+    display: none;
+  }
+}
+
+.catalog-detail__banner {
+  line-height: 0;
+  display: block;
+
+  img {
+    line-height: 0;
+  }
+}
+
+.catalog-detail__banner+.catalog-detail__banner {
+  margin-top: 20px;
+}
+
+.catalog-detail__set {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid @color-light-gray1;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.catalog-detail__set-form {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: @md) {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+.catalog-detail__set-sort {
+  margin-right: 30px;
+
+  @media (max-width: @md) {
+    margin-bottom: 16px;
+  }
+}
+
+
+.catalog-detail__set-check {
+  display: flex;
+
+
+  .checkbox-row+.checkbox-row {
+    margin-top: 0;
+    margin-left: 20px;
+
+    @media (max-width: @md) {
+      margin-left: 10px;
+    }
+  }
+
+  .checkbox-row {
+    @media (max-width: @md) {
+
+      input[type=checkbox]+label::before,
+      input[type=radio]+label::before {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.catalog-detail__btns-view {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+
+  .btns-view {
+    margin-left: 24px;
+  }
+
+  @media (max-width: @md) {
+    display: none;
+  }
+}
+
+.catalog-detail__res {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.catalog-detail__res-title {
+  font-weight: 500;
+  color: @color-black;
+  margin-bottom: 20px;
+}
+
+.catalog-detail__res-filters {
+  display: flex;
+  align-items: center;
+  color: @color-gray;
+
+  p {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 12px;
+    align-self: flex-start;
+    flex-shrink: 0;
+
+    @media (max-width: @xl) {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: @xl) {
+    flex-direction: column;
+  }
+}
+
+.catalog-detail__paginator {
+  margin-top: 10px;
+}

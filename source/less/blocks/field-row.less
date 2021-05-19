@@ -1,0 +1,25 @@
+.field-row {
+  display: flex;
+  align-items: center;
+
+  &>* {
+    flex-shrink: 0;
+  }
+
+  input {
+    width: 80px;
+    text-align: center;
+  }
+}
+
+.field-row__dash {
+  margin: 0 15px;
+  width: 20px;
+  height: 1px;
+  background-color: @color-light-gray1;
+}
+
+.field-row__cur {
+  margin-left: 15px;
+  color: @color-black;
+}

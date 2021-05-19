@@ -1,0 +1,46 @@
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginator__container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.paginator__block {
+  display: inline-flex;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #d7d7d7;
+  border-radius: 4px;
+
+  a {
+    border: 1px solid #d7d7d7;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #000;
+    font: 14px/40px 'Regular', Arial, sans-serif;
+
+    &:hover,
+    &:focus {
+      background-color: #f8f8f8;
+    }
+
+    &.active {
+      background-color: @color-blue;
+      color: @color-white;
+      border-color: @color-blue;
+    }
+  }
+
+  a+a {
+    border-left: none;
+  }
+}
+
+.paginator__dots {
+  margin: 10px 15px;
+}

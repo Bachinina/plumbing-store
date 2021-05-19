@@ -87,57 +87,47 @@ $(document).ready(function () {
     const slideCountOnTabletMD = simpleSlider.attr('data-slide-md-count');
     const slideCountOnTabletLG = simpleSlider.attr('data-slide-lg-count');
 
-    if (screenWidth > 1199) {
-      slideCount = slideCount;
-    } else if (screenWidth <= 1199 && screenWidth > 991) {
-      if (slideCountOnTabletLG !== undefined) {
-        slideCount = slideCountOnTabletLG;
-      } else {
-        slideCount = slideCount > 1 ? slideCount - 1 : slideCount;
-      }
-    } else if (screenWidth <= 991 && screenWidth > 767) {
-      if (slideCountOnTabletMD !== undefined) {
-        slideCount = slideCountOnTabletMD;
-      } else {
-        slideCount = slideCount > 2 ? slideCount - 2 : slideCount;
-      }
-    } else if (screenWidth <= 767 && screenWidth > 575) {
-      if (slideCountOnMobX !== undefined) {
-        slideCount = slideCountOnMobX;
-      } else {
-        slideCount = 1;
-      }
-    } else if (screenWidth <= 767) {
-      if (slideCountOnMob !== undefined) {
-        slideCount = slideCountOnMob;
-      } else {
-        slideCount = 1;
-      }
-    }
 
-
+    console.log(slideCount)
     simpleSlider.owlCarousel({
       dots: false,
       loop: isLooped,
       nav: true,
       smartSpeed: 500,
       navText: [prevBtnContent, nextBtnContent],
-      items: slideCount,
       mouseDrag: false,
-
+      items: slideCount,
       responsive: {
         0: {
           margin: 0,
+          items: slideCountOnMob ?
+            slideCountOnMob : 1,
+        },
+        576: {
+          margin: 0,
+          items: slideCountOnMobX ?
+            slideCountOnMobX : slideCountOnMob ?
+            slideCountOnMob : 1,
         },
         768: {
           margin: 15,
+          items: slideCountOnTabletMD ?
+            slideCountOnTabletMD : slideCount > 2 ? slideCount - 2 : slideCount,
+        },
+        992: {
+          margin: 15,
+          items: slideCountOnTabletLG ?
+            slideCountOnTabletLG : slideCount > 1 ? slideCount - 1 : slideCount,
         },
         1200: {
           margin: 20,
+          items: slideCount,
         },
       }
     });
   });
+
+
 
   // MINI SLIDER
   $('[data-slider-mini]').each(function () {

@@ -1,6 +1,6 @@
 .price {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   line-height: 26px;
   color: @color-black;
@@ -39,4 +39,27 @@
 .price-club__btn {
   font-size: 18px;
   line-height: 1.4;
+}
+
+.price-mini {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.price-old-mini {
+  position: relative;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.3;
+  color: @color-gray;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #ED6B33;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

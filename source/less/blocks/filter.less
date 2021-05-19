@@ -1,0 +1,153 @@
+.filter__acc {
+  .acc__title::after {
+    opacity: (0.7);
+  }
+
+  &.simple {
+    margin-bottom: 16px;
+
+    .acc__item {
+      border: none;
+    }
+
+    .acc__item+.acc__item {
+      margin-top: 16px;
+    }
+
+    .acc__title {
+      .h2();
+      padding: 0;
+      padding-bottom: 9px;
+      min-height: auto;
+    }
+  }
+
+
+  &.def {
+    .acc__item:first-of-type {
+      border-top: none;
+
+      .acc__title {
+        padding-top: 5px;
+        min-height: auto;
+      }
+    }
+
+    .acc__title {
+      padding: 16px 0;
+      font-size: 14px;
+      min-height: 58px;
+      font-weight: 400;
+
+      span {
+        .trans-linear();
+        display: flex;
+        align-items: center;
+
+        &::before {
+          .trans-linear();
+          position: absolute;
+          left: -16px;
+          content: '';
+          width: 8px;
+          height: 8px;
+          display: none;
+          background-color: @color-blue;
+          border-radius: 50%;
+
+          @media (max-width: @md) {
+            position: static;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      &.active,
+      &.marked {
+        span {
+          .trans-linear();
+          font-weight: 500;
+
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.filter {
+  .checkbox-row {
+    color: @color-black;
+  }
+}
+
+.filter__search-input {
+  width: 100%;
+  padding: 10px;
+}
+
+.filter__search-results {
+  margin-top: 20px;
+  max-height: 193px;
+}
+
+.filter__btns {
+  margin-top: 30px;
+  display: flex;
+
+  &>* {
+    width: calc(50% - 25px / 2);
+  }
+
+  &>*:first-of-type {
+    margin-right: 25px;
+  }
+}
+
+.filter__open-btn {
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+
+  @media (min-width: @lg + 1) {
+    display: none;
+  }
+}
+
+@media (min-width: @lg + 1) {
+  .filter__body {
+    position: static;
+    z-index: 1;
+    background-color: transparent;
+    padding: 0;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .filter__wrapper {
+    position: relative;
+    border-radius: 0;
+    width: auto;
+    max-width: none;
+    overflow: visible;
+    background-color: transparent;
+  }
+
+  .filter__container {
+    padding: 0;
+  }
+
+  .filter__close {
+    display: none;
+  }
+}
+
+@media (max-width: @md) {
+  .filter__container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}

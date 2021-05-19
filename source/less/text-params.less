@@ -272,3 +272,70 @@ blockquote {
     margin-top: 20px;
   }
 }
+
+.amount {
+  .trans-linear();
+  color: rgba(124, 124, 124, 0.5);
+  font-weight: 400;
+}
+
+p+.float-left,
+p+.float-right {
+  margin-top: 0;
+}
+
+.float-left,
+.float-right {
+  @media (min-width: @lg + 1) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: @lg) {
+    margin: 1rem 0;
+  }
+}
+
+.float-left {
+  @media (min-width: @lg + 1) {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.float-right {
+  @media (min-width: @lg + 1) {
+    float: right;
+    margin-left: 20px;
+  }
+}
+
+.title-line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    z-index: 0;
+    height: 1px;
+    background-color: @color-light-gray1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+
+  span {
+    position: relative;
+    background-color: @color-white;
+    padding: 0 20px;
+    z-index: 2;
+  }
+
+  a {
+    .link-default();
+    .link-black-blue();
+  }
+}

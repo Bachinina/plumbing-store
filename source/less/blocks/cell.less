@@ -1,0 +1,40 @@
+.cell {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @xl) {
+
+    &:hover,
+    &:focus,
+    &.active {
+      .cell__title {
+        background-color: @color-blue;
+        color: #f3f3f3;
+      }
+    }
+
+  }
+}
+
+.cell__img-wrap {
+  img {
+    margin: 0 auto;
+  }
+}
+
+.cell__title {
+  .trans-linear();
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #636262;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  border-top: 2px solid @color-blue;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
