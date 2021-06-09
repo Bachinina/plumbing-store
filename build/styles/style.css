@@ -4603,6 +4603,12 @@ button.menu__link.active svg {
     margin: 0;
   }
 }
+.slider-double__parent:not(.owl-loaded) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
 .slider-double__child {
   display: none !important;
   margin-top: 32px;
