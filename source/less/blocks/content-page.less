@@ -62,7 +62,13 @@
 
 .content-page__slider {
   margin: 20px 0 24px;
+
+  &:not(.owl-loaded) {
+    display: flex;
+    opacity: 0;
+  }
 }
+
 
 
 .content-page__slider {

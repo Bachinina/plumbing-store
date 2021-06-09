@@ -108,7 +108,7 @@
 
 .card__country {
   margin-top: auto;
-  margin-bottom: 10px;
+  margin: 10px 0;
   display: flex;
   align-items: center;
 
@@ -237,7 +237,7 @@
 }
 
 .card__main {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 
   .card__title {
     font-weight: 500;
@@ -252,119 +252,176 @@
 
 
 // HORIZONTAL CARD
-.card-hor {
-  padding: 0;
 
-  .card__img-wrap {
-    margin-bottom: 0;
-    height: 100%;
+.card__body-hor {
+  display: none;
+}
+
+@media (min-width: @md + 1) {
+  .card-hor-wrap {
+    width: 100%;
+    max-width: none;
+    flex: 0 0 100%;
   }
 
-  .card__title {
-    margin-bottom: 16px;
-  }
+  .card-hor {
+    .card__body-vert {
+      display: none;
+    }
 
-  .card__country {
-    margin-bottom: 24px;
-    margin-top: 0;
-  }
-
-  .card__desc {
-    margin-bottom: 12px;
-  }
-
-  .card__bottom {
-    margin-top: auto;
-
-    @media (max-width: @md) {
-      margin-top: 20px;
+    .card__body-hor {
+      display: flex;
     }
   }
 
-  .card__fb {
-    margin-top: 0;
-    border: none;
+  .card-hor {
+    display: flex;
+    flex-direction: row;
     padding: 0;
-    flex-wrap: wrap;
-  }
 
-  .card__rev-link {
-    margin-left: 0;
-    margin-top: 8px;
-  }
-
-  .card__price-wrap {
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 24px;
-
-    @media (max-width: @xl) {
-      margin-top: 0;
-      margin-bottom: 15px;
+    .card__top {
+      max-width: 33.33%;
+      flex: 0 0 33.33%;
+      margin-bottom: 0;
     }
 
-    @media (max-width: @md) {
-      justify-content: flex-end;
-      flex-direction: row-reverse;
+    .card__meta {
+      .card__copy {
+        display: none;
+      }
+    }
 
-      &>*+* {
-        margin-right: 10px;
+    .card__img-wrap {
+      margin-bottom: 0;
+      height: 100%;
+      padding: 10px;
+      border-right: 1px solid #e6e6e6;
+    }
+
+    .card__img {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+
+      @media (min-width: @xl + 1) {
+        width: 290px;
+      }
+    }
+
+    .card__title {
+      margin-bottom: 16px;
+    }
+
+    .card__country {
+      margin-bottom: 24px;
+      margin-top: 0;
+    }
+
+    .card__desc {
+      margin-bottom: 12px;
+    }
+
+    .card__bottom {
+      margin-top: auto;
+
+      @media (max-width: @md) {
+        margin-top: 20px;
+      }
+    }
+
+    .card__fb {
+      margin-top: 0;
+      border: none;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .card__rev-link {
+      margin-left: 0;
+      margin-top: 8px;
+    }
+
+    .card__price-wrap {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-bottom: 24px;
+
+      @media (max-width: @xl) {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: @md) {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+
+        &>*+* {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .card__btn {
+      margin-right: 0;
+      min-width: auto;
+      margin-bottom: 10px;
+    }
+
+    .price-old {
+      margin-bottom: 4px;
+    }
+
+    .price {
+      font-size: 21px;
+    }
+
+    .range__btn svg {
+      @media (max-width: @xl) {
+        width: 16px;
+      }
+    }
+
+    .card__btn svg {
+      @media (min-width: @md) and (max-width: @xl) {
+        display: none;
       }
     }
   }
 
-  .card__btn {
-    margin-right: 0;
-    min-width: auto;
+  .card__body-hor {
+    flex-grow: 1;
   }
 
-  .price-old {
-    margin-bottom: 4px;
-  }
+  .card-hor__block {
+    padding: 15px;
+    flex-grow: 1;
 
-  .price {
-    font-size: 21px;
-  }
-
-  .range__btn svg {
-    @media (max-width: @xl) {
-      width: 16px;
+    &.vert {
+      display: flex;
+      flex-direction: column;
     }
-  }
 
-  .card__btn svg {
-    @media (min-width: @md) and (max-width: @xl) {
-      display: none;
+
+    &:last-of-type {
+      @media (min-width: @md + 1) {
+        padding-left: 0;
+        padding-right: 12px;
+        min-width: 140px;
+      }
+    }
+
+    &:not(:first-of-type) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
   }
 }
 
-.card-hor__row {
-  margin: 0;
-}
 
-.card-hor__block {
-  padding: 15px;
-
-
-  &:first-of-type {
-    padding: 10px;
-    border-right: 1px solid #E6E6E6;
-  }
-
-  &:last-of-type {
-    @media (min-width: @md + 1) {
-      padding-left: 0;
-      padding-right: 12px;
-    }
-  }
-
-  &:not(:first-of-type) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
 
 
 // CARD MINIFY

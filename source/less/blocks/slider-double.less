@@ -1,9 +1,9 @@
-.slider-double {
-}
+.slider-double {}
 
 .slider-double--vert {
   @media (min-width: @xl + 1) {
     position: relative;
+
     .slider-double__parent {
       margin-left: 170px;
       height: 540px;
@@ -53,8 +53,8 @@
   box-sizing: border-box;
   margin: 0 auto;
 
-  & > *:first-child,
-  & > *:first-child > *:first-child {
+  &>*:first-child,
+  &>*:first-child>*:first-child {
     height: 100%;
   }
 
@@ -101,6 +101,12 @@
     display: block !important;
     max-width: 610px;
     padding: 0 30px;
+  }
+
+
+  &:not(.owl-loaded) {
+    display: flex;
+    opacity: 0;
   }
 }
 
