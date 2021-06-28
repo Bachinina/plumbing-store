@@ -4664,6 +4664,9 @@ button.menu__link.active svg {
           align-items: center;
   cursor: pointer;
 }
+.slider-double__item iframe {
+  border: 0;
+}
 .slider-double__item img {
   -o-object-fit: contain;
      object-fit: contain;
