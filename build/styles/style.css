@@ -4564,7 +4564,6 @@ button.menu__link.active svg {
   }
 }
 .slider-double-alt {
-  max-width: 610px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
@@ -4574,9 +4573,12 @@ button.menu__link.active svg {
 }
 @media (min-width: 768px) {
   .slider-double-alt {
-    margin: 0;
     height: 500px;
+    margin-bottom: 20px;
   }
+}
+.slider-double-alt .slider-double__item {
+  height: 100%;
 }
 .slider-double__parent {
   max-width: 610px;
@@ -4636,6 +4638,7 @@ button.menu__link.active svg {
 .slider-double__child .slider-double__item {
   max-width: 90px;
   max-height: 90px;
+  min-height: 80px;
   padding: 6px;
 }
 @media (min-width: 768px) {
@@ -4687,6 +4690,7 @@ button.menu__link.active svg {
   transition: 0.3s;
   position: absolute;
   bottom: 0;
+  width: 100%;
   padding: 5px 15px;
   font-size: 13px;
   line-height: 1.4;

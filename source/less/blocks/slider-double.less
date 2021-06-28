@@ -34,7 +34,7 @@
 }
 
 .slider-double-alt {
-  max-width: 610px;
+  // max-width: 610px;
   box-sizing: border-box;
   margin: 0 auto;
 
@@ -43,8 +43,13 @@
   border-radius: 6px;
 
   @media (min-width: @md + 1) {
-    margin: 0;
+    // margin: 0;
     height: 500px;
+    margin-bottom: 20px;
+  }
+
+  .slider-double__item {
+    height: 100%;
   }
 }
 
@@ -99,6 +104,7 @@
   .slider-double__item {
     max-width: 90px;
     max-height: 90px;
+    min-height: 80px;
     padding: 6px;
   }
 
@@ -149,6 +155,7 @@
   .trans-linear();
   position: absolute;
   bottom: 0;
+  width: 100%;
   padding: 5px 15px;
   font-size: 13px;
   line-height: 1.4;
