@@ -1746,6 +1746,10 @@ button.tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
@@ -7067,6 +7071,24 @@ button.footer__link.disabled .delivery__price-desc::after {
   font-size: 14px;
   width: 100%;
   margin: 0 auto;
+}
+.page-item .card {
+  height: 100%;
+}
+.card__body-vert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.card__body-vert .card__country + .card__center {
+  margin-top: auto;
 }
 @media (max-width: 767px) {
   .owl-item .card {
