@@ -7939,3 +7939,128 @@ button.footer__link.disabled .delivery__price-desc::after {
     padding-bottom: 0;
   }
 }
+.tabs-item h2:not(:first-of-type),
+.tabs-item h3:not(:first-of-type) {
+  margin-top: 24px;
+}
+.char-wrap {
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .char-wrap {
+    margin-bottom: 40px;
+  }
+}
+.char {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.char li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.char li::after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  border-bottom: 1px dashed #DEDEDE;
+  z-index: -1;
+}
+.char li + li {
+  margin-top: 14px;
+}
+.char__item {
+  width: 60%;
+}
+.char__item span {
+  background-color: #fff;
+  padding-right: 5px;
+}
+.char__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  background-color: #fff;
+  width: 40%;
+}
+.char__value img {
+  margin-right: 5px;
+}
+.char__value a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: inherit;
+          text-decoration-color: inherit;
+}
+.char__value a:hover,
+.char__value a:focus {
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+}
+.doc-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px 0;
+}
+.doc {
+  display: inline-block;
+}
+.doc a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.doc a img {
+  max-width: 48px;
+}
+.doc__title {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.btn-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7C7C7C;
+}
+.btn-down svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #7C7C7C;
+}
+* + .prod__desc {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.prod__desc-char {
+  padding: 25px 0;
+  border-top: 1px solid #DEDEDE;
+}
+.prod__desc-char .char {
+  max-height: 150px;
+}
