@@ -445,4 +445,58 @@ $(document).ready(function () {
     })
   });
 
+
+  // RANGE SELECT
+  $('[data-range-select]').each(function () {
+    let selectedValue = '';
+
+    const items = $(this).find('[data-range-item]');
+    const input = $($(this).attr('data-range-input'));
+
+    function onRangeMouseover(range) {
+      items.removeClass('active');
+      items.each(function (i) {
+        if (i <= range) {
+          $(this).addClass('active');
+        }
+      });
+    };
+
+    function onRangeMouseout() {
+      items.removeClass('active');
+    };
+
+    function onRangeClick() {
+      items.removeClass('active');
+      items.each(function (i) {
+        if (i < selectedValue) {
+          $(this).addClass('active');
+        }
+      });
+
+      input.val(selectedValue);
+    };
+
+
+    items.each(function (i) {
+      $(this).on('mouseover', function () {
+        onRangeMouseover(i);
+      });
+      $(this).on('mouseout', onRangeMouseout);
+
+      $(this).on('click', function () {
+        selectedValue = $(this).attr('data-range-value');
+
+        // DEL EVENT LISTENERS
+        items.each(function () {
+          $(this).off('mouseover');
+          $(this).off('mouseout');
+        });
+        $(this).addClass('active');
+
+        onRangeClick();
+      });
+    })
+  });
+
 });
