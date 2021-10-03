@@ -14,24 +14,88 @@
   a,
   button {
     .btn-default();
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 1px 4px;
-    color: @color-gray;
+  }
+}
 
-    &.active {
-      color: @color-orange;
-      border-color: @color-orange;
-      padding: 1px 7px;
-    }
+.sort-arr {
+  flex-wrap: wrap;
+  gap: 15px 0;
 
-    &:hover,
-    &:focus {
-      color: @color-orange;
+  .sort__list {
+    li:not(:last-of-type) {
+      margin-right: 25px;
+
+      @media (max-width: @md) {
+        margin-right: 15px;
+      }
     }
   }
 }
+
+.sort:not(.sort-arr) {
+  .sort__list {
+
+    a,
+    button {
+      font-size: 14px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      padding: 1px 4px;
+      color: @color-gray;
+
+      &.active {
+        color: @color-orange;
+        border-color: @color-orange;
+        padding: 1px 7px;
+      }
+
+      &:hover,
+      &:focus {
+        color: @color-orange;
+      }
+    }
+  }
+}
+
+.sort-arr {
+  .sort__list {
+
+    a,
+    button {
+      font-size: 16px;
+      color: @color-black;
+
+      &.active {
+        color: @color-blue;
+      }
+
+      &:hover,
+      &:focus {
+        color: @color-blue;
+      }
+
+      &.up,
+      &.down {
+        &::after {
+          margin-left: 5px;
+        }
+      }
+
+      &.up::after {
+        content: '\2191';
+      }
+
+      &.down::after {
+        content: '\2193';
+      }
+
+      @media (max-width: @md) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 
 .sort__title {
   margin-right: 14px;

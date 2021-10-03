@@ -50,6 +50,31 @@ $(document).ready(function () {
   });
 
 
+  if ($(document).width() > 767) {
+    $('[data-tabs-carousel]').owlCarousel({
+      loop: false,
+      nav: false,
+      dots: false,
+      autoWidth: true,
+      merge: true,
+    });
+  }
+
+
+  $(window).on('resize', function () {
+    if ($(window).width() > 767) {
+      $('[data-tabs-carousel]').owlCarousel({
+        loop: false,
+        nav: false,
+        dots: false,
+        autoWidth: true,
+      });
+    } else {
+      $('[data-tabs-carousel]').owlCarousel('destroy');;
+    }
+  });
+
+
   // ACCORDION
   $('[data-acc]').each(function () {
     const acc = $(this);
@@ -445,58 +470,115 @@ $(document).ready(function () {
     })
   });
 
-
   // RANGE SELECT
-  $('[data-range-select]').each(function () {
-    let selectedValue = '';
+  $('[data-range-wrap]').each(function () {
+    const ranges = $(this).find('[data-range-select]');
+    const circle = $(this).find('[data-range-circle]');
+    const rangeCummResult = $(this).find('[data-range-сumm-result]');
 
-    const items = $(this).find('[data-range-item]');
-    const input = $($(this).attr('data-range-input'));
+    // Общий рейтинг
+    let rangeCumm = 0;
+    // Среднее значение рейтинга
+    let rangeCummAverage;
 
-    function onRangeMouseover(range) {
-      items.removeClass('active');
-      items.each(function (i) {
-        if (i <= range) {
-          $(this).addClass('active');
+    const inputs = $(ranges.map(function () {
+      return $($(this).attr('data-range-input'));
+    }));
+    const inputCumm = $(this).find('[data-range-сumm]');
+
+    function viewProgress() {
+      let deg = (360 * rangeCummAverage / 5) + 180;
+      if (rangeCummAverage >= 2.5) {
+        circle.addClass('over-half');
+      } else {
+        circle.removeClass('over-half');
+      }
+      circle.find('.piece.right').css({
+        'transform': 'rotate(' + deg + 'deg',
+      });
+    };
+
+    function onRangeChange() {
+      let currValues = [];
+      // Подсчет общего рейтинга
+      rangeCumm = 0;
+      currValues = [];
+
+      inputs.each(function () {
+        let currValue = Number($(this).val());
+        rangeCumm += currValue;
+        currValues.push(currValue);
+      });
+
+      // Расчет среднего значения рейтинга
+      let upDatedValues = currValues.filter(function (el) {
+        if (el !== 0) {
+          return el;
         }
       });
+      rangeCummAverage = (rangeCumm / upDatedValues.length).toFixed(1);
+
+      // Установка актуальных значений
+      rangeCummResult.text(rangeCummAverage);
+      inputCumm.val(rangeCummAverage);
+      viewProgress();
     };
 
-    function onRangeMouseout() {
-      items.removeClass('active');
-    };
+    ranges.each(function () {
+      let selectedValue = '';
 
-    function onRangeClick() {
-      items.removeClass('active');
-      items.each(function (i) {
-        if (i < selectedValue) {
-          $(this).addClass('active');
-        }
-      });
+      const items = $(this).find('[data-range-item]');
+      const input = $($(this).attr('data-range-input'));
 
-      input.val(selectedValue);
-    };
-
-
-    items.each(function (i) {
-      $(this).on('mouseover', function () {
-        onRangeMouseover(i);
-      });
-      $(this).on('mouseout', onRangeMouseout);
-
-      $(this).on('click', function () {
-        selectedValue = $(this).attr('data-range-value');
-
-        // DEL EVENT LISTENERS
-        items.each(function () {
-          $(this).off('mouseover');
-          $(this).off('mouseout');
+      function onRangeMouseover(range) {
+        items.removeClass('active');
+        items.each(function (i) {
+          if (i <= range) {
+            $(this).addClass('active');
+          }
         });
-        $(this).addClass('active');
+      };
 
-        onRangeClick();
-      });
-    })
+      function onRangeMouseout() {
+        items.removeClass('active');
+      };
+
+      function onRangeClick() {
+        items.removeClass('active');
+        items.each(function (i) {
+          if (i < selectedValue) {
+            $(this).addClass('active');
+          }
+        });
+
+        input.val(selectedValue);
+
+        if (circle.length !== 0) {
+          onRangeChange();
+        }
+      };
+
+
+      items.each(function (i) {
+        $(this).on('mouseover', function () {
+          onRangeMouseover(i);
+        });
+        $(this).on('mouseout', onRangeMouseout);
+
+        $(this).on('click', function () {
+          selectedValue = $(this).attr('data-range-value');
+
+          // DEL EVENT LISTENERS
+          items.each(function () {
+            $(this).off('mouseover');
+            $(this).off('mouseout');
+          });
+          $(this).addClass('active');
+
+          onRangeClick();
+        });
+      })
+    });
   });
 
 });

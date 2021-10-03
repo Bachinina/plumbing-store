@@ -293,6 +293,14 @@
   }
 }
 
+.tabs-carousel.owl-carousel:not(.owl-loaded) {
+  @media (min-width: @md + 1) {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
 .color-var {
   .tabs-toggle {
 
